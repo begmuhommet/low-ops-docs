@@ -1,0 +1,70 @@
+# Low-Ops Docs
+
+stages:
+- Build
+- Package
+- Publish
+
+image: docker:20.10.16
+
+variables:
+  TAG_VERSION: 0-ci-$CI_COMMIT_REF_SLUG
+  TAG_BASE: $CI_REGISTRY/cinaq/low-ops-platform
+  DOCKER_LOGIN: docker login -u $LOWOPS_CI_REGISTRY_USER -p $LOWOPS_CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+default:
+  tags:
+    - hosted
+    - docker
+
+compile:
+  stage: Build
+  needs: []
+  allow_failure: false
+  image: python:3.9.7-alpine3.14
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - mkdocs build --verbose --clean --strict
+  artifacts:
+    paths:
+    - site/
+    expire_in: 1 week
+
+docker:
+  stage: Package
+  needs: []
+  variables:
+    CONTAINER_IMAGE: $TAG_BASE/docs:$TAG_VERSION
+    TAG_LATEST: $TAG_BASE/docs:latest
+  allow_failure: false
+  script:
+    - |
+      $DOCKER_LOGIN
+      docker pull $TAG_LATEST || true
+      docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
+      docker push $CONTAINER_IMAGE
+      docker push $TAG_LATEST
+
+web:
+  stage: Publish
+  needs:
+    - compile
+  allow_failure: false
+  image: bitnami/git
+  script:
+    - |
+      mkdir -p /root/.ssh
+      echo "$SSH_KEY_BASE64" | base64 -d > /root/.ssh/id_rsa
+      chmod 600 /root/.ssh/id_rsa
+      git config --global user.email "noreply@cinaq.com"
+      git config --global user.name "robot"
+      export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+      git clone git@github.com:cinaq/low-ops-docs.git
+      cp -r site/* low-ops-docs/
+      cd low-ops-docs/
+      git add .
+      git commit -m "Publish $CI_COMMIT_SHORT_SHA"
+      git push origin main
+  only:
+    - main

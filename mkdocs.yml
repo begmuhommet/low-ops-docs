@@ -3,10 +3,17 @@ site_url: https://docs.low-ops.com/
 theme:
   name: 'material'
   logo: assets/logo.png
+  custom_dir: overrides
   palette:
     primary: 'blue'
     accent: 'blue gray'
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
 extra:
   homepage: https://low-ops.com/
   version:
     provider: mike
+plugins:
+  - search

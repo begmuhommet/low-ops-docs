@@ -1,0 +1,12 @@
+site_name: Low-Ops Platform
+site_url: https://docs.low-ops.com/
+theme:
+  name: 'material'
+  logo: assets/logo.png
+  palette:
+    primary: 'blue'
+    accent: 'blue gray'
+extra:
+  homepage: https://low-ops.com/
+  version:
+    provider: mike

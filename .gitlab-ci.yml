@@ -33,7 +33,8 @@ compile:
 
 docker:
   stage: Package
-  needs: []
+  needs:
+    - compile
   variables:
     CONTAINER_IMAGE: $TAG_BASE/docs:$TAG_VERSION
     TAG_LATEST: $TAG_BASE/docs:latest

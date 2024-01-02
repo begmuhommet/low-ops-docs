@@ -1,4 +1,4 @@
-site_name: Low-Ops Platform
+site_name: Low-Ops Platform Documentation
 theme:
   name: 'material'
   logo: assets/logo.png
@@ -14,8 +14,14 @@ theme:
     - header.autohide
 extra:
   homepage: https://low-ops.com/
-  version:
-    provider: mike
 plugins:
   - search
-copyright: Copyright &copy; 2022 - 2024 CINAQ.com
+copyright: Copyright &copy; 2022 - 2024 <a href="https://cinaq.com">CINAQ.com</a>
+extra_javascript:
+  - "js/extra.js"
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

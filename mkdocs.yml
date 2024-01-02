@@ -11,9 +11,12 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.footer
+    - header.autohide
 extra:
   homepage: https://low-ops.com/
   version:
     provider: mike
 plugins:
   - search
+copyright: Copyright &copy; 2022 - 2024 CINAQ.com

@@ -1,5 +1,4 @@
 site_name: Low-Ops Platform
-site_url: https://docs.low-ops.com/
 theme:
   name: 'material'
   logo: assets/logo.png

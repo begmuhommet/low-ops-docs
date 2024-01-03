@@ -11,14 +11,19 @@ theme:
     - search.highlight
     - search.share
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
     - header.autohide
 extra:
   homepage: https://low-ops.com/
 plugins:
   - search
 copyright: Copyright &copy; 2022 - 2024 <a href="https://cinaq.com">CINAQ.com</a>
-extra_javascript:
-  - "js/extra.js"
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:

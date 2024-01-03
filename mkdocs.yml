@@ -17,7 +17,7 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.expand
-    - toc.integrate
+    #- toc.integrate
     - header.autohide
 extra:
   homepage: https://low-ops.com/

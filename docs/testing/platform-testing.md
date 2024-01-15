@@ -18,7 +18,7 @@ To create a new application, follow the steps below:
 
 Once the application is created, go to "Catalog" tab to view it. 
 
-## *Deploy application to a test environment*
+## *Deploy application to Test environment*
 
 Open the newly created application and click on the "Environment" tab on the left side menu. 
 
@@ -31,16 +31,50 @@ Open the newly created application and click on the "Environment" tab on the lef
  Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
-Verify: 
+
+*Verify:*
+
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
  - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details. 
 
- ## *Deploy application to a acceptance environment*
+## *Deploy application to Acceptance environment*
 
+ 1. Select the "Acceptance" environment 
+ 2. Under the "Actions" section, click on the "Deploy" button 
+ 3. On the new page that opens up:
+ Step 1: Select "Main" package
+ Step 2: Leave as is
+ Step 3: MyFirstModule.Cleanup - Enable
+ Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
+ And click on "Deploy" button
+ 4. Go back to the Environment tab to see the status of deployment
+
+*Verify:*
+
+ - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
+ - Status of the application is updated 
+ - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details of the deployment. 
  
 
+## *Deploy application to Production environment*
 
+ 1. Select the "Production" environment 
+ 2. Under the "Actions" section, click on the "Deploy" button 
+ 3. On the new page that opens up:
+ Step 1: Select "Main" package
+ Step 2: Leave as is
+ Step 3: MyFirstModule.Cleanup - Enable
+ Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
+ And click on "Deploy" button
+ 4. Go back to the Environment tab to see the status of deployment
+
+*Verify:*
+
+ - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
+ - Status of the application is updated 
+ - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details of the deployment. 
+ 
 
  
 

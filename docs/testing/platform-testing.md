@@ -32,11 +32,12 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify:*
+*Verify*
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
  - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details. 
+ - Select the "Test" environment and click on the URL to make sure that the application opens up successfully. 
 
 ## *Deploy application to Acceptance environment*
 
@@ -50,11 +51,12 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify:*
+*Verify*
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
  - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details of the deployment. 
+ - Select the "Acceptance" environment and click on the URL to make sure that the application opens up successfully. 
  
 
 ## *Deploy application to Production environment*
@@ -69,12 +71,26 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify:*
+*Verify*
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
  - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details of the deployment. 
+ - Select the "Production" environment and click on the URL to make sure that the application opens up successfully. 
  
+## *Commit new application source code to gitea*
+
+1. Login to Gitea with your credentials
+2. Open the newly created application
+3. Open a README file and make a change and click on "commit  changes" button. 
+4. Go back to the portal 
+
+*Verify*
+
+- Environment tab: "Test" environment has to be updated with the new "package version".  
+- Packages tab: New package has to appear in the list
+
+
 
  
 

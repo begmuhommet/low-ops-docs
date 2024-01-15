@@ -32,7 +32,7 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify*
+**Verify**
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
@@ -51,7 +51,7 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify*
+**Verify**
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
@@ -71,24 +71,63 @@ Open the newly created application and click on the "Environment" tab on the lef
  And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
-*Verify*
+**Verify**
 
  - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
  - Status of the application is updated 
  - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details of the deployment. 
  - Select the "Production" environment and click on the URL to make sure that the application opens up successfully. 
  
-## *Commit new application source code to gitea*
+## *Commit new application source code to gitea & Push new application package to harbor*
 
 1. Login to Gitea with your credentials
 2. Open the newly created application
 3. Open a README file and make a change and click on "commit  changes" button. 
 4. Go back to the portal 
 
-*Verify*
+**Verify**
 
 - Environment tab: "Test" environment has to be updated with the new "package version".  
 - Packages tab: New package has to appear in the list
+
+## View package to harbor
+
+In the "Packages" tab, click on the "Package" to view the detials. 
+A new window with details should pop up
+
+## Stop the application in Test/Acceptance/Production environments
+
+1. Go to the "Environment" tab
+2. Click on the Test (Acceptance, Production) environment
+3. Under the "Actions" section click on the red "Stop" button
+4. Click on "Confirm" in the pop up window that appears
+
+**Verify**
+
+- The Status field has to change to "Stopped" 
+- The URL should give a "503 Service Temporarily Unavailable" error message
+
+## Start the application in Test/Acceptance/Production environments
+
+1. Go to the "Environment" tab
+2. Click on the Test (Acceptance, Production) environment
+3. Under the "Actions" section click on the "Start" button
+4. Click on "Confirm" in the pop up window that appears.
+
+**Verify**
+
+- The Status field has to change to "Running" 
+- Give a minute or two for an application to start running again
+- Click on the URL to make sure that the application opens up successfully
+
+## Validate monitoring tb metrics availability
+
+
+
+
+
+
+
 
 
 

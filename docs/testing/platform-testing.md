@@ -8,7 +8,7 @@ Create a new application, make sure it creates without any errrors.
 
 Once logged in, you will be redirected into the home page.
 
-To create a new application, follow the stesps below:
+To create a new application, follow the steps below:
 
  5. In the left menu click on the “Create” button 
  6. Select the "Mendix App Template Generic"
@@ -30,8 +30,17 @@ Open the newly created application and click on the "Environment" tab on the lef
  Step 3: MyFirstModule.Cleanup - Enable
  Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
  And click on "Deploy" button
-To check: 
- "Deployment request submitted" pop up window
+ 4. Go back to the Environment tab to see the status of deployment
+Verify: 
+ - "Deployment request submitted" pop up window appears after the "Deploy" button is clicked. 
+ - Status of the application is updated 
+ - Deployment is complete successfully once "package version", "mendix version" and "updated on" fields contain the details. 
+
+ ## *Deploy application to a acceptance environment*
+
+ 
+
+
 
  
 

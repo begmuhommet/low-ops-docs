@@ -5,4 +5,4 @@
  3. Insert username/email and password
  4. Click on the “Sign in” button
 Once logged in, you will be redirected into the home page.
-![alt text](Low Ops portal "Title")
+![alt text](Low Ops portal.jpg "Title")

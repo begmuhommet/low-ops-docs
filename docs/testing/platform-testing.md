@@ -90,12 +90,12 @@ Open the newly created application and click on the "Environment" tab on the lef
 - Environment tab: "Test" environment has to be updated with the new "package version".  
 - Packages tab: New package has to appear in the list
 
-## View package to harbor
+## *View package to harbor*
 
 In the "Packages" tab, click on the "Package" to view the detials. 
 A new window with details should pop up
 
-## Stop the application in Test/Acceptance/Production environments
+## *Stop the application in Test/Acceptance/Production environments*
 
 1. Go to the "Environment" tab
 2. Click on the Test (Acceptance, Production) environment
@@ -107,7 +107,7 @@ A new window with details should pop up
 - The Status field has to change to "Stopped" 
 - The URL should give a "503 Service Temporarily Unavailable" error message
 
-## Start the application in Test/Acceptance/Production environments
+## *Start the application in Test/Acceptance/Production environments*
 
 1. Go to the "Environment" tab
 2. Click on the Test (Acceptance, Production) environment
@@ -120,7 +120,7 @@ A new window with details should pop up
 - Give a minute or two for an application to start running again
 - Click on the URL to make sure that the application opens up successfully
 
-## Validate monitoring tb metrics availability
+## *Validate monitoring tb metrics availability*
 
 
 

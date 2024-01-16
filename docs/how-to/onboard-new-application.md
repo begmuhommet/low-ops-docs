@@ -155,7 +155,7 @@ A new window with details should pop up.
 4. Click on the `Create` button to create new Backups
 5. In the pop up window include the name and click on `Create`
 
-![](../assets/create_backups.jpg)
+![](../assets/create_backup.jpg)
 
 6. Backup is successfully created the status changes to a greeen check sign `Complete`
 

@@ -1,6 +1,7 @@
 # Platform testing
 ## *Create new application*
 Create a new application, make sure it creates without any errrors. 
+
  1. Follow the link https://portal.trial.low-ops.com/
  2. Click on the button “Sign in with Keycloak OIDC”
  3. Insert username/email and password
@@ -25,11 +26,11 @@ Open the newly created application and click on the "Environment" tab on the lef
  1. Select the "Test" environment 
  2. Under the "Actions" section, click on the "Deploy" button 
  3. On the new page that opens up:
- Step 1: Select "Main" package
- Step 2: Leave as is
- Step 3: MyFirstModule.Cleanup - Enable
- Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
- And click on "Deploy" button
+    Step 1: Select "Main" package
+    Step 2: Leave as is
+    Step 3: MyFirstModule.Cleanup - Enable
+    Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
+    And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
 **Verify**
@@ -44,11 +45,11 @@ Open the newly created application and click on the "Environment" tab on the lef
  1. Select the "Acceptance" environment 
  2. Under the "Actions" section, click on the "Deploy" button 
  3. On the new page that opens up:
- Step 1: Select "Main" package
- Step 2: Leave as is
- Step 3: MyFirstModule.Cleanup - Enable
- Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
- And click on "Deploy" button
+    Step 1: Select "Main" package
+    Step 2: Leave as is
+    Step 3: MyFirstModule.Cleanup - Enable
+    Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
+    And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
 **Verify**
@@ -64,11 +65,11 @@ Open the newly created application and click on the "Environment" tab on the lef
  1. Select the "Production" environment 
  2. Under the "Actions" section, click on the "Deploy" button 
  3. On the new page that opens up:
- Step 1: Select "Main" package
- Step 2: Leave as is
- Step 3: MyFirstModule.Cleanup - Enable
- Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
- And click on "Deploy" button
+    Step 1: Select "Main" package
+    Step 2: Leave as is
+    Step 3: MyFirstModule.Cleanup - Enable
+    Step 4: Check the "I acknowledge the app might be offline briefly during deployment"
+    And click on "Deploy" button
  4. Go back to the Environment tab to see the status of deployment
 
 **Verify**

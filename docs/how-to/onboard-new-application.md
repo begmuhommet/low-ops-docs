@@ -1,6 +1,6 @@
 # Onboard a new application
 
-## *Create new application*
+## *Create New Application*
 Create a new application, make sure it creates without any errrors. 
 
  1. Follow the link https://portal.trial.low-ops.com/
@@ -21,7 +21,7 @@ To create a new application, follow the steps below:
 
 Once the application is created, go to `Catalog` tab to view it. 
 
-## *Deploy application to Test environment*
+## *Deploy Application to Test Environment*
 
 Open the newly created application and click on the `Environment` tab on the left side menu. 
 
@@ -42,7 +42,7 @@ Open the newly created application and click on the `Environment` tab on the lef
  - Deployment is complete successfully once `package version`, `mendix version` and `updated on` fields contain the details. 
  - Select the `Test` environment and click on the URL to make sure that the application opens up successfully. 
 
-## *Deploy application to Acceptance environment*
+## *Deploy Application to Acceptance Environment*
 
 1. Select the `Acceptance` environment 
 2. Under the `Actions` section, click on the `Deploy` button 
@@ -62,7 +62,7 @@ Open the newly created application and click on the `Environment` tab on the lef
  - Select the `Acceptance` environment and click on the URL to make sure that the application opens up successfully. 
  
 
-## *Deploy application to Production environment*
+## *Deploy Application to Production Environment*
 
 1. Select the `Production` environment 
 2. Under the `Actions` section, click on the `Deploy` button 
@@ -81,7 +81,7 @@ Open the newly created application and click on the `Environment` tab on the lef
  - Deployment is complete successfully once `package version`, `mendix version` and `updated on"` fields contain the details of the deployment. 
  - Select the `Production` environment and click on the URL to make sure that the application opens up successfully. 
  
-## *Commit new application source code to gitea & Push new application package to harbor*
+## *Commit New Application Source Code to Gitea & Push New Application Package to Harbor*
 
 1. Login to Gitea with your credentials
 2. Open the newly created application
@@ -93,12 +93,12 @@ Open the newly created application and click on the `Environment` tab on the lef
 - Environment tab: `Test` environment has to be updated with the new `package version`.  
 - `Packages` tab: New package has to appear in the list.
 
-## *View package to harbor*
+## *View Package to Harbor*
 
 In the `Packages` tab, click on the `Package` to view the detials. 
 A new window with details should pop up.
 
-## *Stop the application in Test/Acceptance/Production environments*
+## *Stop the Application in Test/Acceptance/Production Environments*
 
 1. Go to the `Environment` tab.
 2. Click on the `Test` (`Acceptance`, `Production`) environment.
@@ -110,7 +110,7 @@ A new window with details should pop up.
 - The Status field has to change to `Stopped`. 
 - The URL should give a `503 Service Temporarily Unavailable` error message.
 
-## *Start the application in Test/Acceptance/Production environments*
+## *Start the Application in Test/Acceptance/Production Environments*
 
 1. Go to the `Environment` tab
 2. Click on the `Test` (`Acceptance`, `Production`) environment
@@ -124,7 +124,7 @@ A new window with details should pop up.
 - Click on the URL to make sure that the application opens up successfully
 
 
-## *Validate monitoring tb metrics availability*
+## *Validate Monitoring tb Metrics' Availability*
 
 1. Go to the `Environment` tab
 2. Click on the `Test` (`Acceptance`, `Production`) environment
@@ -134,7 +134,7 @@ A new window with details should pop up.
 3. In the left menu select `Monitor`to review the metrics
 4. From the drop down menu in the upper right corner select the period for which to display the metrics, `Today`, `Last 24 hours`, `Last 3 days`, `Last 7 days`, `Last 30 days`.
 
-## *Validate logs*
+## *Validate Logs*
 
 1. Go to the `Environment` tab
 2. Click on the `Test` (`Acceptance`, `Production`) environment
@@ -147,7 +147,7 @@ A new window with details should pop up.
 6. Re-deploy the application by following the steps from `Deploy application to Test environment`
 7. Return to "Logs" to review the traces. 
 
-## Create a backup from a portal*
+## Create a Backup from a Portal*
 
 1. Go to the `Environment` tab
 2. Click on the `Test` (`Acceptance`, `Production`) environment
@@ -157,9 +157,42 @@ A new window with details should pop up.
 
 ![](../assets/create_backup.jpg)
 
-6. Backup is successfully created the status changes to a greeen check sign `Complete`
+6. Backup is successfully created when the status changes to a greeen check sign `Complete`
 
+## *Manage Backups*
 
+1. In the left side menu select `Backups`
+2. Select the backup from the list and click on it
+3. In the pop up window click on `Restore` button to restore the backup
+4. Click on the `Delete` button to delete the backup
+5. To import a backup, go back to the list of backups and click on the `Import` button in the upper right corner
+6. Upload a file from your computer and wait for it to load
+7. Backup is successfully uploaded when the status changes to a greeen check sign `Complete`
+
+## *Validate Privileged Access*
+
+1. Go to the `Environment` tab
+2. Click on the `Test` (`Acceptance`, `Production`) environment
+3. In the left side menu select `Privileged Access`
+4. Use the URL and login credentials to login to Mendix Studio Pro
+
+## *Validate Firewall*
+
+1. Go to the `Environment` tab
+2. Click on the `Test` (`Acceptance`, `Production`) environment
+3. In the left side menu select `Firewall`
+4. Click on the `Create rule` button in the upper right corner
+
+![](../assets/create_firewall_rule.jpg)
+
+5. In the window that pops up indicate the rule details and click on `Save`
+6. Re-deploy the application by following the steps from `Deploy application to Test environment`
+7. Wait for the application to re-deploy
+8. From the `Details` tab use the URL to login to Mendix Studio Pro
+9. Verify the created rule works as specified
+10. To update the Firewall rule, go back to the `Firewall` tab and click on the three dots that will allow to `Edit` or `Delete` the rule. 
+
+## *Validate Alerts*
 
 
 

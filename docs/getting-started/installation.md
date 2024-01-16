@@ -10,18 +10,22 @@ There are 2 different platform `foundation_type`s:
 
 High level AWS diagram:
 
-![LowOps AWS ](../assets/image.png)
+![LowOps AWS](../assets/aws-foundation.png)
 
 ## Platform Configuration
 
 ### Configuration Options
 
-#### Helm chart values file
+#### Image parameters
 
 | Name     | Description | Value |
 | -------- | -------     | ------- |
 |lowops.image.containerImage                          |LowOps platform deploy image name. Request from `CINAQ Team` | "" |
-| | | |
+
+#### Common parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.common.base_domain                    | LowOps platform base domain. Example: `example.low-ops.com`   | "" |
 | lowops.config.common.private_registry_url           | LowOps platform private container registry url                | "registry.gitlab.com" |
 | lowops.config.common.platform_private_registry_user | LowOps platform private container registry user. Request from `CINAQ Team`   | "" |
@@ -37,27 +41,47 @@ High level AWS diagram:
 | lowops.config.common.shared_db_type                 | LowOps platform shared database type for running applications. Options: `platform_pg`, `platform_cnpg`, `rds_mysql`, `rds_postgres` | "platform_pg" |
 | lowops.config.common.low_ops_env                    | LowOps platform environment name. Reserved values: `ci`, `trial`           | "dev" |
 | lowops.config.common.platform_version               | LowOps platform version                                                    | "" |
-| | | |
+
+#### Ingress parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.ingress.default_ssl_cert              | LowOps platform ssl certificate                                            | "" |
 | lowops.config.ingress.default_ssl_key               | LowOps platform ssl key                                                    | "" |
 | lowops.config.ingress.aws_elb_eipalloc              | LowOps platform aws elb allocation. CSV of aws ip allocations. When `common.foundation_type == aws`| "" |
 | lowops.config.ingress.enable_external_dns           | Install external dns operator?                                             | "false" |
 | lowops.config.ingress.enable_letsencrypt            | Install cert manager operator?                                             | "false" |
-| | | |
+
+#### Backstage parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.backstage.redis_password              | LowOps platform portal redis password                                      | "" |
 | lowops.config.backstage.image_tag                   | LowOps platform portal image tag                                           | "" |
 | lowops.config.backstage.backend_image_tag           | LowOps platform portal backend image tag                                   | "" |
-| | | |
+
+#### Cnpg parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.cnpg.services_admin_user              | LowOps platform cnpg service db admin user name                            | "postgres" |
 | lowops.config.cnpg.services_admin_password          | LowOps platform cnpg service db admin user password                        | "" |
 | lowops.config.cnpg.services_volume_size             | LowOps platform cnpg service db pvc volume size                            | "20Gi" |
 | lowops.config.cnpg.apps_admin_user                  | LowOps platform cnpg applications db admin user name                       | "postgres" |
 | lowops.config.cnpg.apps_admin_password              | LowOps platform cnpg applications db admin user password                   | "" |
 | lowops.config.cnpg.apps_volume_size                 | LowOps platform cnpg applications db pvc volume size                       | "20Gi" |
-| | | |
+
+#### Etcd parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.etcd.volume_size                      | LowOps platform etcd service volume size                                   | "8Gi" |
-| | | |
-| lowops.config.gitea.admin_username                  | LowOps platform gitea admin username                                       | "gitea_admin" |
+
+#### Gitea parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
+| lowops.config.gitea.admin_username                  | LowOps platform gitea admin username                                      | "gitea_admin" |
 | lowops.config.gitea.admin_password                  | LowOps platform gitea admin password                                       | "" |
 | lowops.config.gitea.postgresql_username             | LowOps platform gitea postgresql username                                  | "admin" |
 | lowops.config.gitea.postgresql_password             | LowOps platform gitea postgresql password                                  | "" |
@@ -67,7 +91,11 @@ High level AWS diagram:
 | lowops.config.gitea.pg_storage_size                 | LowOps platform gitea pg storage size                                         | "10Gi" |
 | lowops.config.gitea.keycloak_client_id              | LowOps platform gitea oidc client id                                          | "gitea" |
 | lowops.config.gitea.keycloak_client_secret          | LowOps platform gitea oidc client secret                                      | "" |
-| | | |
+
+#### Harbor parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.harbor.admin_password                   | LowOps platform harbor admin password                     | "" |
 | lowops.config.harbor.registry_volume_size             | LowOps platform harbor registry volume size               | "10Gi" |
 | lowops.config.harbor.database_volume_size             | LowOps platform harbor database volume size               | "10Gi" |
@@ -80,19 +108,35 @@ High level AWS diagram:
 | lowops.config.harbor.keycloak_client_secret           | LowOps platform harbor                                    | "" |
 | lowops.config.harbor.minio_user                       | LowOps platform harbor registry storage user name         | "harbor" |
 | lowops.config.harbor.minio_password                   | LowOps platform harbor registry storage user password     | "" |
-| | | |
+
+#### Kanister parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.kanister.minio_user                     | LowOps platform kanister registry storage user name       | "kanister" |
 | lowops.config.kanister.minio_password                 | LowOps platform kanister registry storage user password   | "" |
-| | | |
+
+#### Keycloack parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.keycloak.admin_password                 | LowOps platform keycloak admin user password              | "" |
 | lowops.config.keycloak.db_password                    | LowOps platform keycloak pg database password             | "" |
 | lowops.config.keycloak.google_client_id               | LowOps platform keycloak google client id                 | "" |
 | lowops.config.keycloak.google_client_secret           | LowOps platform keycloak google client secret             | "" |
-| | | |
+
+#### Minio parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.minio.root_user                         | LowOps platform minio root user                           | "admin" |
 | lowops.config.minio.root_password                     | LowOps platform minio root password                       | "" |
 | lowops.config.minio.storage_size                      | LowOps platform minio pvc storage size                    | "8G" |
-| | | |
+
+#### Monitoring stack parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.monitoring_stack.thanos_minio_user                  | LowOps platform monitoring thanos minio user                  | "thanos" |
 | lowops.config.monitoring_stack.thanos_minio_password              | LowOps platform monitoring thanos minio password              | "" |
 | lowops.config.monitoring_stack.grafana_keycloak_client_id         | LowOps platform monitoring grafana keycloak client id         | "grafana" |
@@ -102,26 +146,54 @@ High level AWS diagram:
 | lowops.config.monitoring_stack.grafana_smtp_smarthost             | LowOps platform monitoring grafana smtp smarthost             | "" |
 | lowops.config.monitoring_stack.grafana_smtp_smarthost_user        | LowOps platform monitoring grafana smtp smarthost user        | "" |
 | lowops.config.monitoring_stack.grafana_smtp_smarthost_password    | LowOps platform monitoring grafana smtp smarthost password    | "" |
-| | | |
+
+#### Oauth2 proxy parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.oauth2proxy.keycloak_client_id      | LowOps platform oauth2proxy keycloak client id            | "oauth2-proxy" |
 | lowops.config.oauth2proxy.keycloak_client_secret  | LowOps platform oauth2proxy keycloak client secret        | "" |
-| | | |
+
+#### Pgadmin parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.pgadmin.password                    | LowOps platform pgadmin user password                     | "" |
-| | | |
+
+#### Postgresql parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.postgresql.admin_password           | LowOps platform pg admin user password                    | "" |
 | lowops.config.postgresql.volume_size              | LowOps platform pg volume size                            | "30G" |
-| | | |
+
+#### S3 apps services gateway parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.s3_gateway.apps_root_user           | LowOps platform s3 gateway user name to access apps storage buckets       | "" |
 | lowops.config.s3_gateway.apps_root_password       | LowOps platform s3 gateway user password to access apps storage buckets   | "" |
-| | | |
+
+#### S3 core services parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.s3_gateway.core_root_user_set       | LowOps platform s3 gateway user name to access core storage buckets       | "" |
 | lowops.config.s3_gateway.core_root_password       | LowOps platform s3 gateway user password to access core storage buckets   | "" |
-| | | |
+
+#### Tekton parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | lowops.config.tekton_cicd.mendix_license_id       | LowOps platform mendix license ID     | "" |
 | lowops.config.tekton_cicd.mendix_license_key      | LowOps platform mendix license key    | "" |
-| | | |
+
+#### Consul parameters
+
+| Name     | Description | Value |
+| -------- | -------     | ------- |
 | vault.consul_storage_size                         | LowOps platform vault consul backend storage size | "8Gi" |
-| | | |
+
 
 
 Values file `values-dev.yaml` example:

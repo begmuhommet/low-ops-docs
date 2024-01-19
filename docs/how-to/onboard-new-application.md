@@ -192,41 +192,5 @@ Allows you to add a new runtime setting.
 For the new setting values to take effect, re-deploy the application.
 
 
-# Release 2.0
 
-## **New Environment Navigation**
-
-The new environment navigation appears on the left side as a dropdown menu, which becomes visible once one of the environments is chosen.
-
-![](../assets/environment_navigation.jpg)
-
-## **Microflow metrics - Mendix Microflow Execution Frequency**
-
-New Metrix added to display Mendix Microflow Executon Frequency (per second). 
-
-![](../assets/execution_frequency.jpg)
-
-## **Microflow metrics - Mendix Microflow Execution Time**
-
-New Metrix added to display Mendix Microflow Execution Time. 
-
-![](../assets/execution_time.jpg)
-
-## **CNPG**
-
-## **New S3 Storage Model**
-
-## **Backups Importing with New Model**
-
-## **Oauth - Keycloak Branded Login Screens**
-
-New branded login screens were implemented for Outh and Keycloak. 
-
-![](../assets/login_platform.jpg)
-
-![](../assets/login_credentials.jpg)
-
-## **IP Filtering (Firewall)**
-
-## **Backstage with Backend**
 

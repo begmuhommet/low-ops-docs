@@ -1,4 +1,4 @@
-## *Privileged Access*
+## *Privilieged Access*
 
 1. Go to the `Environment` tab.
 2. Click on the `Test` (`Acceptance`, `Production`) environment.

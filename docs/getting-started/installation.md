@@ -2,13 +2,13 @@
 
 ## Platform Foundation
 
-The platform foundation is an infrastructure level that have to provide scalable, flexeble and extensible enviromnemt for platform lifecycle. To build platform foundation you can use cloud providers or on-premise solutions that allows you to run managed or self managed k8s clusters.
+The platform foundation is an infrastructure level that has to provide scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.
 
 There are 2 different platform `foundation_type`s:
 
-- `generic` - Default platform installation method. Supports any kubernetes custom or managed solution. All platform components that are required to run future applications workloads will be installed automatically.
+- `generic` - Default platform installation method supports any Kubernetes custom or managed solution. All platform components required to run future applications workloads will be installed automatically.
 
-- `aws` - Optimised platform installation for AWS specific services. Natively support other `aws` services such as EKS, RDS, S3, ELB, EBS. To use aws managed data resources you need to create them before platform installation as part of foundation setup. See diagram bellow for more details.
+- `aws` - Optimised platform installation for AWS-specific services natively supports other `AWS` services such as EKS, RDS, S3, ELB, EBS. To use AWS-managed data resources, you need to create them before platform installation as part of the foundation setup. Refer to the diagram bellow for more details.
 
 High level AWS diagram:
 
@@ -16,7 +16,7 @@ High level AWS diagram:
 
 ## Platform Configuration
 
-Before starting platform installation process check configuration options below. Change required paramaters to match your environment setup.
+Before starting the platform installation process, check the configuration options below. Change required paramaters to match your environment setup.
 
 Update values file with `values.yaml` example:
 
@@ -39,16 +39,16 @@ For more information follow [helm page](./helm.md)
 
 ## Platform Installation
 
-From the deploy server with access to Kubernetes cluster api. Install platform by installing `lowops` helm chart.
+From the deploy server with access to the Kubernetes cluster API. Install the platform by installing `lowops` helm chart.
 
-Add lowops helm repository
+Add lowops helm repository.
 
 ```
 helm repo add --username $PAT_NAME --password $PAT_TOKEN lowops \
     "https://gitlab.com/api/v4/projects/41532268/packages/helm/stable"
 ```
 
-Run `helm install` command to start platform setup process
+Run `helm install` command to start the platform setup process.
 
 ```
 HELM_CMD="helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE"

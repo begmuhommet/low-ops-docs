@@ -1,4 +1,4 @@
-# Helm
+# Advanced configuration
 
 ## Add LowOps Repository
 

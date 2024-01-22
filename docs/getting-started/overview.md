@@ -3,7 +3,7 @@
 How to get started with LowOps platform
 ---------------------------------------
 
-## Step 1: [Prerequisites](./)
+## Step 1: [Prerequisites](./prerequisites.md)
 
 What is required before platform installation
 

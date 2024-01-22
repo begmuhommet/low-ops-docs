@@ -11,6 +11,6 @@ What is required before platform installation
 
 Platform configuration and installation process.
 
-# Step 3: [Explore LowOps with portal](../how-to/onboard-new-application.md)
+## Step 3: [Explore LowOps with portal](../how-to/onboard-new-application.md)
 
 LowOps platform portal is an iDP (interanl developer portal).

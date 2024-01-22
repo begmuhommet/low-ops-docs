@@ -2,7 +2,7 @@
 
 ## Platform Foundation
 
-The platform foundation is an infrastructure level that has to provide scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.
+The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.
 
 There are 2 different platform `foundation_type`s:
 

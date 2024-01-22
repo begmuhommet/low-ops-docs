@@ -4,7 +4,7 @@
 
 ### Required packages
 
-Following binaries must be present on the machine with access to kubernetes api before starting:
+The following binaries must be present on the machine with access to Kubernetes api before starting:
 
 - kubectl `v1.28.0`
 - helm `v3.9.4`

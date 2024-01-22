@@ -1,5 +1,22 @@
 # Low Ops Platform setup
 
+## Prerequisites
+
+### Required packages
+
+Following binaries must be present on the machine with access to kubernetes api before starting:
+
+- kubectl `v1.28.0`
+- helm `v3.9.4`
+
+### Kubernetes
+
+LowOps platform requires a Kubernetes cluster.
+
+Curently supported versions are:
+
+- `1.27`
+
 ## Platform Foundation
 
 The platform foundation is an infrastructure level that has to provide a scalable, flexeble and extensible enviromnemt for the platform lifecycle. To build the platform foundation, you can use cloud providers or on-premise solutions that allow you to run managed or self-managed Kubernetes (k8s) clusters.
@@ -35,7 +52,7 @@ lowops:
       general_client_name: CI
       platform_version: v2.0.0
 ```
-For more information follow [helm page](./helm.md) 
+For more advanced configuration follow this [page](./advanced-configuration.md) 
 
 ## Platform Installation
 
@@ -52,7 +69,6 @@ Run `helm install` command to start the platform setup process.
 
 ```
 HELM_CMD="helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE"
-
 if [ -f "$CHART_VALUES_FILE" ]; then
     HELM_CMD="$HELM_CMD -f $CHART_VALUES_FILE"
 fi
@@ -61,3 +77,4 @@ if [ -n "$CHART_VERSION" ]; then
 fi
 echo "$HELM_CMD"
 eval "$HELM_CMD"
+```

@@ -1,17 +1,14 @@
-# Low Ops Platform initial setup
+# Low Ops Platform setup
 
-## Platform Requirements
+## Platform Foundation
 
-Requirements must be present on build server:
-- kubectl
-- helm
-
+The platform foundation is an infrastructure level that have to provide scalable, flexeble and extensible enviromnemt for platform lifecycle. To build platform foundation you can use cloud providers or on-premise solutions that allows you to run managed or self managed k8s clusters.
 
 There are 2 different platform `foundation_type`s:
 
-- `generic` - Should work on any kubernetes custom or managed solution
+- `generic` - Default platform installation method. Supports any kubernetes custom or managed solution. All platform components that are required to run future applications workloads will be installed automatically.
 
-- `aws` - Optimised platform installation for AWS specific services. Natively support other `aws` services such as EKS, RDS, S3, ELB.
+- `aws` - Optimised platform installation for AWS specific services. Natively support other `aws` services such as EKS, RDS, S3, ELB, EBS. To use aws managed data resources you need to create them before platform installation as part of foundation setup. See diagram bellow for more details.
 
 High level AWS diagram:
 
@@ -19,63 +16,9 @@ High level AWS diagram:
 
 ## Platform Configuration
 
-### Configuration Options
+Before starting platform installation process check configuration options below. Change required paramaters to match your environment setup.
 
-#### Image parameters
-
-| Name     | Description | Default Value |
-| -------- | -------     | ------- |
-|lowops.image.containerImage                          |LowOps platform deploy image name. Request from `CINAQ Team` | "" |
-
-#### Common parameters
-
-| Name     | Description | Default Value |
-| -------- | -------     | ------- |
-| lowops.config.common.base_domain                    | LowOps platform base domain. Example: `example.low-ops.com`   | "ci.cinaq.com" |
-| lowops.config.common.private_registry_url           | LowOps platform private container registry url                | "registry.gitlab.com" |
-| lowops.config.common.platform_private_registry_user | LowOps platform private container registry user.   | "lowops-user" |
-| lowops.config.common.platform_private_registry_token| LowOps platform private container registry token. Request from `CINAQ Team`  | "" |
-| lowops.config.common.platform_state                 | LowOps platform state. Options: `present` - will run platform install or upgrade, `absent` - will destroy all platform components. | "present"|
-| lowops.config.common.foundation_type                | LowOps platform foundation type. Options `generic`, `aws` - must be set if running on AWS EKS.                 | "generic" |
-| lowops.config.common.aws_default_region             | LowOps platform AWS Default region. When `common.foundation_type` is set to `aws` | "eu-central-1" |
-| lowops.config.common.email_domain                   | LowOps platform email domain. Example: `Google workspace domain`          | "cinaq.com" |
-| lowops.config.common.general_client_name            | LowOps platform general client name                                       | "CINAQ" |
-| lowops.config.common.shared_db_type                 | LowOps platform shared database type for running applications. Options: `platform_pg`, `platform_cnpg`, `rds_mysql`, `rds_postgres` | "platform_cnpg" |
-| lowops.config.common.low_ops_env                    | LowOps platform environment name. You can use any string except reserved values: `ci`, `trial`. Example `prod`, `stage`           | "dev" |
-| lowops.config.common.platform_version               | LowOps platform version. Example: `v2.0.0.`                                | "" |
-| lowops.config.common.mendix_license_id              | LowOps platform mendix license ID                                          | "" |
-| lowops.config.common.mendix_license_key             | LowOps platform mendix license key                                         | "" |
-
-#### Ingress parameters
-
-| Name     | Description | Default Value |
-| -------- | -------     | ------- |
-| lowops.config.ingress.default_ssl_cert              | LowOps platform ssl certificate. Base64 encoded string                     | "" |
-| lowops.config.ingress.default_ssl_key               | LowOps platform ssl key. Base64 encoded string                             | "" |
-| lowops.config.ingress.aws_elb_eipalloc              | LowOps platform aws elb allocation. CSV of aws ip allocations. When `common.foundation_type` is set to `aws`| "" |
-
-#### S3 apps services gateway parameters
-
-When running with `foundation_type` == `aws`, change s3 gateway values to AWS API Access and Secret keys with access to S3 applications bucket (see the diagram above).
-In `generic` type, will point to minio service inside platform.
-
-| Name     | Description | Default Value |
-| -------- | -------     | ------- |
-| lowops.config.s3_gateway.apps_root_user           | LowOps platform s3 gateway user name to access apps storage buckets       | "" |
-| lowops.config.s3_gateway.apps_root_password       | LowOps platform s3 gateway user password to access apps storage buckets   | "" |
-
-#### S3 core services parameters
-
-When running with `foundation_type` == `aws`, change s3 gateway values to AWS API Access and Secret keys with access to S3 core services bucket.
-In `generic` type, will point to minio service inside platform (see the diagram above).
-
-| Name     | Description | Default Value |
-| -------- | -------     | ------- |
-| lowops.config.s3_gateway.core_root_user_set       | LowOps platform s3 gateway user name to access core storage buckets       | "" |
-| lowops.config.s3_gateway.core_root_password       | LowOps platform s3 gateway user password to access core storage buckets   | "" |
-
-
-Values file `values-dev.yaml` example:
+Update values file with `values.yaml` example:
 
 ```
 lowops:
@@ -91,15 +34,8 @@ lowops:
       email_domain: cinaq.com
       general_client_name: CI
       platform_version: v2.0.0
-    
 ```
-#### Environment variables
-
-All configuration options could be overriten with `Environment variable`
-
-For instance:
-
-- The helm chart value `lowops.config.common.base_domain` can be replaced with `BASE_DOMAIN` env var. Passed to the deploy service.
+For more information follow [helm page](./helm.md) 
 
 ## Platform Installation
 

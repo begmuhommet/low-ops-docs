@@ -9,4 +9,4 @@
  ![](../assets/configure_log_levels.jpg)
 
 6. Re-deploy the application by following the steps from `Deploy Application to the Environment`
-7. Return to "Logs" to review the traces. 
+7. Return to `Logs` to review the traces. 

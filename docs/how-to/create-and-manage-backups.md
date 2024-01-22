@@ -1,4 +1,4 @@
-## Create a Backup from a Portal*
+## *Create a Backup from a Portal*
 
 1. Go to the `Environment` tab.
 2. Click on the `Test` (`Acceptance`, `Production`) environment.

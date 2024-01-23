@@ -13,7 +13,7 @@ To access the `Privilieged Access` tab, follow the steps below:
 ![](../assets/environments_overview.jpg)
 
 4. Once one of the environments is selected, a new dropdown navigation menu will appear. 
-5. In the left-side menu, select `Privileged Access`.
+5. In the left-side menu, select `Privilieged Access`.
 6. Under the `Admin User` section, you will find the URL and login credentials to log in to Mendix Studio Pro.
 7. Under the `Debugging` section, you will find URL and password to login to the Mendix Debugger via Mendix Studio Pro.
 

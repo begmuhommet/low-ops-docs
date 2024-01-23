@@ -23,24 +23,6 @@ To create a new application, follow the steps below:
 After the application is created, go to the Catalog tab to view it in the list of components. 
 
 
- 
-## *Commit the New Application Source Code to Gitea and Push the New Application Package to Harbor.*
-
-1. Login to Gitea with your credentials.
-2. Open the newly created application.
-3. Open a `README` file, make a change, and click on the `Commit Changes` button. 
-4. Go back to the portal. 
-
-**Verify**
-
-- In the `Environment` tab, the `Test` environment should be updated with the new `package version`.  
-- In the`Packages` tab, new package should appear in the list.
-
-## *View Package in Harbor*
-
-In the `Packages` tab, click on the `Package` to view the detials. 
-A new window with details should pop up.
-
 
 
 

@@ -1,32 +1,4 @@
-# Deploy Application
 
-## *Deploy Specific Application Version to the Environment*
-
-The following steps are the same for Test, Acceptance and Production environments. 
-
-Open the newly created application and click on the `Environment` tab on the left side menu. 
-
-1. Select the `Test` (`Acceptance`, `Production`) environment.
-2. Under the `Actions` section, click on the `Deploy` button. 
-
-![](../assets/deploy_button.jpg)
-
-3. On the new page that opens up:
-    - Step 1: Select the package version.
-    - Step 2: Confugire Constants; provides the possibility to include new values. 
-    - Step 3: Enable/Disable `MyFirstModule.Cleanup`.  
-    - Step 4: Check the box for `I acknowledge the app might be offline briefly during deployment`.
-    - Click on `Deploy` button.
-4. Go back to the Environment tab to see the status of deployment.
-
-**Verify**
-
- - A pop-up window appears with the message `Deployment request submitted` after clicking the `Deploy` button.
- - Confirm that the status of the application is updated.
- - Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the necessary details.
- - Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens successfully.
-
- 
 ## *Create New Application Version Release*
 
 1. Access the `Overview` tab by opening the component and then copy the Git repository URL.
@@ -67,3 +39,33 @@ Open the newly created application and click on the `Environment` tab on the lef
 12. After a successful login, you will be automatically directed to the Mendix home page, where you can observe the implemented changes.
 
 ![](../assets/mendix_home.jpg)
+
+# Deploy Application
+
+## *Deploy Specific Application Version to the Environment*
+
+The following steps are the same for Test, Acceptance and Production environments. 
+
+Open the newly created application and click on the `Environment` tab on the left side menu. 
+
+1. Select the `Test` (`Acceptance`, `Production`) environment.
+2. Under the `Actions` section, click on the `Deploy` button. 
+
+![](../assets/deploy_button.jpg)
+
+3. On the new page that opens up:
+    - Step 1: Select the package version.
+    - Step 2: Confugire Constants; provides the possibility to include new values. 
+    - Step 3: Enable/Disable `MyFirstModule.Cleanup`.  
+    - Step 4: Check the box for `I acknowledge the app might be offline briefly during deployment`.
+    - Click on `Deploy` button.
+4. Go back to the Environment tab to see the status of deployment.
+
+**Verify**
+
+ - A pop-up window appears with the message `Deployment request submitted` after clicking the `Deploy` button.
+ - Confirm that the status of the application is updated.
+ - Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the necessary details.
+ - Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens successfully.
+
+ 

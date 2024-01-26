@@ -1,4 +1,4 @@
-# Low Ops Platform setup
+# Low Ops Platform installation
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Before starting the platform installation process, check the configuration optio
 
 Create values file `values.yaml` with following parameters:
 
-`For more advanced configuration and options descriptions follow this [page](./advanced-configuration.md)`
+For more advanced configuration and options descriptions follow this [page](./advanced-configuration.md)
 
 ```
 lowops:
@@ -102,9 +102,8 @@ kubectl -n "$NAMESPACE" create secret generic lowops-registry --from-file=.docke
 
 ### Install metallb
 
-```
-**Note:** This step is not needed for managed k8s solutions.
-```
+> **Note:** This step is not needed for managed k8s solutions.
+
 
 Add bitnami helm repo
 

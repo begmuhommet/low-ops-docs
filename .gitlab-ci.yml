@@ -9,8 +9,8 @@ image: docker:20.10.16
 
 variables:
   TAG_VERSION: 0-ci-$CI_COMMIT_REF_SLUG
-  TAG_BASE: $CI_REGISTRY/cinaq/low-ops-platform
-  DOCKER_LOGIN: docker login -u $LOWOPS_CI_REGISTRY_USER -p $LOWOPS_CI_REGISTRY_PASSWORD $CI_REGISTRY
+  TAG_BASE: $CI_REGISTRY/cinaq/low-ops-docs
+  DOCKER_LOGIN: docker login -u $LOWOPS_DOCS_CI_REGISTRY_USER -p $LOWOPS_DOCS_CI_REGISTRY_PASSWORD $CI_REGISTRY
 
 default:
   tags:
@@ -36,8 +36,8 @@ docker:
   needs:
     - compile
   variables:
-    CONTAINER_IMAGE: $TAG_BASE/docs:$TAG_VERSION
-    TAG_LATEST: $TAG_BASE/docs:latest
+    CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
+    TAG_LATEST: $TAG_BASE:latest
   allow_failure: false
   script:
     - |

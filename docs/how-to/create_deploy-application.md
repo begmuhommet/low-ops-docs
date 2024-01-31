@@ -1,5 +1,6 @@
-
 ## *Create New Application Version Release*
+
+To create a new application version in the Low-Ops platform, follow the steps below:
 
 1. Access the `Overview` tab by opening the component and then copy the Git repository URL.
 
@@ -68,4 +69,36 @@ Open the newly created application and click on the `Environment` tab on the lef
  - Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the necessary details.
  - Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens successfully.
 
+
+## *Start the Application in the Test/Acceptance/Production Environments*
+
+1. Go to the `Environment` tab
+2. Click on the `Test` (`Acceptance`, `Production`) environment.
+3. Under the `Actions` section click on the `Start` button.
+
+![](../assets/start_application.jpg)
+
+4. Click on `Confirm` in the pop up window that appears.
+
+**Verify**
+
+- The Status field should change to `Running`. 
+- Allow a minute or two for the application to start running again.
+- Click on the URL to ensure that the application opens up successfully.
+
+
+## *Stop the Application in the Test/Acceptance/Production Environments*
+
+1. Go to the `Environment` tab.
+2. Click on the `Test` (`Acceptance`, `Production`) environment.
+3. Under the `Actions` section, click on the red `Stop` button.
+
+![](../assets/stop_application.jpg)
+
+4. Click on `Confirm` in the pop up window that appears.
+
+**Verify**
+
+- The Status field should change to `Stopped`. 
+- Attempting to access the URL should result in a `503 Service Temporarily Unavailable` error message.
  

@@ -34,7 +34,4 @@ Allows you to add a new runtime setting.
  - In the pop-up window, include the `Name`, `Value`, and click on the `Add` button.
 
 
-
-```
-! For the new setting values to take effect, re-deploy the application.
-```
+> **_NOTE:_** For the new setting values to take effect, re-deploy the application.

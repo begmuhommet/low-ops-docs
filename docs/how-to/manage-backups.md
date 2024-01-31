@@ -37,7 +37,7 @@ To import a backup, follow the steps below:
 
 ![](../assets/create_import_backups.jpg)
 
-2. Upload the backup file from your device in the CSV format and wait for it to load.
+2. Upload the backup file from your device in the tar.gz archive format and wait for it to load.
 
 3.  The backup is successfully created when the status changes to a greeen checkmark `Complete`.
 

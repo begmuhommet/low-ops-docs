@@ -33,11 +33,11 @@
 
     - Step 3: Enable/Disable `MyFirstModule.Cleanup`.
 
-    ![](../scheduled_events.jpg)
+     ![](../assets/scheduled_events.jpg)
 
     - Step 4: Check the box for `I acknowledge the app might be offline briefly during deployment`.
 
-    ![](../confirm_deployment.jpg)
+     ![](../assets/confirm_deployment.jpg)
 
     - Click on the`Deploy` button.
 
@@ -45,7 +45,7 @@
 
 5. Once the application is deployed, the status should be `Ready`.
 
- ![](../status_ready.jpg)
+  ![](../assets/status_ready.jpg)
 
 6. Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the necessary details.
 

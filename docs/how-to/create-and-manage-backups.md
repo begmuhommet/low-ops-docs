@@ -1,9 +1,21 @@
-## *Create a Backup from a Portal*
+## *Backups*
 
-1. Go to the `Environment` tab.
-2. Click on the `Test` (`Acceptance`, `Production`) environment.
-3. In the left menu, select `Backups`.
-4. Click on the `Create` button to initiate a new backup. 
+To access the `Logs` tab, follow the steps below:
+
+
+1. On the `Catalog` homepage, choose the application from the list. 
+2. Once the application is selected, the navigaion menu will appear on the left side. Click on the `Environments` tab.
+3. Select one of the environments such as `Test`,`Acceptance` or `Production`.
+
+![](../assets/environments_overview.jpg)
+
+4. Once one of the environments is selected, a new dropdown navigation menu will appear. 
+5. In the left-side menu, select `Backups`.
+
+
+## *Create a Backup*
+
+1. On the `Backups` page, click on the `Create` button to initiate a new backup. 
 5. In the pop-up window, include the name and click on `Create`.
 
 ![](../assets/create_backup.jpg)

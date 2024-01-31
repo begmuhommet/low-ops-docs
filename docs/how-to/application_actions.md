@@ -1,4 +1,3 @@
-
 ## *Deploy Specific Application Version to the Environment*
 
 > **_NOTE:_** The following steps are the same for Test, Acceptance and Production environments. 
@@ -30,7 +29,7 @@
 
     - Step 2: Confugire Constants; provides the possibility to include new values. 
 
-     ![](../assets/configure_constants.jpg)
+    ![](../assets/configure_constants.jpg)
 
     - Step 3: Enable/Disable `MyFirstModule.Cleanup`.
 

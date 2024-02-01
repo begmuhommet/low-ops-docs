@@ -33,6 +33,12 @@
 
 **To update the firewall rule, follow the steps below:**
 
-1. Return to the `Firewall` tab and click on the three dots, which will allow to `Edit` or `Delete` the rule. 
+1. Return to the `Firewall` tab and click on the three dots at the upper right corner. 
 
 ![](../assets/manage_firewall.jpg)
+
+2. Click on the `Edit` button to update the firewall rule details in the pop up window that should appear. 
+
+![](../assets/edit_firewall.jpg)
+
+3. Clik on the `Delete` button to delete the firewall rule. 

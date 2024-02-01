@@ -18,7 +18,7 @@
 
 ![](../assets/actions_section.jpg)
 
-> **_NOTE:_** A pop-up window appears with the message `Deployment request submitted` after clicking the `Deploy` button.
+> **_NOTE:_** A pop-up window should appear with the message `Deployment request submitted` after clicking the `Deploy` button.
 
 ![](../assets/deploy_button.jpg)
 
@@ -43,13 +43,13 @@
 
 4. Go back to the `Environment` tab to see the status of deployment.
 
-5. Once the application is deployed, the status should be `Ready`.
+5. Once the application is deployed, the status should change to `Ready`.
 
   ![](../assets/status_ready.jpg)
 
-6. Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the necessary details.
+6. Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the new information.
 
-7. Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens successfully.
+7. Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens up successfully.
 
 
 ## *Start the Application*
@@ -59,7 +59,7 @@
 
 ![](../assets/start_application.jpg)
 
-2. Click on `Confirm` in the pop up window that appears.
+2. Click on the `Confirm` button in the pop up window that appears.
 
 3. The Status field should change to `Deploying`. 
 
@@ -74,11 +74,11 @@
 
 ## *Stop the Application*
 
-1. Under the `Actions` section, click on the red `Stop` button.
+1. Under the `Actions` section, click on the `Stop` button.
 
 ![](../assets/stop_application.jpg)
 
-2. Click on `Confirm` in the pop up window that appears.
+2. Click on the `Confirm` button in the pop up window that appears.
 
 3. The Status field should change to `Stopped`. 
 
@@ -105,3 +105,5 @@
 4. Allow a minute or two for the application to start running again.
 
 5. Once the status updates to `Ready`, click on the URL to ensure that the application opens up successfully.
+
+![](../assets/ready_status.jpg)

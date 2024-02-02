@@ -11,7 +11,7 @@
 
   ![](../assets/login_credentials.jpg)
 
- 4. Click on the `Sign in` button.
+ 4. Click on the `Log in` button.
 
 Once logged in, you will be redirected to the Low-Ops portal.
 

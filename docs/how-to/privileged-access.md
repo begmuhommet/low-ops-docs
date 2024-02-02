@@ -1,4 +1,4 @@
-## *Privilieged Access*
+## *Privileged Access*
 
 *Privileged Access facilitates access to the URLs and login credentials, enabling users to seamlessly log in to the Mendix Studio Pro and the Mendix Debugger.*
 

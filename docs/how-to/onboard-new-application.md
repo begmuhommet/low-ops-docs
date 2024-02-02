@@ -35,7 +35,7 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 **Creating application from a template:**
 
-1. Once you select the template and click on the `Choose` button, you will be redirected to a new page to fill out the credentials.
+1. Once the template is selected, click on the `Choose` button, and you will be redirected to a new page to fill out the credentials.
 
 ![](../assets/create_new_component.jpg)
 
@@ -51,8 +51,16 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 4. Once the application is created, navigate back to the `Catalog` tab to view it in the list of components. 
 
+**Creating application from existing component:**
 
+1. Click on the `Register Existing component`.
 
+![](../assets/template_new_application.jpg)
 
+2. Enter the URL to your source code repository to add it to Low-Ops.
 
+![](../assets/register_existing_component.jpg)
 
+3. The wizard will analyze the file, preview the entities, and add them to the Low-Ops catalog.
+
+4. If no entities are found, the wizard will prepare a Pull Request that adds an example catalog-info.yaml and prepares the Low-Ops catalog to load all entities as soon as the Pull Request is merged.

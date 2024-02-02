@@ -17,7 +17,7 @@
 
 5. Select the appropriate group name from the list and then click on it.
 
-![](../assets/keycloak_groups_select.jpg)
+![](../assets/keycloak_group_select.jpg)
 
 6. Navigate to the `Members` tab and then click on the `Add Member` button.
 

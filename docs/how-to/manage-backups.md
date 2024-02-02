@@ -47,7 +47,7 @@ To import a backup, follow the steps below:
 1. Choose the backup from the list and click on it.
 3. In the pop-up window click on the `Restore` button to restore the backup.
 
-> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which it is running. 
+> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Application Actions tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/test-cases-v2.0.0/docs/how-to/application_actions.md). 
 
 4. Click on the `Delete` button to delete the backup.
 

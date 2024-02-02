@@ -46,6 +46,9 @@ To import a backup, follow the steps below:
 
 1. Choose the backup from the list and click on it.
 3. In the pop-up window click on the `Restore` button to restore the backup.
+
+> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which it is running. 
+
 4. Click on the `Delete` button to delete the backup.
 
 ![](../assets/restore_backup.jpg)

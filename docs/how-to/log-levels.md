@@ -27,4 +27,4 @@ To access the `Logs` tab, follow the steps below:
 
 > **_NOTE:_** Re-deploy the application for changes to take place.
 
-3. Return to `Logs` to review the traces. 
+3. Return to the `Logs` tab to review the traces. 

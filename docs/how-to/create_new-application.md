@@ -32,7 +32,7 @@ To create a new application version in the Low-Ops platform, follow the steps be
 
 8. Navigate back to the Low-Ops platform and access the `Activities` tab. After the changes are complete, you will observe the status transition to `Complete`.
 
-![](../assets/activities_overview.jpg)
+![](../assets/activities.png)
 
 9. Proceed to the `Environments` tab, and select the `Test` environment.
 

@@ -17,7 +17,7 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 ![](../assets/low_ops_portal.jpg)
 
-## *Create New Application*
+## *Offboard an Application*
 
 **To offboard an application, follow the steps below:**
 

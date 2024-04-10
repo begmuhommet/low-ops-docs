@@ -21,10 +21,13 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 **To offboard an application, follow the steps below:**
 
-1. On the `Catalog` home page, click on the application you want to offboard
+1. On the `Catalog` home page, click on the application you want to offboard.
 
 ![](../assets/offboarding1.png)
 
-2. On the application overview page click on the three dots in the upper right corner and select `Remove Entity` and hit OK
+2. On the application overview page click on the three dots in the upper right corner and select `Remove Entity`.
 
 ![](../assets/offboarding2.png)
+
+3. A pop-up window will appear, click `OK` to delete the application.
+

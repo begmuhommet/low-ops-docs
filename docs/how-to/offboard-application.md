@@ -29,5 +29,5 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 ![](../assets/offboarding2.png)
 
-3. A pop-up window will appear, click `OK` to delete the application.
+3. A pop-up window will appear, click `Confirm` to delete the application.
 

@@ -4,19 +4,17 @@
 
 **To access the `Monitor` tab, follow the steps below:**
 
-1. On the `Catalog` homepage, choose the application from the list. 
-2. Once the application is selected, the navigaion menu will appear on the left side. Click on the `Environments` tab.
-3. Select one of the environments such as `Test`,`Acceptance` or `Production`.
+1. Navigate to the Environments tab and choose the environment from the list.
 
 ![](../assets/environments_overview.jpg)
 
-4. Once one of the environments is selected, a new dropdown navigation menu will appear. 
-5. In the left-side menu, select `Monitor`.
+2. Once one of the environments is selected, a new dropdown navigation menu will appear. 
+3. In the left-side menu, select `Monitor`.
 
 ![](../assets/monitoring.jpg)
 
 
-6. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
+4. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
 
 
  **Microflow metrics - Mendix Microflow Execution Frequency**

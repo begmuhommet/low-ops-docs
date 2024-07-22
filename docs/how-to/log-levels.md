@@ -6,7 +6,7 @@
 To access the `Logs` tab, follow the steps below:
 
 
-1. Navigate to the Environments tab and choose the application from the list.
+1. Navigate to the `Environments` tab and choose the environment from the list.
 
 ![](../assets/environments_overview.jpg)
 

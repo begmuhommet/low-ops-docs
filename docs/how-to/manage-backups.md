@@ -5,14 +5,12 @@
 To access the `Backups` tab, follow the steps below:
 
 
-1. On the `Catalog` homepage, choose the application from the list. 
-2. Once the application is selected, the navigaion menu will appear on the left side. Click on the `Environments` tab.
-3. Select one of the environments such as `Test`,`Acceptance` or `Production`.
+1. Navigate to the `Environments` tab and choose the environment from the list.
 
 ![](../assets/environments_overview.jpg)
 
-4. Once one of the environments is selected, a new dropdown navigation menu will appear. 
-5. In the left-side menu, select `Backups`.
+2. Once one of the environments is selected, a new dropdown navigation menu will appear. 
+3. In the left-side menu, select `Backups`.
 
 
 ## *Create a Backup*
@@ -44,12 +42,11 @@ To import a backup, follow the steps below:
 
 ## *Manage Backups*
 
-1. Choose the backup from the list and click on it.
-3. In the pop-up window click on the `Restore` button to restore the backup.
+1. To restore backups, simply click on the`Restore` button. Click on the arrow button next to the `Restore` button to restore backups in different environmnets. 
 
 > **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Application Actions tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/test-cases-v2.0.0/docs/how-to/application_actions.md). 
 
-4. Click on the `Delete` button to delete the backup.
+4. To delete the backup, click on the three dots and click on the `Delete` button.
 
 ![](../assets/restore_backup.jpg)
 

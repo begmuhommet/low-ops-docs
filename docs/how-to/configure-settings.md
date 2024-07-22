@@ -2,14 +2,14 @@
 
 This page allows you to view and make changes to the current settings. It is divided into five blocks: `Domain`, `Scaling`,`Environment Variables`, `Runtime Settings`, and `Delete this environment`.
 
-**`Domain` section**
+**`Domain` Section**
 
 Consists of the `Application URL`, and fields for `TLS Certificate Chain` and `TLS Private Key`.  
 
 
 ![](../assets/configure_settings.jpg)
 
-**`Scaling` section** 
+**`Scaling` Section** 
 
 Allows to modify `Quotas CPU`, `Quotas memory`, `Replicas`.
 
@@ -19,7 +19,7 @@ Allows to modify `Quotas CPU`, `Quotas memory`, `Replicas`.
 
  - Update the fields with changes and click on the `Save changes` button.
  
-**`Environment Variable` section**
+**`Environment Variable` Section**
 
 
 Allows you to add a new environment variable.

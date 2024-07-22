@@ -18,7 +18,6 @@
 
 6. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
 
-![](../assets/monitor_period.jpg)
 
  **Microflow metrics - Mendix Microflow Execution Frequency**
 

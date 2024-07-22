@@ -16,7 +16,7 @@
 ![](../assets/monitoring.jpg)
 
 
-6. From the drop down menu in the upper right corner, select the period for which to display the metrics: `Today`, `Last 24 hours`, `Last 3 days`, `Last 7 days`, `Last 30 days`.
+6. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
 
 ![](../assets/monitor_period.jpg)
 

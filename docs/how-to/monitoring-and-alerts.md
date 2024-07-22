@@ -36,15 +36,13 @@ Displays Mendix Microflow Execution Time.
 
 **To access the `Alerts` tab, follow the steps below:**
 
-1. On the `Catalog` homepage, choose the application from the list. 
-2. Once the application is selected, the navigaion menu will appear on the left side. Click on the `Environments` tab.
-3. Select one of the environments such as `Test`,`Acceptance` or `Production`.
+1. Navigate to the Environments tab and choose the environment from the list.
 
 ![](../assets/environments_overview.jpg)
 
-4. Once one of the environments is selected, a new dropdown navigation menu will appear. 
-5. In the left-side menu, select `Alerts`.
+2. Once one of the environments is selected, a new dropdown navigation menu will appear. 
+3. In the left-side menu, select `Alerts`.
 
 ![](../assets/alerts.jpg)
 
-6. The `State` column will notify if the application is running without problems or if any problems have occured.
+4. The `State` column will notify if the application is running without problems or if any problems have occured.

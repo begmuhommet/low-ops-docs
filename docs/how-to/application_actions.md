@@ -2,13 +2,11 @@
 
 > **_NOTE:_** The following steps are the same for Test, Acceptance and Production environments. 
 
-1. On the `Catalog` homepage, choose the application from the list. 
+1. On the homepage, choose the application from the list. 
 
-![](../assets/catalog_page.jpg)
+![](../assets/home_page.jpg)
 
-2. Once the application is selected, the navigaion menu will appear on the left side. Click on the `Environments` tab.
-
-![](../assets/inside_app.jpg)
+2. Once the application is selected, click on the `Environments` tab.
 
 3. Select one of the environments such as `Test`,`Acceptance` or `Production`.
 

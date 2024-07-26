@@ -55,8 +55,7 @@
 ![](../assets/starting_status.jpg)
 
 4. Allow a minute or two for the application to start running again.
-
-5.The status should change to `Running`.
+5. The status should change to `Running`.
 
 ![](../assets/running.jpg)
 

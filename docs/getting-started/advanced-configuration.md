@@ -42,7 +42,7 @@ helm show values lowops/lowops
 
 ### Cloudnative Postgres Service (CNPG)
 
-LowOps platform running postgres as primary database service. By default 3 cnpg clusters are added. `services` - to store data for platform core services, `audit` - to store data for retraced audit system events, `apps` - to store application data
+Low-Ops platform runs Postgres as primary database service. By default 3 CNPG clusters are added: `services` - to store data for platform core services, `audit` - to store data for retraced audit system events, and `apps` - to store application data
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -64,7 +64,7 @@ LowOps platform running postgres as primary database service. By default 3 cnpg 
 
 ### Gitea service
 
-Gitea - private source code version control system is used to store applications source code, platform configuration states, etc.
+Gitea, a private source code version control system, is used to store application source code, platform configuration states, etc.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -75,7 +75,7 @@ Gitea - private source code version control system is used to store applications
 
 ### Harbor service
 
-Harbor - private regestry service is used to store platform and application container images
+Harbor - private registry service is used to store platform and application container images
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -88,7 +88,7 @@ Harbor - private regestry service is used to store platform and application cont
 
 ### Ingress Parameters
 
-When `foundation_type` is set to `aws`, the ELB (Elastic Load Balancer) is managed through the Ingress Controller platform component. To configure the load balancer to use static IP adresses (typically, you need 2 for a production environment in 2 different subnets/azs, which could be usefull for DNS configuration) update the `lowops.config.ingress.aws_elb_eipalloc` helm values variable as a comma-separated string of AWS EIP allocations IDs.
+When `foundation_type` is set to `aws`, the ELB (Elastic Load Balancer) is managed through the Ingress Controller platform component. To configure the load balancer to use static IP addresses (typically, you need 2 for a production environment in 2 different subnets/azs, which could be useful for DNS configuration), update the `lowops.config.ingress.aws_elb_eipalloc` helm values variable as a comma-separated string of AWS EIP allocation IDs.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -98,14 +98,14 @@ When `foundation_type` is set to `aws`, the ELB (Elastic Load Balancer) is manag
 
 ### Kanister service
 
-Kanister - backup solution for the private application platform. Used for `backup`, `restore`, `import` applications data actions.
+Kanister - backup solution for the private application platform. Used for `backup`, `restore`, and `import` application data actions.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
 
 ### Keycloak service
 
-Keycloack - LowOps platform Single Sing On and oidc client for LowOps Private application platform
+Keycloak - Low-Ops platform Single Sing-On and OIDC client for Low-Ops Private application platform
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -114,7 +114,7 @@ Keycloack - LowOps platform Single Sing On and oidc client for LowOps Private ap
 
 ### Monitoring service
 
-Monitoring - LowOps platform monitoring service. Used for platform and applications insights, alerts
+Monitoring - Low-Ops platform monitoring service. Used for platform and application insights, alerts
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -129,7 +129,7 @@ Monitoring - LowOps platform monitoring service. Used for platform and applicati
 
 ### Oauth2-proxy service
 
-Oauth2-proxy - used to enable LowOps platform web services user authentication using oidc keycloak provider.
+OAuth2-proxy - used to enable Low-Ops platform web services user authentication using OIDC Keycloak provider.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -143,8 +143,8 @@ Retraced audit - service used to store platform and application events.
 
 ### S3 Apps Services Gateway Parameters
 
-When running with `foundation_type` == `aws`, change s3 gateway values to AWS API Access and Secret keys with access to the S3 applications bucket (Refer to the diagram above).
-In `generic` type, will point to Minio service inside platform.
+When running with `foundation_type` == `aws`, change S3 gateway values to AWS API Access and Secret keys with access to the S3 applications bucket (refer to the diagram above).
+For `generic` type, will point to the MinIO service inside the platform.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
@@ -153,8 +153,8 @@ In `generic` type, will point to Minio service inside platform.
 
 ### S3 Core Services Parameters
 
-When running with `foundation_type` == `aws`, change s3 gateway values to AWS API Access and Secret keys with access to the S3 core services bucket (Refer to the diagram above).
-In `generic` type, will point to Minio service inside platform.
+When running with `foundation_type` == `aws`, change S3 gateway values with AWS API Access and Secret keys that have access to the S3 core services bucket (refer to the diagram above).
+For `generic` type, the system will point to MinIO service inside platform.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |

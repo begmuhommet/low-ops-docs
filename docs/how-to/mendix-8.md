@@ -1,6 +1,6 @@
 ## **Mendix 8 Support**
 
-Low Ops platform utilizes private Git repositories to store Mendix application source code.
+Low-Ops platform utilizes private Git repositories to store Mendix application source code.
 
 Mendix Studio Pro versions before 9 are compatible only with SVN (Version Control System) and do not support Git. Consequently, Git command line interface is employed for committing and pushing changes to remote repositories.
 

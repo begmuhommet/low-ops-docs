@@ -23,9 +23,9 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 1. From the `Home` page, click on the application you want to offboard and navigate to the `Settings` tab. 
 
-![](../assets/offboarding1.png)
+![](../assets/offboarding1.jpg)
 
 2. A pop-up window will appear, input the app name and click `Delete app` to delete the application.
 
-![](../assets/offboarding2.png)
+![](../assets/offboarding2.jpg)
 

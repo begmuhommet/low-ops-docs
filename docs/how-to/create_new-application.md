@@ -2,9 +2,9 @@
 
 To create a new application version in the Low-Ops platform, follow the steps below:
 
-1. Access the `Overview` tab by opening the component and then copy the Git repository URL.
+1. Open the abb and navigate to the `Source` tab and then copy the Git repository URL.
 
- ![](../assets/git_repository.jpg)   
+ ![](../assets/source.jpg)   
 
 2. Within Mendix Studio Pro, locate and select the `Open Private App` button.
 
@@ -30,17 +30,17 @@ To create a new application version in the Low-Ops platform, follow the steps be
 
 ![](../assets/changes.jpg)
 
-8. Navigate back to the Low-Ops platform and access the `Activities` tab. After the changes are complete, you will observe the status transition to `Complete`.
+8. Navigate back to the Low-Ops platform and access the `Activities` tab. After the changes are complete, you will observe the status transition to `Completed`.
 
 ![](../assets/activities.png)
 
-9. Proceed to the `Environments` tab, and select the `Test` environment.
+9. Proceed to the `Environments` tab, and open the `Test` (`Acceptance`, `Production`) environment.
 
 ![](../assets/environments_overview.jpg)
 
-10. In the left-side menu, select `Privilieged Access`.
+10. In the left-side menu that appears, go to `Security`.
 
-![](../assets/privilieged_access.jpg)
+![](../assets/security.jpg)
 
 11. Use the URL and login credentials to log in to `Mendix Studio Pro`.
 12. After a successful login, you will be automatically directed to the Mendix home page, where you can observe the implemented changes.

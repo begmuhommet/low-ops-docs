@@ -12,43 +12,37 @@
 
 ![](../assets/environments_overview.jpg)
 
-4. Under the `Actions` section, click on the `Deploy` button. 
+4. Click on the `Deploy` button as shown on the screenshot.  
 
-![](../assets/actions_section.jpg)
+![](../assets/deploy_application.jpg)
 
-> **_NOTE:_** A pop-up window should appear with the message `Deployment request submitted` after clicking the `Deploy` button.
 
-![](../assets/deploy_button.jpg)
+5. In the side menu that opens up:
 
-3. On the new page that opens up:
+![](../assets/deploy_sidebar.jpg)
+
     - Step 1: Select the package version.
-
-    ![](../assets/step_one_deployment.jpg)
 
     - Step 2: Confugire Constants; provides the possibility to include new values. 
 
-    ![](../assets/configure_constants.jpg)
-
     - Step 3: Enable/Disable `MyFirstModule.Cleanup`.
-
-     ![](../assets/scheduled_events.jpg)
 
     - Step 4: Check the box for `I acknowledge the app might be offline briefly during deployment`.
 
-     ![](../assets/confirm_deployment.jpg)
-
     - Click on the`Deploy` button.
 
-4. Go back to the `Environment` tab to see the status of deployment.
+6. The status of the environment should change to `Deploying`. 
 
-5. Once the application is deployed, the status should change to `Ready`.
+![](../assets/deploying.jpg)
 
-  ![](../assets/status_ready.jpg)
+7. Once the application is deployed, the status should change to `Running`.
 
-6. Verify the successful completion of deployment when the `package version`, `Mendix version`, and `updated on` fields contain the new information.
+  ![](../assets/running.jpg)
 
-7. Select the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens up successfully.
 
+8. Open the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens up successfully.
+
+![](../assets/open_app.jpg)
 
 ## *Start the Application*
 

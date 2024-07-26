@@ -46,56 +46,37 @@
 
 ## *Start the Application*
 
-
-1. Under the `Actions` section click on the `Start` button.
+1. To start the application, simply click on the`Start` button.
 
 ![](../assets/start_application.jpg)
 
-2. Click on the `Confirm` button in the pop up window that appears.
+2. The status of the environment should change to `Starting`.
 
-3. The Status field should change to `Deploying`. 
-
-![](../assets/deploying_status.jpg)
+![](../assets/starting_status.jpg)
 
 4. Allow a minute or two for the application to start running again.
 
-5. Once the status changes to `Ready`, click on the URL to ensure that the application opens up successfully.
+5.The status should change to `Running`.
 
-![](../assets/ready_status.jpg)
+![](../assets/running.jpg)
 
+6. Open the `Test` (`Acceptance`, `Production`) environment and click on the URL to ensure that the application opens up successfully.
+
+![](../assets/open_app.jpg)
 
 ## *Stop the Application*
 
-1. Under the `Actions` section, click on the `Stop` button.
+1. Click on the `Stop` button.
 
 ![](../assets/stop_application.jpg)
 
-2. Click on the `Confirm` button in the pop up window that appears.
+2. The Status field should change to `Stopping`. 
 
-3. The Status field should change to `Stopped`. 
+![](../assets/stopping_status.jpg)
 
-![](../assets/stopped_status.jpg)
+3. Once the application is stopped,the status should change to `Stopped`. 
+
+![](../assets/stopped.jpg)
 
 4. Attempting to access the URL should result in a `503 Service Temporarily Unavailable` error message.
- 
 
- ## *Restart the Application*
-
-
-1. Under the `Actions` section, click on the red `Restart` button.
-
-![](../assets/restart_application.jpg)
-
-2. Click on `Confirm` in the pop up window that appears.
-
-![](../assets/restart_pop_up_window.jpg)
-
-3. The Status field should change to `Deploying`. 
-
-![](../assets/deploying_status.jpg)
-
-4. Allow a minute or two for the application to start running again.
-
-5. Once the status updates to `Ready`, click on the URL to ensure that the application opens up successfully.
-
-![](../assets/ready_status.jpg)

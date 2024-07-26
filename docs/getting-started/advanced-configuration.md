@@ -1,6 +1,6 @@
 # Advanced configuration
 
-## Add LowOps Repository
+## Add Low-Ops Repository
 
 ```
 helm repo add --username $PAT_NAME --password $PAT_TOKEN lowops \

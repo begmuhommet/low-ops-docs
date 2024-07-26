@@ -1,6 +1,6 @@
 # Offboard an Application
 
-**To login to the low-ops portal, follow the steps below:**
+**To login to the Low-Ops portal, follow the steps below:**
 
  1. Navigate to the link: https://portal.trial.low-ops.com/
  2. Click on the button `Log in with SSO`.
@@ -21,13 +21,11 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 **To offboard an application, follow the steps below:**
 
-1. On the `Catalog` home page, click on the application you want to offboard.
+1. From the `Home` page, click on the application you want to offboard and navigate to the `Settings` tab. 
 
 ![](../assets/offboarding1.png)
 
-2. On the application overview page click on the three dots in the upper right corner and select `Remove Entity`.
+2. A pop-up window will appear, input the app name and click `Delete app` to delete the application.
 
 ![](../assets/offboarding2.png)
-
-3. A pop-up window will appear, click `Confirm` to delete the application.
 

@@ -33,7 +33,7 @@ Once logged in, you will be redirected to the Low-Ops portal.
 
 ![](../assets/component_creating.jpg)
 
-4. Once the application is created, it will appear in the list of apps on the home page. 
+4. Once the application is created, it will appear in the list of the apps on the home page. 
 
 ![](../assets/component_created.jpg)
 

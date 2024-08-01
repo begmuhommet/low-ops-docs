@@ -1,5 +1,7 @@
 ## *How to add new user using keycloak UI*
 
+> TODO: rewrite to use Portal Admin
+
 *Keycloak is a single sign-on (SSO) solution, providing a centralized authentication service that allows users to log in once and access multiple applications or services without having to authenticate separately for each.*
 
 

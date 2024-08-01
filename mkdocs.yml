@@ -34,14 +34,15 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.sections
-    - navigation.expand
-    #- toc.integrate
+    # - navigation.sections
+    # - navigation.expand
+    # - toc.integrate
     - header.autohide
 extra:
   homepage: https://low-ops.com/
 plugins:
   - search
+  - awesome-pages
 copyright: Copyright &copy; 2022 - 2024 <a href="https://cinaq.com">CINAQ.com</a>
 markdown_extensions:
   - pymdownx.superfences:

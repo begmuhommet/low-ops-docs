@@ -6,4 +6,4 @@ LowOps Platform Audit logging system is designed for recording events and action
 
 Contains application Audit log events `Timestamp`, `Action`, `Actor`, `Environment`, `Status`.
 
-![](../assets/activities.png)
+![](../../assets/activities.png)

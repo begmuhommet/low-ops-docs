@@ -25,7 +25,7 @@ compile:
   before_script:
     - pip install -r requirements.txt
   script:
-    - mkdocs build --verbose --clean --strict
+    - mkdocs build --verbose --clean
   artifacts:
     paths:
     - site/

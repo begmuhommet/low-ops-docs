@@ -14,7 +14,7 @@ Mendix Studio Pro versions before 9 are compatible only with SVN (Version Contro
    ![Clone Mendix Project](../../assets/mx8_git_clone_repo.png)
 
    3. **Open Mendix Studio Pro:**
-   - Launch Mendix Studio Pro and click on "Open App."
+   - Launch Mendix Studio Pro and click on "Open App".
    ![Open Mendix App](../../assets/mx8_open_app.png)
 
    4. **Select Locally on Disk:**

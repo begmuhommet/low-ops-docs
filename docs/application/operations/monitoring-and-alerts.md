@@ -6,12 +6,12 @@
 
 1. Navigate to the Environments tab and choose the environment from the list.
 
-![](../assets/environments_overview.jpg)
+![](../../assets/environments_overview.jpg)
 
 2. Once one of the environments is selected, a new dropdown navigation menu will appear. 
 3. In the left-side menu, select `Monitor`.
 
-![](../assets/monitoring.jpg)
+![](../../assets/monitoring.jpg)
 
 
 4. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
@@ -21,14 +21,14 @@
 
 Displays Mendix Microflow Executon Frequency (per second).
 
-![](../assets/execution_frequency.jpg)
+![](../../assets/execution_frequency.jpg)
 
  **Microflow metrics - Mendix Microflow Execution Time**
 
 
 Displays Mendix Microflow Execution Time.
 
-![](../assets/execution_time.jpg)
+![](../../assets/execution_time.jpg)
 
 ## *Alerts*
 
@@ -38,11 +38,11 @@ Displays Mendix Microflow Execution Time.
 
 1. Navigate to the Environments tab and choose the environment from the list.
 
-![](../assets/environments_overview.jpg)
+![](../../assets/environments_overview.jpg)
 
 2. Once one of the environments is selected, a new dropdown navigation menu will appear. 
 3. In the left-side menu, select `Alerts`.
 
-![](../assets/alerts.jpg)
+![](../../assets/alerts.jpg)
 
 4. The `State` column will notify if the application is running without problems or if any problems have occured.

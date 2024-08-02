@@ -7,13 +7,13 @@ This page allows you to view and make changes to the current settings. It is div
 Consists of the `Application URL`, and fields for `TLS Certificate Chain` and `TLS Private Key`.  
 
 
-![](../assets/configure_settings.jpg)
+![](../../assets/configure_settings.jpg)
 
 **`Scaling` Section** 
 
 Allows to modify `Quotas CPU`, `Quotas memory`, `Replicas`.
 
-![](../assets/scaling_settings.jpg)
+![](../../assets/scaling_settings.jpg)
 
 *To make changes*:
 
@@ -25,7 +25,7 @@ Allows to modify `Quotas CPU`, `Quotas memory`, `Replicas`.
 Allows you to add a new environment variable.
 
 
-![](../assets/add_new_environment.jpg)
+![](../../assets/add_new_environment.jpg)
 
  - Click on the `Add` button in the upper right corner.
  - In the pop-up window, include the `Name`, `Value`, and `Description`, check the `Protected` checkbox (optional), and click on the `Add` button.
@@ -34,7 +34,7 @@ Allows you to add a new environment variable.
 
 Allows you to add a new runtime setting.
 
-![](../assets/runtime_settings.jpg)
+![](../../assets/runtime_settings.jpg)
 
  - Click on the `Add` button in the upper right corner.
  - In the pop-up window, include the `Name`, `Value`, and click on the `Add` button.
@@ -46,4 +46,4 @@ Allows you to add a new runtime setting.
 
 Allows to delete the environment and everything that this environment contains. Simply click on the red `Delete environment` button. 
 
-![](../assets/delete_environment.jpg)
+![](../../assets/delete_environment.jpg)

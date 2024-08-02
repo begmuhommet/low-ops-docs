@@ -2,7 +2,7 @@
 
 ## Low-Ops Portal
 
-how to login click here.. go login...
+> **_NOTE:_** To login to the Low-Ops portal, follow the steps from the [Onboard New Application tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/8c80aeea60e67ccd1ffca818dcb36ebc38809cfd/docs/platform/administration/onboard-new-application.md). 
 
 ## Open app overview
 
@@ -13,7 +13,7 @@ To create a new application version in the Low-Ops platform, follow the steps be
 
 1. Open the abb and navigate to the `Source` tab and then copy the Git repository URL.
 
- ![](../../assets/source.jpg)   
+ ![](../assets/source.jpg)   
 
 2. Within Mendix Studio Pro, locate and select the `Open Private App` button.
 

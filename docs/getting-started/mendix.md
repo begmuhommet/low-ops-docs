@@ -8,12 +8,13 @@ This documentation guides you through creating and deploying new application ver
 
 ## Open app overview
 
+> **_NOTE:_** To navigate to the `Security` tab and access the Git repository URL, follow the steps from the [Security tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/8c80aeea60e67ccd1ffca818dcb36ebc38809cfd/docs/application/operations/security.md).
 
 ## Make changes in Mendix Studio Pro
 
 To create a new application version in the Low-Ops platform, follow the steps below:
 
-1. Open the abb and navigate to the `Source` tab and then copy the Git repository URL.
+1. Inside the Low-Ops portal navigate to the `Security` tab and then copy the Git repository URL.
 
  ![](../assets/source.jpg)   
 

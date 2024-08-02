@@ -6,7 +6,7 @@
 
 1. Navigate to the `Home` page and open one of the applications.
 
-![](../assets/home_page.jpg)
+![](../../assets/home_page.jpg)
 
 2. Inside the app, navigate to the `Build` tab. 
 

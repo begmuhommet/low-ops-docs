@@ -20,14 +20,30 @@ Login to the Low-Ops portal and navigate to the `Administration` tab in the left
 
 4. Click on the user to open the profile. 
 
-From here you can: 
-- View Personal information
+![](../../assets/user_profile.jpg)
+
+From here you can view: 
+- Personal information
 - Credentials section with a possibility to delete the password. 
 - User teams section which allows to add user to different applications. To add a user to a new group, simply click the `Join` button. In the pop up window, put a check mark next to the group you want to add this user to. 
-- Delete user. 
 
-![](../../assets/user_profile.jpg)
+![](../../assets/join_team.jpg)
+
+- Delete user.  
+
+
 ![](../../assets/user_profile_1.jpg)
 
-## *Create New User*
+## *Teams Section*
+
+Here you can view all teams in your portal.
+
+![](../../assets/teams.jpg)
+
+## *Applications Section*
+
+The `Applications` section allows to create new apps by clicking the `Create apps` button. 
+To delete the app, click on the three dots to open a `Delete app` button. 
+
+![](../../assets/applications.jpg)
 

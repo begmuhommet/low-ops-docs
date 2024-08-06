@@ -39,7 +39,7 @@ helm show values lowops/lowops
 | lowops.config.common.platform_version               | LowOps platform version. Example: `v2.0.0.`                                | "" |
 | lowops.config.common.mendix_license_id              | LowOps platform mendix license ID                                          | "" |
 | lowops.config.common.mendix_license_key             | LowOps platform mendix license key                                         | "" |
-| lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp2` storage class. | "csi-hostpath-sc" |
+| lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp3` storage class. | "csi-hostpath-sc" |
 
 ### Cloudnative Postgres Service (CNPG)
 

@@ -39,6 +39,7 @@ helm show values lowops/lowops
 | lowops.config.common.platform_version               | LowOps platform version. Example: `v2.0.0.`                                | "" |
 | lowops.config.common.mendix_license_id              | LowOps platform mendix license ID                                          | "" |
 | lowops.config.common.mendix_license_key             | LowOps platform mendix license key                                         | "" |
+| lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp2` storage class. | "csi-hostpath-sc" |
 
 ### Cloudnative Postgres Service (CNPG)
 
@@ -158,7 +159,7 @@ For `generic` type, the system will point to MinIO service inside platform.
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
-| lowops.config.s3_gateway.core_root_user_set       | LowOps platform s3 gateway user name to access core storage buckets       | "" |
+| lowops.config.s3_gateway.core_root_user           | LowOps platform s3 gateway user name to access core storage buckets       | "" |
 | lowops.config.s3_gateway.core_root_password       | LowOps platform s3 gateway user password to access core storage buckets   | "" |
 
 ### Tekton service

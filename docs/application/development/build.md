@@ -1,4 +1,4 @@
-## *Build*
+## Build
 
 *This section covers the build versions of your Mendix applications.The Build page allows you to view and manage these versions, providing insight into your application's development history and enabling you to track changes over time.*
 
@@ -12,7 +12,7 @@
 
 ![](../../assets/build.jpg)
 
-## *Security Severity*
+## Security Severity
 
 *The Security Severity feature helps identify and categorize potential security issues within each build, allowing to address vulnerabilities promptly.*
 
@@ -24,7 +24,7 @@
 
 ![](../../assets/security_severity_inside.jpg)
 
-## *Policies*
+## Policies
 
 *Policies are a set of pre-defined rules that validate Mendix app development against best practices.*
 

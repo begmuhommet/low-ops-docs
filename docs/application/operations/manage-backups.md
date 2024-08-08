@@ -43,7 +43,7 @@ To import a backup, follow the steps below:
 
 - To restore backups, simply click on the`Restore` button. Click on the arrow button next to the `Restore` button to restore backups in different environmnets. 
 
-> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Application Actions tutorial](./application/operations/application_actions.md). 
+> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Application Actions tutorial](./application_actions.md). 
 
 - To delete the backup, click on the three dots and click on the `Delete` button.
 

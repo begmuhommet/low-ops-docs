@@ -4,11 +4,11 @@
 
 **To access the `Build` tab, follow the steps below:**
 
-1. Navigate to the `Home` page and open one of the applications.
+- Navigate to the `Home` page and open one of the applications.
 
 ![](../../assets/home_page.jpg)
 
-2. Inside the app, navigate to the `Build` tab. 
+- Inside the app, navigate to the `Build` tab. 
 
 ![](../../assets/build.jpg)
 
@@ -16,11 +16,11 @@
 
 *The Security Severity feature helps identify and categorize potential security issues within each build, allowing to address vulnerabilities promptly.*
 
-1. By clicking the `Details`, you can access more comprehensive information about the security issues detected in a specific build.
+- By clicking the `Details`, you can access more comprehensive information about the security issues detected in a specific build.
 
 ![](../../assets/security_severity.jpg)
 
-2. When opening the Details, you will see a summary of security vulnerabilities categorized by severity (High, Medium, Low), along with a table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions.
+- When opening the Details, you will see a summary of security vulnerabilities categorized by severity (High, Medium, Low), along with a table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions.
 
 ![](../../assets/security_severity_inside.jpg)
 
@@ -28,15 +28,15 @@
 
 *Policies are a set of pre-defined rules that validate Mendix app development against best practices.*
 
-1. By clicking the `Details`, you can access more comprehensive information about the Policies.
+- By clicking the `Details`, you can access more comprehensive information about the Policies.
 
 ![](../../assets/policies.jpg)
 
-2. When opening the Details, you will see a summary of policy test results, including the total number of tests, passed tests, and failed tests.
+- When opening the Details, you will see a summary of policy test results, including the total number of tests, passed tests, and failed tests.
 
 ![](../../assets/policies_inside.jpg)
 
-3. To view details of the failed policies, simply click the arrow as shown in the screenshot.
+- To view details of the failed policies, simply click the arrow as shown in the screenshot.
 
 ![](../../assets/policies_failed.jpg)
 

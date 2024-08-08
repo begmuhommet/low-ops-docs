@@ -4,11 +4,11 @@ This documentation guides you through creating and deploying new application ver
 
 ## Low-Ops Portal
 
-> **_NOTE:_** To login to the Low-Ops portal, follow the steps from the [Onboard New Application tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/8c80aeea60e67ccd1ffca818dcb36ebc38809cfd/docs/platform/administration/onboard-new-application.md). 
+> **_NOTE:_** To login to the Low-Ops portal, follow the steps from the [Onboard New Application tutorial](../platform/administration/onboard-new-application.md). 
 
 ## Open app overview
 
-> **_NOTE:_** To navigate to the `Security` tab and access the Git repository URL, follow the steps from the [Security tutorial](https://gitlab.com/cinaq/low-ops-docs/-/blob/8c80aeea60e67ccd1ffca818dcb36ebc38809cfd/docs/application/operations/security.md).
+> **_NOTE:_** To navigate to the `Security` tab and access the Git repository URL, follow the steps from the [Security tutorial](../application/operations/security.md).
 
 ## Make changes in Mendix Studio Pro
 

@@ -1,5 +1,5 @@
 
-Firewall Serves as a critical component for securing the network and systems.
+Firewall serves as a critical component for securing the network and systems.
 
 **To access the `Firewall` tab, follow the steps below:**
 
@@ -20,7 +20,7 @@ Firewall Serves as a critical component for securing the network and systems.
 
 ![](../../assets/create_firewall_rule.jpg)
 
-- Re-deploy the application by following the steps from [here](./docs/how-to/application_actions.md).
+- Re-deploy the application by following the steps from [Application Actions Tutorial](../application/operations/application_actions.md).
 
 - From the `Deployment` tab, use the URL to log in to Mendix Studio Pro.
 

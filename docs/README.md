@@ -21,4 +21,4 @@ Without Low-Ops, an organization would need to hire a team of DevOps-, Cloud eng
 * **Scalable** - Low-Ops is designed to be scalable. This means that it is designed to be able to scale up and down as needed.
 * **Upgradable** - Low-Ops is designed to be upgradable. This means that it is designed to be able to upgrade to new versions of Kubernetes and other components without downtime.
 
-Jump to [Getting Started](getting-started/developer.md) to learn how to use Low-Ops. Or checkout out our [Architecture](architecture.md) to learn how Low-Ops works.
+Jump to [Getting Started](./getting-started/mendix.md) to learn how to use Low-Ops with Mendix. Or checkout out our [Architecture](./platform/architecture/high-level-architecture.md) to learn how Low-Ops works.

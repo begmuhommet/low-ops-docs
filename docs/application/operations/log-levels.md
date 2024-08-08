@@ -2,7 +2,7 @@
 Logs  capture information about events, activities, errors, or status changes; serve as a valuable resource for troubleshooting, debugging, and monitoring system performance.
 
 
-To access the `Logs` tab, follow the steps below:
+**To access the `Logs` tab, follow the steps below:**
 
 
 - Navigate to the `Environments` tab and choose the environment from the list.

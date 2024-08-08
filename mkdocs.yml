@@ -39,7 +39,7 @@ theme:
     # - toc.integrate
     - header.autohide
 extra:
-  homepage: https://low-ops.com/
+  homepage: /
 plugins:
   - search
   - awesome-pages

@@ -1,4 +1,4 @@
-## *Portal Administration*
+# Portal Administration
 
 The Low-Ops Portal provides an administration interface for managing users, teams, and applications within the platform. From the Administration section, administrators can view all users in the portal, create new users, and manage application access. This centralized administration area allows for efficient user management and control over platform resources.
 
@@ -6,7 +6,7 @@ Login to the Low-Ops portal and navigate to the `Administration` tab in the left
 
 ![](../../assets/administration.jpg)
 
-## *Create New User*
+## Create New User
 
 1. To create a new user, navigate to the `Users` tab in the left side menu.
 
@@ -34,13 +34,13 @@ From here you can view:
 
 ![](../../assets/user_profile_1.jpg)
 
-## *Teams Section*
+## Teams Section
 
 Here you can view all teams in your portal.
 
 ![](../../assets/teams.jpg)
 
-## *Applications Section*
+## Applications Section
 
 The `Applications` section allows to create new apps by clicking the `Create apps` button. 
 To delete the app, click on the three dots to open a `Delete app` button. 

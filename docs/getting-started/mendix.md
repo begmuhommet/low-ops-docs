@@ -1,4 +1,4 @@
-# Introduction
+# Mendix
 
 This documentation guides you through creating and deploying new application versions in the Low-Ops platform using Mendix Studio Pro. Mendix Studio Pro is a powerful low-code development environment that allows developers to rapidly build and customize enterprise-grade applications. The guide covers the entire process, from accessing the Git repository to making changes in Mendix Studio Pro and verifying them across different environments.
 

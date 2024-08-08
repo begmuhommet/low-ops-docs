@@ -1,4 +1,4 @@
-## *Configure Settings*
+## Configure Settings
 
 This page allows you to view and make changes to the current settings. It is divided into five blocks: `Domain`, `Scaling`,`Environment Variables`, `Runtime Settings`, and `Delete this environment`.
 

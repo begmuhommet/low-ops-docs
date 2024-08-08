@@ -1,6 +1,6 @@
 Application environments can be managed with some basic actions. Here you will learn what these actions are and how to use them.
 
-## *Deploy Specific Application Version to the Environment*
+## Deploy Specific Application Version to the Environment
 
 > **_NOTE:_** The following steps are the same for Test, Acceptance and Production environments. 
 
@@ -46,7 +46,7 @@ Application environments can be managed with some basic actions. Here you will l
 
 ![](../../assets/open_app.jpg)
 
-## *Start the Application*
+## Start the Application
 
 - To start the application, simply click on the`Start` button.
 
@@ -65,7 +65,7 @@ Application environments can be managed with some basic actions. Here you will l
 
 ![](../../assets/open_app.jpg)
 
-## *Stop the Application*
+## Stop the Application
 
 - Click on the `Stop` button.
 

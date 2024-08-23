@@ -30,13 +30,13 @@ There are two ways to access the Start button:
 5. Click the provided URL to verify that the application opens successfully (See Figure 5).
 
 *Figure 3: Starting status*
-![Starting status](../../assets/starting_status.jpg)
+![](../../assets/starting_status.jpg)
 
 *Figure 4: Running status*
-![Running status](../../assets/running.jpg)
+![](../../assets/running.jpg)
 
 *Figure 5: Open application*
-![Open application](../../assets/open_app.jpg)
+![](../../assets/open_app.jpg)
 
 # Stop the Application
 

@@ -17,7 +17,7 @@ There are two ways to access the Start button:
 
 **Figure 1: Start button on Environments page**
 ![](../../assets/start_application.jpg)
-<img src="../../assets/start_application.jpg" width="300" alt="Start button on Environments page">
+<img src="../../assets/start_application.jpg" width="400" alt="Start button on Environments page">
 
 **Figure 2: Start button on Deployment page**
 ![](../../assets/start_application2.jpg)

@@ -15,27 +15,24 @@ There are two ways to access the Start button:
    - You will be redirected to the Deployment page.
    - Locate the Start button on this page (See Figure 2).
 
-*Figure 1: Start button on Environments page*
-![Start button on Environments page](../../assets/start_application.jpg)
+**Figure 1: Start button on Environments page**
+![](../../assets/start_application.jpg)
 
-*Figure 2: Start button on Deployment page*
-![Start button on Deployment page](../../assets/start_application2.jpg)
+**Figure 2: Start button on Deployment page**
+![](../../assets/start_application2.jpg)
 
 ## Starting the application 
 
 1. Click the Start button for the desired environment.
-2. The status will change to "Starting" (See Figure 3).
+2. The status will change to "Starting.
 3. Wait for 1-2 minutes while the application initializes.
-4. The status will change to "Running" once the application has started (See Figure 4).
-5. Click the provided URL to verify that the application opens successfully (See Figure 5).
+4. The status will change to "Running" once the application has started (See Figure 3).
+5. Click the provided URL to verify that the application opens successfully (See Figure 4).
 
-*Figure 3: Starting status*
-![](../../assets/starting_status.jpg)
-
-*Figure 4: Running status*
+**Figure 3: Running status**
 ![](../../assets/running.jpg)
 
-*Figure 5: Open application*
+**Figure 4: Open application**
 ![](../../assets/open_app.jpg)
 
 # Stop the Application

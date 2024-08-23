@@ -1,8 +1,8 @@
 This document provides instructions on how to Start, Stop, and Restart the application in different environments.
 
-# Start the Application
+## Start the Application
 
-## Accessing the Start button
+### Accessing the Start button
 
 There are two ways to access the Start button:
 
@@ -23,7 +23,7 @@ There are two ways to access the Start button:
 
 <img src="../../assets/start_application2.jpg" width="500" alt="Start button on Deployment page">
 
-## Starting the application 
+### Starting the application 
 
 1. Click the Start button for the desired environment.
 2. The status will change to "Starting.
@@ -39,18 +39,39 @@ There are two ways to access the Start button:
 
 <img src="../../assets/open_app.jpg" width="500" alt="Open application">
 
-# Stop the Application
+## Stop the Application
 
-- Click on the `Stop` button.
+### Accessing the Stop Button
 
-![](../../assets/stop_application.jpg)
+The Stop button is located in the same place as the Start button. There are two ways to access it:
 
-- The Status field should change to `Stopping`. 
+1. From the Environments page:
+   - Navigate to the Environments tab.
+   - Click the Stop button next to the specific environment (See Figure 6).
 
-![](../../assets/stopping_status.jpg)
+2. From the Deployment page:
+   - Open a specific environment.
+   - You will be redirected to the Deployment page.
+   - Locate the Stop button on this page (See Figure 7).
 
-- Once the application is stopped,the status should change to `Stopped`. 
+*Figure 6: Stop button on Environments page*
+<img src="../../assets/stop_application.jpg" width="500" alt="Stop button on Environments page">
 
-![](../../assets/stopped.jpg)
+*Figure 7: Stop button on Deployment page*
+<img src="../../assets/stop_application2.jpg" width="500" alt="Stop button on Deployment page">
 
-- Attempting to access the URL should result in a `503 Service Temporarily Unavailable` error message.
+### Stopping the Application
+
+1. Click the Stop button for the desired environment.
+2. The status will change to "Stopping" (See Figure 8).
+3. Wait for the application to fully stop.
+4. The status will change to "Stopped" once the application has been terminated.
+5. Attempting to access the URL should result in a "503 Service Temporarily Unavailable" error message (See Figure 9).
+
+*Figure 8: Stopping status*
+<img src="../../assets/stopping_status.jpg" width="500" alt="Stopping status">
+
+*Figure 9: Stopped status and error message*
+<img src="../../assets/stopped.jpg" width="500" alt="Stopped status and error message">
+
+

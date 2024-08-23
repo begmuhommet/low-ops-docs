@@ -4,14 +4,14 @@ Firewall serves as a critical component for securing the network and systems.
 
 ## Accessing the Firewall Tab
 
-1. Navigate to the Environments tab.
+1. Navigate to the Environments tab (See Figure 1).
 2. Choose the desired environment from the list.
 3. A new dropdown navigation menu will appear.
 4. In the left-side menu, select Firewall.
 
 **Figure 1: Environments overview**
 
-<img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview">
+<img src="../../assets/environments_overview.jpg" width="700" alt="Environments overview">
 
 ## Creating a Firewall Rule
 

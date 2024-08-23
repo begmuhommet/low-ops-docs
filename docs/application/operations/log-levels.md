@@ -1,27 +1,34 @@
+# Logs Management
 
-Logs  capture information about events, activities, errors, or status changes; serve as a valuable resource for troubleshooting, debugging, and monitoring system performance.
+Logs capture information about events, activities, errors, or status changes; they serve as a valuable resource for troubleshooting, debugging, and monitoring system performance.
 
+## Accessing the Logs Tab
 
-**To access the `Logs` tab, follow the steps below:**
+1. Navigate to the Environments tab (See Figure 1).
+2. Choose the desired environment from the list.
+3. A new dropdown navigation menu will appear.
+4. In the left-side menu, select Logs (See Figure 2).
 
+**Figure 1: Environments overview**
 
-- Navigate to the `Environments` tab and choose the environment from the list.
+<img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview">
 
-![](../../assets/environments_overview.jpg)
+**Figure 2: Logs tab**
 
-- Once one of the environments is selected, a new dropdown navigation menu will appear.
-- In the left-side menu, select  `Logs`.
+<img src="../../assets/logs.jpg" width="500" alt="Logs tab">
 
- ![](../../assets/logs.jpg)
+## Configuring Log Levels
 
-## Configure Log Levels
+1. Click on Configure Log Levels in the upper right corner (See Figure 3).
+2. In the pop-up window, click on Add log level.
+3. Specify the Log node.
+4. Select Log level from the drop-down menu.
+5. Provide a Description if necessary.
+6. Click on the blue button to add the log level.
+7. Return to the Logs tab to review the traces.
 
-- Click on `Configure Log Levels` in the upper right corner.
-- In the pop-up window, click on the `Add log level`, and specify the `Log node`, select `Log level` from a drop down menu, provide `Description` if necessary and click on the blue button. 
+**Figure 3: Configure log levels**
 
- ![](../../assets/configure_log_levels.jpg)
+<img src="../../assets/configure_log_levels.jpg" width="500" alt="Configure log levels">
 
-
-> **_NOTE:_** Re-deploy the application for changes to take place.
-
-- Return to the `Logs` tab to review the traces. 
+> **_NOTE:_** Re-deploy the application for changes to take effect.

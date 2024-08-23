@@ -11,7 +11,7 @@ Firewall serves as a critical component for securing the network and systems.
 
 **Figure 1: Environments overview**
 
-<img src="../../assets/environments_overview.jpg" width="600" alt="Environments overview">
+<img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview">
 
 ## Creating a Firewall Rule
 

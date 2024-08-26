@@ -36,14 +36,17 @@ There are two ways to access the Start button:
 3. Wait for 1-2 minutes while the application initializes.
 4. The status will change to "Running" once the application has started (See Figure 3).
   <img src="../../assets/running.jpg" width="500" alt="Running status">
+
 5. Click the provided URL to verify that the application opens successfully (See Figure 4).
+  <img src="../../assets/open_app.jpg" width="500" alt="Open application">
+
 
 **Figure 3: Running status**
 
 
 **Figure 4: Open application**
 
-<img src="../../assets/open_app.jpg" width="500" alt="Open application">
+
 
 ## Stop the Application
 

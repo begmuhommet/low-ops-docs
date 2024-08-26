@@ -8,11 +8,13 @@ This document provides instructions on how to Start, Stop, and Restart the appli
 
 There are two ways to access the Start button:
 
+<img src="../../assets/start_application.jpg" width="500" alt="Start button on Environments page">
+
 1. From the Environments page:  
    - Navigate to the Environments tab.
    - Click the Start button next to the specific environment (See Figure 1).
-<img src="../../assets/start_application.jpg" width="500" alt="Start button on Environments page">
-  
+
+<img src="../../assets/start_application2.jpg" width="500" alt="Start button on Deployment page">
 
 2. From the Deployment page:
    - Open a specific environment.
@@ -25,7 +27,7 @@ There are two ways to access the Start button:
 
 **Figure 2: Start button on Deployment page**
 
-<img src="../../assets/start_application2.jpg" width="500" alt="Start button on Deployment page">
+
 
 ### Starting the application 
 
@@ -33,11 +35,11 @@ There are two ways to access the Start button:
 2. The status will change to "Starting.
 3. Wait for 1-2 minutes while the application initializes.
 4. The status will change to "Running" once the application has started (See Figure 3).
+  <img src="../../assets/running.jpg" width="500" alt="Running status">
 5. Click the provided URL to verify that the application opens successfully (See Figure 4).
 
 **Figure 3: Running status**
 
-<img src="../../assets/running.jpg" width="500" alt="Running status">
 
 **Figure 4: Open application**
 

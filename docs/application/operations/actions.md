@@ -56,11 +56,11 @@ The Stop button is located in the same place as the Start button. There are two 
    - You will be redirected to the Deployment page.
    - Locate the Stop button on this page (See Figure 7).
 
-*Figure 6: Stop button on Environments page*
+**Figure 6: Stop button on Environments page**
 
 <img src="../../assets/stop_application.jpg" width="500" alt="Stop button on Environments page">
 
-*Figure 7: Stop button on Deployment page*
+**Figure 7: Stop button on Deployment page**
 
 <img src="../../assets/stop_application2.jpg" width="500" alt="Stop button on Deployment page">
 
@@ -72,11 +72,11 @@ The Stop button is located in the same place as the Start button. There are two 
 4. The status will change to "Stopped" once the application has been terminated.
 5. Attempting to access the URL should result in a "503 Service Temporarily Unavailable" error message (See Figure 9).
 
-*Figure 8: Stopping status*
+**Figure 8: Stopping status**
 
 <img src="../../assets/stopping_status.jpg" width="500" alt="Stopping status">
 
-*Figure 9: Stopped status and error message*
+**Figure 9: Stopped status and error message**
 
 <img src="../../assets/stopped.jpg" width="500" alt="Stopped status and error message">
 
@@ -95,11 +95,11 @@ The Restart button is located in the same place as the Start and Stop button. Th
    - You will be redirected to the Deployment page.
    - Locate the Restart button by clicking the arrow and accessing the Restart button (See Figure 11).
 
-*Figure 10: Restart button on Environments page*
+**Figure 10: Restart button on Environments page**
 
 <img src="../../assets/restart_application.jpg" width="500" alt="Restart button on Environments page">
 
-*Figure 11: Restart button on Deployment page*
+**Figure 11: Restart button on Deployment page**
 
 <img src="../../assets/restart_application2.jpg" width="500" alt="Restart button on Deployment page">
 

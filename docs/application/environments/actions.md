@@ -60,9 +60,10 @@ The Stop button is located in the same place as the Start button. There are two 
 
 3. Wait for the application to fully stop.
 4. The status will change to "Stopped" once the application has been terminated.
-5. Attempting to access the URL should result in a "503 Service Temporarily Unavailable" error message.
 
 <img src="../../assets/stopped.jpg" width="500" alt="Stopped status and error message">
+
+5. Attempting to access the URL should result in a "503 Service Temporarily Unavailable" error message.
 
 ## Restart the Application
 

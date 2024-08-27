@@ -46,7 +46,7 @@ For more advanced configuration and options descriptions follow this [page](./ad
 ```
 lowops:
   image:
-    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v2-0-0
+    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v3-1-2
 
   # LowOps platfrom configuration variables
   config:
@@ -56,14 +56,7 @@ lowops:
       foundation_type: generic
       email_domain: cinaq.com
       general_client_name: CINAQ
-      platform_version: v2.0.0
-  # Set lowops custom images tags to the same version
-      rootfs_app_image_tag: 0-ci-v2-0-0
-      rootfs_builder_image_tag: 0-ci-v2-0-0
-      toolkit_image_tag: 0-ci-v2-0-0
-      s3_gateway_image_tag: 0-ci-v2-0-0
-      oauth2proxy_image_tag: 0-ci-v2-0-0
-      keycloak_image_tag: 0-ci-v2-0-0
+      platform_version: v3.1.2
     ingress:
   # Update certificate and key params values to base64 encoded strings 
       default_ssl_cert: base64-encoded-cert-string
@@ -144,7 +137,7 @@ Run `helm install` command to start the platform setup process.
 ```
 NAMESPACE=lowops-devops
 CHART_VALUES_FILE=values.yaml
-CHART_VERSION=0.1.70
+CHART_VERSION=0.1.407
 HELM_CMD="helm upgrade -i lowops-platform lowops/lowops -n $NAMESPACE"
 if [ -f "$CHART_VALUES_FILE" ]; then
     HELM_CMD="$HELM_CMD -f $CHART_VALUES_FILE"

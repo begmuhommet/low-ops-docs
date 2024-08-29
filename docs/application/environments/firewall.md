@@ -27,7 +27,7 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
     - Include description 
     - Click the "Create" button
 
-3. Re-deploy the application by following the steps from the [Application Tutorial](./actions.md).
+3. Re-deploy the application by following the steps from the [Application Tutorial](.../actions.md).
 
 ## Updating a Firewall Rule
 
@@ -50,7 +50,7 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
 
 <img src="../../assets/manage_firewall.jpg" width="500" alt="Manage firewall">
 
-3. Click on the Delete button.
+3. Click the "Delete" button.
 4. Confirm the deletion in the pop-up window.
 
 <img src="../../assets/delete_firewall.jpg" width="500" alt="Delete firewall">

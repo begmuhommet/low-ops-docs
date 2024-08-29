@@ -13,13 +13,13 @@ This document provides instructions on how to create backups in different enviro
 3. A new dropdown navigation menu will appear.
 4. In the left-side menu, select "Backups".
 
-<img src="../../assets/access_backup.jpg" width="500" alt="Access backup page">
+<img src="../../../assets/access_backup.jpg" width="500" alt="Access backup page">
 
 ## Creating a Backup
 
 1. Click the "Create" button in the right corner. 
 
-<img src="../../assets/create_backup.jpg" width="500" alt="Create backup">
+<img src="../../../assets/create_backup.jpg" width="500" alt="Create backup">
 
 2. In the pop-up window:
     - Include a comment
@@ -31,4 +31,4 @@ This document provides instructions on how to create backups in different enviro
 
 The system automatically creates a backup at night. These backups appear with the "Nightly backup" comment in the list of backups.
 
-<img src="../../assets/nightly_backup.jpg" width="500" alt="Nightly backup">
+<img src="../../../assets/nightly_backup.jpg" width="500" alt="Nightly backup">

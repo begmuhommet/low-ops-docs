@@ -25,4 +25,4 @@ This document provides instructions on how to import backups in different enviro
 
 <img src="../../../assets/importing.jpg" width="500" alt="Importing backup">
 
-3. Once the file is loaded, it will appear as the first backup in the list of backups.  
+4. Once the file is loaded, it will appear as the first backup in the list of backups.  

@@ -20,5 +20,9 @@ This document provides instructions on how to import backups in different enviro
 
 <img src="../../../assets/import_backup.jpg" width="500" alt="Import backup">
 
-2. Upload the backup file from your device in the tar.gz archive format and wait for it to load.
-3. The imported backup will appear in the list of backups. 
+2. Upload the backup file from your device in the tar.gz archive format.
+3. In the pop-up window include a comment and click the "Import" button. 
+
+<img src="../../../assets/importing.jpg" width="500" alt="Importing backup">
+
+3. Once the file is loaded, it will appear as the first backup in the list of backups.  

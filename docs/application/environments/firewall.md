@@ -21,11 +21,11 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
 <img src="../../assets/create_firewall_rule.jpg" width="500" alt="Create firewall rule">
 
 2. In the pop-up window, enter the rule details:
-- Indicate the path that should be denied or allowed for a specific IP address
-- Select the desired action from the drop-down menu: "Allow" or "Deny"
-- Input the IP adresses and press "ENTER". 
-- Include description 
-- Click the "Create" button
+* Indicate the path that should be denied or allowed for a specific IP address
+* Select the desired action from the drop-down menu: "Allow" or "Deny"
+* Input the IP adresses and press "ENTER". 
+* Include description 
+* Click the "Create" button
 
 3. Re-deploy the application by following the steps from the [Application Tutorial](./actions.md).
 

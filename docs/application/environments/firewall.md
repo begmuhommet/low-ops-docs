@@ -4,35 +4,30 @@ Firewall serves as a critical component for securing the network and systems.
 
 ## Accessing the Firewall Tab
 
-1. Navigate to the Environments tab (See Figure 1).
-2. Choose the desired environment from the list.
-3. A new dropdown navigation menu will appear.
-4. In the left-side menu, select Firewall.
-
-**Figure 1: Environments overview**
+1. Navigate to the "Environments" tab.
 
 <img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview">
 
-## Creating a Firewall Rule
-
-1. Click on the Create rule button in the upper right corner.
-2. In the pop-up window, enter the rule details.
-3. Click on the Create button.
-4. Re-deploy the application by following the steps from the [Application Actions Tutorial](./application_actions.md).
-5. From the Deployment tab, use the URL to log in to Mendix Studio Pro.
-6. Verify that the created rule works as specified.
-
-**Figure 2: Firewall tab**
+2. Choose the desired environment from the list.
+3. A new dropdown navigation menu will appear.
+4. In the left-side menu, select "Firewall".
 
 <img src="../../assets/firewall_tab.jpg" width="500" alt="Firewall tab">
 
-**Figure 3: Create firewall rule**
+## Creating a Firewall Rule
+
+1. Click on the "Create rule" button in the upper right corner.
 
 <img src="../../assets/create_firewall_rule.jpg" width="500" alt="Create firewall rule">
 
-**Figure 4: Mendix URL**
+2. In the pop-up window, enter the rule details:
+ - Indicate the path
+ - Select the desired action from the drop-down menu: "Allow" or "Deny"
+ - Input the IP adresses and press "ENTER". 
+ - Include description 
+ - Click the "Create" button
 
-<img src="../../assets/mendix_url.jpg" width="500" alt="Mendix URL">
+3. Re-deploy the application by following the steps from the [Application Actions Tutorial](./application_actions.md).
 
 ## Managing Firewall Rules
 

@@ -7,7 +7,7 @@ This document provides instructions on how to create backups in different enviro
 
 1. Navigate to the Environments tab.
 
-<img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview page">
+<img src="../../../assets/environments_overview.jpg" width="500" alt="Environments overview page">
 
 2. Choose the desired environment from the list.
 3. A new dropdown navigation menu will appear.

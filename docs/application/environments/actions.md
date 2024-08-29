@@ -88,6 +88,12 @@ The Restart button is located in the same place as the Start and Stop button. Th
 
 1. Click the Restart button for the desired environment.
 2. The status will change to "Restarting".
+
+<img src="../../assets/restarting_status.jpg" width="500" alt="Restarting status">
+
 3. Wait for 1-2 minutes while the application initializes.
 4. The status will change to "Running" once the application has restarted.
+
+<img src="../../assets/running.jpg" width="500" alt="Running status">
+
 5. Click the provided URL to verify that the application opens successfully.

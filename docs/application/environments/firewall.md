@@ -16,7 +16,7 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
 
 ## Creating a Firewall Rule
 
-1. Click on the "Create rule" button in the upper right corner.
+1. Click the "Create rule" button in the right corner.
 
 <img src="../../assets/create_firewall_rule.jpg" width="500" alt="Create firewall rule">
 
@@ -27,30 +27,30 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
     - Include description 
     - Click the "Create" button
 
-3. Re-deploy the application by following the steps from the [Application Tutorial](.../actions.md).
+3. Re-deploy the application by following the steps from the [Application Tutorial](.../.../.../actions.md).
 
 ## Updating a Firewall Rule
 
 1. Return to the Firewall tab.
-2. Click on the three dots at the upper right corner of the rule you want to edit.
+2. Click on the three dots at the right corner of the rule you want to edit.
 
 <img src="../../assets/manage_firewall.jpg" width="500" alt="Manage firewall">
 
-3. Click on the Edit button.
+3. Click the "Edit" button.
 4. In the pop window update the needed details. 
 
 <img src="../../assets/edit_firewall.jpg" width="500" alt="Edit firewall">
 
-5. Click Save to apply the changes.
+5. Click "Save" to apply the changes.
 
 ## Deleting a Firewall Rule
 
 1. Return to the Firewall tab.
-2. Click on the three dots at the upper right corner of the rule you want to delete.
+2. Click on the three dots at the right corner of the rule you want to delete.
 
 <img src="../../assets/manage_firewall.jpg" width="500" alt="Manage firewall">
 
 3. Click the "Delete" button.
-4. Confirm the deletion in the pop-up window.
+4. Confirm the deletion in the pop-up window by clicking the "Delete" button.
 
 <img src="../../assets/delete_firewall.jpg" width="500" alt="Delete firewall">

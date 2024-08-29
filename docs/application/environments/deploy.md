@@ -26,6 +26,8 @@ There are two ways to access the Deploy button:
 
 ### Deploying the Application
 
+<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
+
 1. Once the "Deploy" button is clicked, a side menu will pop. 
 
    - Select the package version.
@@ -33,8 +35,6 @@ There are two ways to access the Deploy button:
    - Enable/Disable MyFirstModule.Cleanup.
    - Check the box for "I acknowledge the app might be offline briefly during deployment".
    - Click the "Deploy" button.
-
-<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
 
 2. The status will change to "Deploying". 
 

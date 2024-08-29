@@ -1,6 +1,6 @@
 # Firewall Management
 
-Firewall serves as a critical component for securing the network and systems.
+Firewall (IP filtering) serves to restrict application access to specific IP address or IP ranges. 
 
 ## Accessing the Firewall Tab
 
@@ -21,17 +21,15 @@ Firewall serves as a critical component for securing the network and systems.
 <img src="../../assets/create_firewall_rule.jpg" width="500" alt="Create firewall rule">
 
 2. In the pop-up window, enter the rule details:
- - Indicate the path
- - Select the desired action from the drop-down menu: "Allow" or "Deny"
- - Input the IP adresses and press "ENTER". 
- - Include description 
- - Click the "Create" button
+        - Indicate the path that should be denied or allowed for a specific IP address
+        - Select the desired action from the drop-down menu: "Allow" or "Deny"
+        - Input the IP adresses and press "ENTER". 
+        - Include description 
+        - Click the "Create" button
 
-3. Re-deploy the application by following the steps from the [Application Actions Tutorial](./application_actions.md).
+3. Re-deploy the application by following the steps from the [Application Tutorial](./actions.md).
 
-## Managing Firewall Rules
-
-### Updating a Firewall Rule
+## Updating a Firewall Rule
 
 1. Return to the Firewall tab.
 2. Click on the three dots at the upper right corner of the rule you want to edit.
@@ -39,7 +37,7 @@ Firewall serves as a critical component for securing the network and systems.
 4. Update the firewall rule details in the pop-up window that appears.
 5. Click Save to apply the changes.
 
-### Deleting a Firewall Rule
+## Deleting a Firewall Rule
 
 1. Return to the Firewall tab.
 2. Click on the three dots at the upper right corner of the rule you want to delete.

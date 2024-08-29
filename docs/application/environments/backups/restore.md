@@ -17,7 +17,7 @@ This document provides instructions on how to restore backups in different envir
 
 ## Restoring a Backup
 
-> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Actions tutorial](./actions.md).
+> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Actions tutorial](../actions.md).
 
 ### Restoring a backup in the same environment
 

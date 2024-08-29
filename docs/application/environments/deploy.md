@@ -40,11 +40,10 @@ There are two ways to access the Deploy button:
 <img src="../../assets/deploying.jpg" width="500" alt="Deploying status">
 
 3. Wait for 1-2 minutes while the application initializes.
-
 4. The status will change to "Running" once the application is deployed.
 
 <img src="../../assets/running.jpg" width="500" alt="Running status">
 
-4. Click the provided URL to verify that the application opens successfully.
+5. Click the provided URL to verify that the application opens successfully.
 
 <img src="../../assets/open_app.jpg" width="500" alt="Open application">

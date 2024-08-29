@@ -1,5 +1,5 @@
-I apologize for the confusion. I understand that the formatting is not displaying correctly. Let me provide a properly formatted version of the documentation you want to create, based on the example and the content you've provided. I'll use the correct Markdown syntax:
-markdownCopy# Application Deployment Guide
+# Application Deployment Guide
+
 This document provides instructions on how to deploy the application in different environments.
 
 ## Deploy the Application

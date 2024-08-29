@@ -29,7 +29,6 @@ There are two ways to access the Deploy button:
 <img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
 
 1. Once the "Deploy" button is clicked, a side menu will pop. 
-
    - Select the package version.
    - Configure Constants; You can include and modify new values as needed by clicking the pencil. 
    - Enable/Disable MyFirstModule.Cleanup.

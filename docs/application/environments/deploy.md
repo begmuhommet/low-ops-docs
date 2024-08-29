@@ -1,47 +1,47 @@
-#Application Deployment Guide
-
+I apologize for the confusion. I understand that the formatting is not displaying correctly. Let me provide a properly formatted version of the documentation you want to create, based on the example and the content you've provided. I'll use the correct Markdown syntax:
+markdownCopy# Application Deployment Guide
 This document provides instructions on how to deploy the application in different environments.
 
-##Deploy the Application
+## Deploy the Application
 
-###Accessing the Deploy button
+> **_NOTE:_** The following steps are the same for Test, Acceptance and Production environments.
 
+### Accessing the Deploy button
 There is one way to access the Deploy button:
+
+<img src="../../assets/home_page.jpg" width="500" alt="Homepage with application list">
+
+1. From the homepage:
+   * Choose the application from the list.
+   * Once the application is selected, click on the `Environments` tab.
+   * Select the environment
+
 <img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview page">
 
-From the Environments page:
+   * Click on the `Deploy` button  
 
-Navigate to the homepage and choose the application from the list.
-Click on the Environments tab.
-Select the desired environment.
-Locate the Deploy button next to the specific environment.
-
-
-
-
-NOTE: The following steps are the same for Test, Acceptance and Production environments.
-
-Deploying the Application
-
-Click the Deploy button for the desired environment.
 <img src="../../assets/deploy_application.jpg" width="500" alt="Deploy button on Environments page">
 
-A side menu will open up with deployment options:
-<img src="../../assets/deploy_sidebar.jpg" width="300" alt="Deploy sidebar">
+### Deploying the Application
 
-Step 1: Select the package version.
-Step 2: Configure Constants; provides the possibility to include new values.
-Step 3: Enable/Disable MyFirstModule.Cleanup.
-Step 4: Check the box for I acknowledge the app might be offline briefly during deployment.
+1. In the side menu that opens up:
 
+<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
 
-Click the Deploy button at the bottom of the sidebar.
-The status will change to "Deploying".
+   * Step 1: Select the package version.
+   * Step 2: Configure Constants; provides the possibility to include new values. 
+   * Step 3: Enable/Disable `MyFirstModule.Cleanup`.
+   * Step 4: Check the box for `I acknowledge the app might be offline briefly during deployment`.
+   * Click on the`Deploy` button.
+
+2. The status of the environment should change to `Deploying`. 
+
 <img src="../../assets/deploying.jpg" width="500" alt="Deploying status">
 
-Wait while the application deploys.
-The status will change to "Running" once the application has been deployed.
+3. Once the application is deployed, the status should change to `Running`.
+
 <img src="../../assets/running.jpg" width="500" alt="Running status">
 
-Open the environment and click on the provided URL to verify that the application opens successfully.
+4. Open the environment and click on the URL to ensure that the application opens up successfully.
+
 <img src="../../assets/open_app.jpg" width="500" alt="Open application">

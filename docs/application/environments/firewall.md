@@ -27,7 +27,7 @@ Firewall (IP filtering) serves to restrict application access to specific IP add
     - Include description 
     - Click the "Create" button
 
-3. Re-deploy the application by following the steps from the [Application Tutorial](.../.../.../actions.md).
+3. Re-deploy the application by following the steps from the [Deploy Application Tutorial](deploy.md).
 
 ## Updating a Firewall Rule
 

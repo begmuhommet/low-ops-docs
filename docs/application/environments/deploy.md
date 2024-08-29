@@ -12,7 +12,7 @@ There are two ways to access the Deploy button:
 
 <img src="../../assets/deploy_application.jpg" width="500" alt="Deploy button on Environments page">
 
-1. 1. From the Environments page:  
+1. From the Environments page:  
    - Navigate to the Environments tab.
    - Click the Start button next to the specific environment.
 
@@ -26,24 +26,26 @@ There are two ways to access the Deploy button:
 
 ### Deploying the Application
 
-1. Once the Deploy button is clicked, a side menu will pop 
-
-<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
+1. Once the Deploy button is clicked, a side menu will pop. 
 
    - Select the package version.
    - Configure Constants; provides the possibility to include new values. 
-   - Enable/Disable `MyFirstModule.Cleanup`.
-   - Check the box for `I acknowledge the app might be offline briefly during deployment`.
-   - Click on the`Deploy` button.
+   - Enable/Disable MyFirstModule.Cleanup.
+   - Check the box for I acknowledge the app might be offline briefly during deployment.
+   - Click the Deploy button.
 
-2. The status of the environment should change to `Deploying`. 
+<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
+
+2. The status will change to "Deploying". 
 
 <img src="../../assets/deploying.jpg" width="500" alt="Deploying status">
 
-3. Once the application is deployed, the status should change to `Running`.
+3. Wait for 1-2 minutes while the application initializes.
+
+4. The status will change to "Running" once the application is deployed.
 
 <img src="../../assets/running.jpg" width="500" alt="Running status">
 
-4. Open the environment and click on the URL to ensure that the application opens up successfully.
+4. Click the provided URL to verify that the application opens successfully.
 
 <img src="../../assets/open_app.jpg" width="500" alt="Open application">

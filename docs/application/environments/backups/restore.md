@@ -29,9 +29,22 @@ This document provides instructions on how to restore backups in different envir
 
 <img src="../../../assets/restore_popup.jpg" width="500" alt="Restore pop-up">
 
+3. Once the backup is restored, it will appear in the list of backups.
+
 ### Restoring a backup in a different environment
 
+1. Click on the arrow drop down list next to the "Restore" button in the right corner.
 
-2. To delete the backup:
+<img src="../../../assets/restore_arrow.jpg" width="500" alt="Restore arrow">
+
+2. Select the environment from the drop down list to which you want to restore the backup. 
+
+3. In the pop-up window include a comment and click the "Create" button.
+
+<img src="../../../assets/restore_env.jpg" width="500" alt="Restore environment">
+
+4. Once the backup is restored, it will appear in the list of backups.
+
+To delete the backup:
 - Click on the three dots and click on the `Delete` button.
 

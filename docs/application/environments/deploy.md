@@ -26,13 +26,13 @@ There are two ways to access the Deploy button:
 
 ### Deploying the Application
 
-1. Once the Deploy button is clicked, a side menu will pop. 
+1. Once the "Deploy" button is clicked, a side menu will pop. 
 
    - Select the package version.
-   - Configure Constants; provides the possibility to include new values. 
+   - Configure Constants; You can include and modify new values as needed by clicking the pencil. 
    - Enable/Disable MyFirstModule.Cleanup.
-   - Check the box for I acknowledge the app might be offline briefly during deployment.
-   - Click the Deploy button.
+   - Check the box for "I acknowledge the app might be offline briefly during deployment".
+   - Click the "Deploy" button.
 
 <img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
 

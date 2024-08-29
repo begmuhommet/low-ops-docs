@@ -25,7 +25,7 @@ This document provides instructions on how to restore backups in different envir
 
 <img src="../../../assets/restore_backup.jpg" width="500" alt="Restore backup">
 
-2. In the pop-up window include a comment and click the "Create" button.
+2. In the pop-up window include a comment and click the "Restore" button.
 
 <img src="../../../assets/restore_popup.jpg" width="500" alt="Restore pop-up">
 
@@ -39,7 +39,7 @@ This document provides instructions on how to restore backups in different envir
 
 2. Select the environment from the drop down list to which you want to restore the backup. 
 
-3. In the pop-up window include a comment and click the "Create" button.
+3. In the pop-up window include a comment and click the "Restore" button.
 
 <img src="../../../assets/restore_env.jpg" width="500" alt="Restore environment">
 

@@ -16,4 +16,8 @@ This document provides instructions on how to export backups. Backups serve as e
 
 ## Exporting a Backup
 
-Click on the arrow drop down list next to the "Restore" button in the right corner.
+1. Click on the arrow drop down list next to the "Restore" button in the right corner
+2. Click on the "Download DB" button to download backup database
+3. Click on the "Download files" buton to download backup files
+
+<img src="../../../assets/export_backup.jpg" width="500" alt="Export backup">

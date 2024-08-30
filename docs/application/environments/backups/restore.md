@@ -4,7 +4,6 @@ This document provides instructions on how to restore backups in different envir
 
 ## Accessing the Backups tab
 
-
 1. Navigate to the Environments tab.
 
 <img src="../../../assets/environments_overview.jpg" width="500" alt="Environments overview page">

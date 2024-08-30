@@ -15,8 +15,6 @@ This document provides instructions on how to access the Access tab and retrieve
 
 ## Mendix Studio Pro & Debugger Access
 
-<img src="../../assets/access.jpg" width="500" alt="Access tab">
-
 1. To login to Mendix Studio Pro: 
     - Locate the Admin User section 
     - Copy the application URL to access the page
@@ -26,5 +24,7 @@ This document provides instructions on how to access the Access tab and retrieve
     - Locate the "Debugging" section
     - Copy the URL to access the page
     - Use the password to login
+
+<img src="../../assets/access.jpg" width="500" alt="Access tab">
 
 > **_NOTE:_** Ensure you keep these credentials secure and do not share them with unauthorized individuals.

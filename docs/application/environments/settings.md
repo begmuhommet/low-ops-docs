@@ -36,7 +36,7 @@ To make changes:
 This section allows you to add new environment variables.
 
 To add a new variable:
-1.  Click on the `Add` button in the upper right corner.
+1.  Click on the "Add" button in the upper right corner.
 2. In the pop-up window:
   - Include the "Name", "Value", and "Description".
   - Check the "Protected" checkbox (optional).

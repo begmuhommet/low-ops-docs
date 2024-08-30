@@ -44,4 +44,3 @@ This document provides instructions on how to restore backups in different envir
 <img src="../../../assets/restore_env.jpg" width="500" alt="Restore environment">
 
 4. Once the backup is restored, it will appear in the list of backups.
-

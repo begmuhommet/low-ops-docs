@@ -1,8 +1,8 @@
-# Access Guide
+# Access 
 
 This document provides instructions on how to access the Access tab and retrieve login credentials for Mendix Studio Pro and Mendix Debugger.
 
-## Accessing the tab
+## Access tab
 
 1. Navigate to the Environments tab.
 
@@ -14,7 +14,6 @@ This document provides instructions on how to access the Access tab and retrieve
 
 
 ## Mendix Studio Pro & Debugger Access
-To access Mendix Studio Pro:
 
 <img src="../../assets/access.jpg" width="500" alt="Access tab">
 

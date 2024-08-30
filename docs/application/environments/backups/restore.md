@@ -45,7 +45,3 @@ This document provides instructions on how to restore backups in different envir
 
 4. Once the backup is restored, it will appear in the list of backups.
 
-## Deleting a backup
-
-- Click on the three dots and click on the `Delete` button.
-

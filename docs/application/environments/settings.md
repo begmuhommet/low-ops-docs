@@ -18,7 +18,7 @@ The Configuration page is divided into five sections: `Domain`, `Scaling`, `Envi
 ### Domain Section
 This section consists of the `Application URL`, and fields for `TLS Certificate Chain` and `TLS Private Key`.
 
-<img src="../../assets/configure_settings.jpg" width="500" alt="Domain configuration settings">
+<img src="../../assets/domain_settings.jpg" width="500" alt="Domain configuration settings">
 
 ### Scaling Section
 This section allows you to modify `Quotas CPU`, `Quotas memory`, and `Replicas`.

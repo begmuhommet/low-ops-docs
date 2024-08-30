@@ -24,15 +24,10 @@ Logs capture information about events, activities, errors, or status changes; th
 
 <img src="../../assets/add_log_level.jpg" width="500" alt="Configure log levels">
 
+    -Specify the Log node.
+    -Select Log level from the drop-down menu.
+    -Provide a Description if necessary.
+    -Click on the blue button to add the log level.
+    -Return to the Logs tab to review the traces.
 
--Specify the Log node.
--Select Log level from the drop-down menu.
--Provide a Description if necessary.
--Click on the blue button to add the log level.
--Return to the Logs tab to review the traces.
-
-**Figure 3: Configure log levels**
-
-
-
-> **_NOTE:_** Re-deploy the application for changes to take effect.
+> **_NOTE:_** Re-deploy the application for changes to take effect. Re-deploy the application by following the steps from the [Deploy Application Tutorial](deploy.md).

@@ -1,32 +1,32 @@
+# Monitoring Guide
 
 Monitoring is essential for proactively identifying and addressing system issues, ensuring performance, and maintaining overall reliability with minimal manual intervention.
 
-**To access the `Monitor` tab, follow the steps below:**
+## Accessing the Monitor Tab
 
-- Navigate to the Environments tab and choose the environment from the list.
+To access the `Monitor` tab, follow these steps:
 
-![](../../assets/environments_overview.jpg)
+1. Navigate to the Environments tab and choose the environment from the list.
 
-- Once one of the environments is selected, a new dropdown navigation menu will appear. 
-- In the left-side menu, select `Monitor`.
+   ![Environments Overview](../../assets/environments_overview.jpg)
 
-![](../../assets/monitoring.jpg)
+2. Once an environment is selected, a new dropdown navigation menu will appear.
+3. In the left-side menu, select `Monitor`.
 
+   ![Monitoring](../../assets/monitoring.jpg)
 
-- Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, `30 days`.
+4. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, or `30 days`.
 
+## Available Metrics
 
- **Microflow metrics - Mendix Microflow Execution Frequency**
+### Microflow Metrics - Mendix Microflow Execution Frequency
 
-Displays Mendix Microflow Executon Frequency (per second).
+This metric displays Mendix Microflow Execution Frequency (per second).
 
-![](../../assets/execution_frequency.jpg)
+![Execution Frequency](../../assets/execution_frequency.jpg)
 
- **Microflow metrics - Mendix Microflow Execution Time**
+### Microflow Metrics - Mendix Microflow Execution Time
 
+This metric displays Mendix Microflow Execution Time.
 
-Displays Mendix Microflow Execution Time.
-
-![](../../assets/execution_time.jpg)
-
-
+![Execution Time](../../assets/execution_time.jpg)

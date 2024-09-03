@@ -26,24 +26,24 @@ Monitoring is essential for proactively identifying and addressing system issues
 
 ### CPU Usage
 
-<img src="../../assets/CPU_usage.jpg" width="500" alt="CPU Usage">
+<img src="../../assets/CPU_usage.jpg" width="300" alt="CPU Usage">
 
 ### JVM Memory Usage
 
-<img src="../../assets/JVM_memory_usage.jpg" width="500" alt="JVM Memory Usage">
+<img src="../../assets/JVM_memory_usage.jpg" width="300" alt="JVM Memory Usage">
 
 ### Mendix Connection Bus
 
-<img src="../../assets/connection_bus.jpg" width="500" alt="Connection Bus">
+<img src="../../assets/connection_bus.jpg" width="300" alt="Connection Bus">
 
 ### Microflow Metrics - Mendix Microflow Execution Frequency
 
 This metric displays Mendix Microflow Execution Frequency (per second).
 
-<img src="../../assets/execution_frequency.jpg" width="500" alt="Execution Frequency">
+<img src="../../assets/execution_frequency.jpg" width="300" alt="Execution Frequency">
 
 ### Microflow Metrics - Mendix Microflow Execution Time
 
 This metric displays Mendix Microflow Execution Time.
 
-<img src="../../assets/execution_time.jpg" width="500" alt="Execution Time">
+<img src="../../assets/execution_time.jpg" width="300" alt="Execution Time">

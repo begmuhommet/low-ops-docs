@@ -15,13 +15,13 @@ This document provides instructions on how to view and modify environment settin
 
 The Configuration page is divided into five sections: "Domain", "Scaling", "Environment Variables", "Runtime Settings", and "Delete this environment".
 
-### Domain Section
+### "Domain" Section
 
 This section consists of the "Application URL", and fields for "TLS Certificate Chain" and "TLS Private Key".
 
 <img src="../../assets/domain_settings.jpg" width="500" alt="Domain configuration settings">
 
-### Scaling Section
+### "Scaling" Section
 
 This section allows you to modify "Quotas CPU", "Quotas memory", and "Replicas".
 
@@ -31,12 +31,12 @@ To make changes:
 
 <img src="../../assets/scaling_settings.jpg" width="500" alt="Scaling settings">
 
-### Environment Variables Section
+### "Environment Variables" Section
 
 This section allows you to add new environment variables.
 
 To add a new variable:
-1.  Click on the "Add" button in the upper right corner.
+1.  Click on the "Add" button in the right corner.
 2. In the pop-up window:
   - Include the "Name", "Value", and "Description".
   - Check the "Protected" checkbox (optional).
@@ -44,13 +44,13 @@ To add a new variable:
 
 <img src="../../assets/environment_variables.jpg" width="500" alt="Add new environment variable">
 
-### Runtime Settings Section
+### "Runtime Settings" Section
 
 This section allows you to add new runtime settings.
 
 To add a new runtime settings:
 
-1. Click on the "Add" button in the upper right corner.
+1. Click on the "Add" button in the right corner.
 2. In the pop-up window:
   - Include the "Name" and "Value".
   - Click on the "Add" button.

@@ -2,22 +2,36 @@
 
 Monitoring is essential for proactively identifying and addressing system issues, ensuring performance, and maintaining overall reliability with minimal manual intervention.
 
-## Accessing the Monitor Tab
+## Access Monitoring Tab
 
-To access the `Monitor` tab, follow these steps:
+   1. Navigate to the "Environments" tab.
 
-1. Navigate to the Environments tab and choose the environment from the list.
+<img src="../../assets/environments_overview.jpg" width="500" alt="Environments Overview">
 
-   <img src="../../assets/environments_overview.jpg" width="500" alt="Environments Overview">
+   2. Choose the desired environment from the list.
+   3. A new dropdown navigation menu will appear.
+   4. In the left-side menu, select "Monitoring".
 
-2. Once an environment is selected, a new dropdown navigation menu will appear.
-3. In the left-side menu, select `Monitor`.
+<img src="../../assets/monitoring.jpg" width="500" alt="Monitoring">
 
-   <img src="../../assets/monitoring.jpg" width="500" alt="Monitoring">
-
-4. Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, or `30 days`.
+ Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, or `30 days`.
 
 ## Available Metrics
+### Mendix Runtime Requests (per second)
+
+<img src="../../assets/runtime_requests.jpg" width="500" alt="Runtime Requests">
+
+### CPU Usage
+
+<img src="../../assets/CPU_usage.jpg" width="500" alt="CPU Usage">
+
+### JVM Memory Usage
+
+<img src="../../assets/JVM_memory_usage.jpg" width="500" alt="JVM Memory Usage">
+
+### Mendix Connection Bus
+
+<img src="../../assets/connection_bus.jpg" width="500" alt="Connection Bus">
 
 ### Microflow Metrics - Mendix Microflow Execution Frequency
 

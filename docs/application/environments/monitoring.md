@@ -16,7 +16,11 @@ Monitoring is essential for proactively identifying and addressing system issues
 
 ## Managing Monitoring tab
 
- Select the period for which to display the metrics: "3H", "12H", "24H", or "48H".
+<img src="../../assets/managing_monitoring.jpg" width="500" alt="Managing monitoring">
+
+ 1. Select the period for which to display the metrics: "3H", "12H", "24H", or "48H".
+
+ 2. Click the "Open in Grafana" button to access more metrics. 
 
 ## Available Metrics
 
@@ -24,17 +28,25 @@ Monitoring is essential for proactively identifying and addressing system issues
 
 <img src="../../assets/runtime_requests.jpg" width="300" alt="Runtime Requests">
 
+This metric shows the number of requests processed by the Mendix Runtime per second.
+
 ### CPU Usage
 
 <img src="../../assets/CPU_usage.jpg" width="300" alt="CPU Usage">
+
+This metric displays the percentage of CPU utilization by the Mendix application.
 
 ### JVM Memory Usage
 
 <img src="../../assets/JVM_memory_usage.jpg" width="300" alt="JVM Memory Usage">
 
+This metric shows the amount of Java Virtual Machine (JVM) memory used by the application.
+
 ### Mendix Connection Bus
 
 <img src="../../assets/connection_bus.jpg" width="300" alt="Connection Bus">
+
+This metric displays the status and performance of the Mendix Connection Bus.
 
 ### Microflow Metrics - Mendix Microflow Execution Frequency
 

@@ -14,12 +14,15 @@ Monitoring is essential for proactively identifying and addressing system issues
 
 <img src="../../assets/monitoring.jpg" width="500" alt="Monitoring">
 
- Select the period for which to display the metrics: `Today`, `24 hours`, `3 days`, or `30 days`.
+## Managing Monitoring tab
+
+ Select the period for which to display the metrics: "3H", "12H", "24H", or "48H".
 
 ## Available Metrics
+
 ### Mendix Runtime Requests (per second)
 
-<img src="../../assets/runtime_requests.jpg" width="500" alt="Runtime Requests">
+<img src="../../assets/runtime_requests.jpg" width="300" alt="Runtime Requests">
 
 ### CPU Usage
 

@@ -24,6 +24,7 @@ It captures information about activities such as:
 <img src="../assets/activities.jpg" width="500" alt="Overview tab">
 
 3. To access the full activities list, you have two options:
+
    a. Click on "All activities" in the right corner of the Overview tab.
    b. Navigate to the "Activity" tab.
 

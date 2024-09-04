@@ -14,6 +14,6 @@ This document provides instructions on how to offboard an application.
 5. Input the app name.
 6. Click "Delete app" to delete the application.
 
-<img src="../../assets/offboarding2.jpg" width="500" alt="Delete application confirmation pop-up">
+<img src="../../../assets/offboarding2.jpg" width="500" alt="Delete application confirmation pop-up">
 
 > **Note:** Ensure you want to permanently delete the application before confirming, as this action cannot be undone.

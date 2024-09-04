@@ -1,6 +1,6 @@
 # New Environment
 
-This documentation provides a step by step guide on how to create new environmnets.
+This documentation provides a step by step guide on how to create new environments.
 
 ## Creating new environment
 

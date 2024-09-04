@@ -14,7 +14,7 @@ This document provides instructions on how to access the Alerts tab and understa
 
 ## Understanding Alerts
 
-1. Once on the Alerts page:
+Once on the Alerts page:
     - Locate the "State" column
     - This column indicates if the application is running without problems or if any issues have occurred
 

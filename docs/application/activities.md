@@ -1,9 +1,5 @@
 # Activity 
 
-This document explains the Low-Ops Platform Activity and how to access it.
-
-## Overview
-
 Activity tab is designed for recording events and actions within the system for the purpose of:
 - Monitoring
 - Analyzing

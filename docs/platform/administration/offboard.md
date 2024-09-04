@@ -1,31 +1,34 @@
-This tutorial shows the steps on how to offboard an application.
+# Application Offboarding
 
-**To login to the Low-Ops portal, follow the steps below:**
+This document provides instructions on how to log in to the Low-Ops portal and offboard an application.
 
-- Navigate to the link: https://portal.trial.low-ops.com/
-- Click on the button `Log in with SSO`.
+## Logging in to Low-Ops Portal
 
-![](../../assets/login_platform.jpg)
+1. Navigate to the Low-Ops portal: https://portal.trial.low-ops.com/
+2. Click on the "Log in with SSO" button.
 
-- Enter your username/email and password.
+<img src="../../assets/login_platform.jpg" width="500" alt="Low-Ops portal login page">
 
-![](../../assets/login_credentials.jpg)
+3. Enter your username/email and password.
 
-- Click on the `Log in` button.
+<img src="../../assets/login_credentials.jpg" width="500" alt="SSO login credentials page">
 
-Once logged in, you will be redirected to the Low-Ops portal.
+4. Click on the "Log in" button.
+5. Once logged in, you will be redirected to the Low-Ops portal.
 
-![](../../assets/low_ops_portal.jpg)
+<img src="../../assets/low_ops_portal.jpg" width="500" alt="Low-Ops portal home page">
 
-## Offboard an Application
+## Offboarding an Application
 
-**To offboard an application, follow the steps below:**
+1. From the "Home" page, click on the application you want to offboard.
+2. Navigate to the "Settings" tab.
 
-- From the `Home` page, click on the application you want to offboard and navigate to the `Settings` tab. 
+<img src="../../assets/offboarding1.jpg" width="500" alt="Application settings page">
 
-![](../../assets/offboarding1.jpg)
+3. A pop-up window will appear.
+4. Input the app name.
+5. Click "Delete app" to delete the application.
 
-- A pop-up window will appear, input the app name and click `Delete app` to delete the application.
+<img src="../../assets/offboarding2.jpg" width="500" alt="Delete application confirmation pop-up">
 
-![](../../assets/offboarding2.jpg)
-
+> **Note:** Ensure you want to permanently delete the application before confirming, as this action cannot be undone.

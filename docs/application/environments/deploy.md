@@ -23,7 +23,6 @@ There are two ways to access the Deploy button:
    - You will be redirected to the Deployment page.
    - Locate the Start button on this page.
 
-
 ### Deploying the Application
 
 <img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">

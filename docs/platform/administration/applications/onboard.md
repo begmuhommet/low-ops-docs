@@ -11,7 +11,7 @@ This document provides instructions on how to onboard a new application.
 2. In the pop-up window, fill in the fields for "App name" and "App tenant".
 3. Click on the "Create app" button.
 
-<img src="../../assets/create_new_component.jpg" width="500" alt="Create new application pop-up">
+<img src="../../../assets/create_new_component.jpg" width="500" alt="Create new application pop-up">
 
 4. Wait for the application to be created. This process may take a few minutes.
 

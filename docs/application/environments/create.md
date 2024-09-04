@@ -22,4 +22,4 @@ This documentation provides a step by step guide on how to create new environmen
 
 5. Once the environment is created, it will appear in the list of environments. 
 
-> **_NOTE:_** To learn how to deploy an application in the created environment, follow the steps from the [Deploy tutorial](../deploy.md).
+> **_NOTE:_** To learn how to deploy an application in the created environment, follow the steps from the [Deploy tutorial](/deploy.md).

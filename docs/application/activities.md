@@ -1,7 +1,33 @@
-LowOps Platform Audit logging system is designed for recording events and actions within a system for the purpose of monitoring, analyzing, and ensuring accountability. It involves capturing information about activities such applications onboarding, application configuration changes, data backups and restore actions, application pipelines trigger on commits to repository and other significant events that occur within an platform or applications.
+# Audit Logging System
 
-**Component `Activities` section**
+This document explains the LowOps Platform Audit logging system and how to access application audit logs.
 
-Contains application Audit log events `Timestamp`, `Action`, `Actor`, `Environment`, `Status`.
+## Overview
 
-![](../../assets/activities.png)
+The LowOps Platform Audit logging system is designed for recording events and actions within the system for the purpose of:
+- Monitoring
+- Analyzing
+- Ensuring accountability
+
+It captures information about activities such as:
+- Application onboarding
+- Application configuration changes
+- Data backups and restore actions
+- Application pipeline triggers on commits to repository
+- Other significant events within the platform or applications
+
+## Accessing Application Audit Logs
+
+1. Navigate to the desired application in the LowOps portal.
+2. Locate the "Activities" section.
+
+<img src="../../assets/activities.png" width="500" alt="Activities section showing audit log events">
+
+3. In the Activities section, you will find the following information for each audit log event:
+   - Timestamp
+   - Action
+   - Actor
+   - Environment
+   - Status
+
+> **Note:** Regular review of audit logs can help maintain security, track changes, and ensure compliance with organizational policies.

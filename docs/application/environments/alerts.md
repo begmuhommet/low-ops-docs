@@ -1,16 +1,23 @@
-## Alerts
+# Alerts
 
-Alerts serve as automated notifications that promptly inform operators about potential issues or deviations from normal behavior, enabling rapid response and resolution.
+This document provides instructions on how to access the Alerts tab and understand the alert system for monitoring application health.
 
-**To access the `Alerts` tab, follow the steps below:**
+## Alerts tab
 
-- Navigate to the Environments tab and choose the environment from the list.
+1. Navigate to the Environments tab.
 
-![](../../assets/environments_overview.jpg)
+![Environments overview page](../../assets/environments_overview.jpg)
 
-- Once one of the environments is selected, a new dropdown navigation menu will appear. 
-- In the left-side menu, select `Alerts`.
+2. Choose the desired environment from the list.
+3. A new dropdown navigation menu will appear.
+4. In the left-side menu, select "Alerts".
 
-![](../../assets/alerts.jpg)
+## Understanding Alerts
 
-- The `State` column will notify if the application is running without problems or if any problems have occured.
+1. Once on the Alerts page:
+    - Locate the "State" column
+    - This column indicates if the application is running without problems or if any issues have occurred
+
+![Alerts tab](../../assets/alerts.jpg)
+
+> **Note:** Alerts serve as automated notifications that promptly inform operators about potential issues or deviations from normal behavior, enabling rapid response and resolution.

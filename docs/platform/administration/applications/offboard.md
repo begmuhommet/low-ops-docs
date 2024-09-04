@@ -7,7 +7,7 @@ This document provides instructions on how to offboard an application.
 1. From the "Home" page, select  the application you want to offboard.
 2. Navigate to the "Settings" tab.
 
-<img src="../../assets/offboarding1.jpg" width="500" alt="Application settings page">
+<img src="../../../assets/offboarding1.jpg" width="500" alt="Application settings page">
 
 3. Click the "Delete" button.
 4. A pop-up window will appear.

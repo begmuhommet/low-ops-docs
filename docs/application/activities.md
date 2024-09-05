@@ -1,11 +1,10 @@
 # Activity 
 
-Activity tab is designed for recording events and actions within the system for the purpose of:
-- Monitoring
-- Analyzing
-- Ensuring accountability
+Activity tab is designed for recording events and actions within the system for the purpose of Monitoring, Analyzing, and Ensuring accountability.
 
-It captures information about activities such as:
+## Overview 
+
+Activity tab captures information about activities such as:
 - Application onboarding
 - Application configuration changes
 - Data backups and restore actions

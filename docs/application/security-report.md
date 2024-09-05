@@ -14,7 +14,11 @@ The Security Severity feature helps identify and categorize potential security i
 
 <img src="../assets/security_severity.jpg" width="500" alt="Security Severity overview">
 
-4. In the Details view, you will see:
+4. Check the "Include image vulnerabilities" box to view security issues related to Docker images used in your application.
+
+<img src="../assets/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox">
+
+5. In the Details view, you will see:
    - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
    - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
 
@@ -28,4 +32,4 @@ The Security Severity feature helps identify and categorize potential security i
 - Medium Severity: These issues are important but may not require immediate action. They should be addressed in your next update cycle.
 - Low Severity: These issues pose minimal risk but should still be reviewed and addressed when convenient.
 
-> **Tip:** Always prioritize addressing high severity vulnerabilities to minimize potential security risks to your application.
+> **Tip:** Always prioritize addressing high severity vulnerabilities to minimize potential security risks to your application. Don't forget to review Docker image vulnerabilities by checking the "Include image vulnerabilities" box.

@@ -1,43 +1,50 @@
-## Build
+# Build Management
 
-*This section covers the build versions of your Mendix applications.The Build page allows you to view and manage these versions, providing insight into your application's development history and enabling you to track changes over time.*
+This document provides instructions on how to access and understand the Build tab, Security Severity feature, and Policies in your Mendix applications.
 
-**To access the `Build` tab, follow the steps below:**
+## Accessing the Build Tab
 
-- Navigate to the `Home` page and open one of the applications.
+1. Navigate to the Home page and open one of the applications.
 
-![](../../assets/home_page.jpg)
+<img src="../../assets/home_page.jpg" width="500" alt="Home page with application list">
 
-- Inside the app, navigate to the `Build` tab. 
+2. Inside the app, navigate to the "Build" tab.
 
-![](../../assets/build.jpg)
+<img src="../../assets/build.jpg" width="500" alt="Build tab in application">
+
+> **Note:** The Build page allows you to view and manage build versions, providing insight into your application's development history and enabling you to track changes over time.
 
 ## Security Severity
 
-*The Security Severity feature helps identify and categorize potential security issues within each build, allowing to address vulnerabilities promptly.*
+The Security Severity feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
 
-- By clicking the `Details`, you can access more comprehensive information about the security issues detected in a specific build.
+1. Click on "Details" to access more comprehensive information about the security issues detected in a specific build.
 
-![](../../assets/security_severity.jpg)
+<img src="../../assets/security_severity.jpg" width="500" alt="Security Severity overview">
 
-- When opening the Details, you will see a summary of security vulnerabilities categorized by severity (High, Medium, Low), along with a table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions.
+2. In the Details view, you will see:
+   - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
+   - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
 
-![](../../assets/security_severity_inside.jpg)
+<img src="../../assets/security_severity_inside.jpg" width="500" alt="Detailed Security Severity information">
 
 ## Policies
 
-*Policies are a set of pre-defined rules that validate Mendix app development against best practices.*
+Policies are a set of pre-defined rules that validate Mendix app development against best practices.
 
-- By clicking the `Details`, you can access more comprehensive information about the Policies.
+1. Click on "Details" to access more comprehensive information about the Policies.
 
-![](../../assets/policies.jpg)
+<img src="../../assets/policies.jpg" width="500" alt="Policies overview">
 
-- When opening the Details, you will see a summary of policy test results, including the total number of tests, passed tests, and failed tests.
+2. In the Details view, you will see a summary of policy test results, including:
+   - Total number of tests
+   - Number of passed tests
+   - Number of failed tests
 
-![](../../assets/policies_inside.jpg)
+<img src="../../assets/policies_inside.jpg" width="500" alt="Detailed Policies information">
 
-- To view details of the failed policies, simply click the arrow as shown in the screenshot.
+3. To view details of the failed policies, click the arrow as shown in the screenshot.
 
-![](../../assets/policies_failed.jpg)
+<img src="../../assets/policies_failed.jpg" width="500" alt="Failed Policies details">
 
-
+> **Note:** Regularly reviewing Security Severity and Policies can help maintain the quality and security of your Mendix applications.

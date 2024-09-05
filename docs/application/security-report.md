@@ -12,7 +12,7 @@ The Security Severity feature helps identify and categorize potential security i
 2. Locate the Security Severity section.
 3. Click on "Details" to access more comprehensive information about the security issues detected in a specific build.
 
-<img src="../../assets/security_severity.jpg" width="500" alt="Security Severity overview">
+<img src="../assets/security_severity.jpg" width="500" alt="Security Severity overview">
 
 4. In the Details view, you will see:
    - A summary of security vulnerabilities categorized by severity (High, Medium, Low)

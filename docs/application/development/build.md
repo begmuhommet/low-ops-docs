@@ -10,7 +10,7 @@ This document provides instructions on how to access and understand the "Build" 
 
 <img src="../../assets/build.jpg" width="500" alt="Build tab in application">
 
-> **_NOTE:_** Before restoring a backup, make sure to stop the environment in which the application is running. To stop the application, follow the steps from the [Actions tutorial](../../../../../actions.md).
+> **_NOTE:_** To learn more about the policies, refer to the [Code Quality tutorial](../code-quality.md).
 
 
 

@@ -1,6 +1,6 @@
 # Build Management
 
-This document provides instructions on how to access and understand the "Build" tab in your Mendix applications.
+This document provides instructions on how to access and understand the "Build" tab.
 
 ## Overview
 
@@ -41,7 +41,7 @@ To access additional options:
 
 2. In this menu, you can:
    - Deploy the application
-   > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../../deploy.md).
+   > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../deploy.md).
    - Modify the "Description"
    - Open the Security Severity details
    - Open the Policies details

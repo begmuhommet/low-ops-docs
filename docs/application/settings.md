@@ -9,7 +9,7 @@ Settings page allows to delete an application.
 
 <img src="../assets/offboarding1.jpg" width="500" alt="Application settings page">
 
-In order to delete an application, follow the steps below:
+## Deleting an applicaton
 
 1. Click the "Delete" button.
 2. A pop-up window will appear.

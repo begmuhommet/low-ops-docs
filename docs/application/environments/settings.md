@@ -42,7 +42,7 @@ To add a new variable:
   - Check the "Protected" checkbox (optional).
   - Click on the "Add" button.
 
-<img src="../../assets/environment_variables.jpg" width="500" alt="Add new environment variable">
+<img src="../../assets/environment_variables.jpg" width="400" alt="Add new environment variable">
 
 ### "Runtime Settings" Section
 
@@ -55,7 +55,7 @@ To add a new runtime settings:
   - Include the "Name" and "Value".
   - Click on the "Add" button.
 
-<img src="../../assets/runtime_settings.jpg" width="500" alt="Runtime settings">
+<img src="../../assets/runtime_settings.jpg" width="300" alt="Runtime settings">
 
 > **_NOTE:_** For the new setting values to take effect, re-deploy the application. Re-deploy the application by following the steps from the [Deploy Application Tutorial](deploy.md).
 

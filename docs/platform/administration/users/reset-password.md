@@ -21,5 +21,3 @@ This guide provides step-by-step instructions for resetting a user's password in
 6. In the pop-up window, enter the new password and click the "Reset" button.
 
 <img src="../../../assets/resetting_password.jpg" width="500" alt="Reset password confirmation pop-up">
-
-> **Note:** Ensure the new password meets the system's security requirements.

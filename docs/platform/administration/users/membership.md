@@ -1,6 +1,6 @@
 # Managing User Team Membership
 
-This guide provides step-by-step instructions for managing a user's team membership in the Administration section of the Low-Ops Portal.
+This guide provides step-by-step instructions for managing a user's team membership in the Administration section.
 
 ## Adding a User to a Team
 

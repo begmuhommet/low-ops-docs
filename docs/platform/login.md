@@ -11,12 +11,12 @@
 
 3. Enter your username/email and password.
 
-<img src="../../assets/login_credentials.jpg" width="500" alt="SSO login credentials page">
+<img src="../assets/login_credentials.jpg" width="500" alt="SSO login credentials page">
 
 4. Click on the "Log in" button.
 5. Once logged in, you will be redirected to the Low-Ops portal.
 
-<img src="../../assets/low_ops_portal.jpg" width="500" alt="Low-Ops portal home page">
+<img src="../assets/low_ops_portal.jpg" width="500" alt="Low-Ops portal home page">
 
 
 ## No account?

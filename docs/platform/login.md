@@ -7,7 +7,7 @@
 1. Navigate to the Low-Ops portal: https://portal.trial.low-ops.com/
 2. Click on the "Log in with SSO" button.
 
-<img src="../../assets/login_platform.jpg" width="500" alt="Low-Ops portal login page">
+<img src="../assets/login_platform.jpg" width="500" alt="Low-Ops portal login page">
 
 3. Enter your username/email and password.
 

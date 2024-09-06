@@ -11,18 +11,18 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 - Access to the Low-Ops portal
 - Mendix Studio Pro installed on your machine
 
-> **Note:** For instructions on logging into the Low-Ops portal, refer to the [Onboard New Application tutorial](../platform/administration/onboard-new-application.md).
+> **Note:** For instructions on logging into the Low-Ops portal, refer to the [Login tutorial](../platform/login.md).
 
 ## Creating a New Application Version
 
-### Step 1: Access Git Repository
+### Access Git Repository
 
 1. In the Low-Ops portal, navigate to the "Security" tab.
 2. Copy the Git repository URL.
 
 <img src="../assets/source.jpg" width="500" alt="Git repository URL in Security tab">
 
-### Step 2: Open Project in Mendix Studio Pro
+### Open Project in Mendix Studio Pro
 
 1. In Mendix Studio Pro, click the "Open Private App" button.
 
@@ -33,7 +33,7 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 
 <img src="../assets/insert_link.jpg" width="500" alt="Insert Git repository URL">
 
-### Step 3: Make Changes
+### Make Changes
 
 1. In the "MyFirstModule" menu, select "Home_Web" from the dropdown list.
 
@@ -44,7 +44,7 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 
 <img src="../assets/make_change.jpg" width="500" alt="Making changes in Mendix Studio Pro">
 
-### Step 4: Commit Changes
+### Commit Changes
 
 1. Click the "Commit" button, then "Save and Continue".
 
@@ -56,14 +56,14 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 
 ## Verifying Changes
 
-### Step 1: Check Activities
+### Check Activities
 
 1. In the Low-Ops platform, go to the "Activities" tab.
 2. Wait for the status to change to "Completed".
 
 <img src="../assets/activities.png" width="500" alt="Activities tab in Low-Ops platform">
 
-### Step 2: Access Test Environment
+### Access Test Environment
 
 1. Go to the "Environments" tab and open the Test environment.
 
@@ -73,7 +73,7 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 
 <img src="../assets/security.jpg" width="500" alt="Security tab in Test environment">
 
-### Step 3: Verify Changes in Mendix
+### Verify Changes in Mendix
 
 1. Use the provided URL and login credentials to access Mendix Studio Pro.
 2. After logging in, you'll be directed to the Mendix home page where you can observe your implemented changes.

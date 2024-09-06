@@ -23,15 +23,7 @@ This centralized administration area enables efficient user management and contr
 
 ### Creating a New User
 
-1. Navigate to the "Users" tab in the left side menu.
-
-<img src="../../assets/administration_users.jpg" width="500" alt="Users tab in Administration section">
-
-2. Click the "Create user" button.
-3. In the pop-up window, input new user information.
-4. Click the "Create" button.
-
-<img src="../../assets/create_user.jpg" width="500" alt="Create user pop-up window">
+> **_NOTE:_** To learn how to ceate a new user, follow the steps from the [Create tutorial](../create.md).
 
 ### Managing User Profiles
 

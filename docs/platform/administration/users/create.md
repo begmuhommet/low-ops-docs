@@ -1,6 +1,6 @@
 # Creating a New User
 
-This guide provides step-by-step instructions for creating a new user in the Low-Ops Portal.
+This guide provides step-by-step instructions for creating a new user in the Administration console.
 
 ## Steps to Create a New User
 

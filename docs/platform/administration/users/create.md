@@ -11,7 +11,7 @@ This guide provides step-by-step instructions for creating a new user in the Low
 2. In the left menu, select the "Users" tab.
 3. Click the "Create user" button in the upper left corner.
 
-<img src="../../assets/administration_user.jpg" width="500" alt="Users tab in Administration section">
+<img src="../../../assets/administration_user.jpg" width="500" alt="Users tab in Administration section">
 
 4. In the pop-up window, fill in the following information:
    - Username

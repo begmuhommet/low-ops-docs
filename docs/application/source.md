@@ -17,4 +17,4 @@ To create a new application version in the Low-Ops platform, Copy the Git reposi
 
 <img src="../assets/source_link.jpg" width="500" alt="Source page">
 
-> **Note:** For instructions on logging into Mendix Studio Pro, refer to the [Mendix tutorial](../mendix.md).
+> **Note:** For instructions on logging into Mendix Studio Pro, refer to the [Mendix tutorial](./getting-started/mendix.md).

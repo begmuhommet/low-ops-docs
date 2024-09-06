@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for creating a new user in the Low
 
 1. Navigate to the "Administration" tab in the upper left corner of the Low-Ops Portal.
 
-<img src="../../assets/administration.jpg" width="500" alt="Administration tab in Low-Ops Portal">
+<img src="../../../assets/administration.jpg" width="500" alt="Administration tab in Low-Ops Portal">
 
 2. In the left menu, select the "Users" tab.
 3. Click the "Create user" button in the upper left corner.

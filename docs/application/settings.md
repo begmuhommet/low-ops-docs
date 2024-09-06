@@ -9,4 +9,4 @@ Settings page allows to offboard an application.
 
 <img src="../assets/offboarding1.jpg" width="500" alt="Application settings page">
 
-> **_NOTE:_** To learn how to offboard an application, follow the steps from the [Offboard tutorial](../../../offboard.md).
+> **_NOTE:_** To learn how to offboard an application, follow the steps from the [Offboard tutorial](../platform/administration/applications/offboard.md).

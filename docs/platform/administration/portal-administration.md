@@ -23,7 +23,7 @@ This centralized administration area enables efficient user management and contr
 
 ### Creating a New User
 
-> **_NOTE:_** To learn how to ceate a new user, follow the steps from the [Create tutorial](/create.md).
+> **_NOTE:_** To learn how to ceate a new user, follow the steps from the [Create tutorial](../../create.md).
 
 ### Managing User Profiles
 

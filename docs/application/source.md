@@ -15,7 +15,7 @@ The source page contains the Git repository URL to use in the Mendix Studio Pro.
 
 <img src="../assets/source_link.jpg" width="500" alt="Git repository URL on Source page">
 
-> **Note:** For instructions on logging into Mendix Studio Pro, refer to the [Mendix tutorial](/getting-started/mendix.md).
+> **Note:** For instructions on logging into Mendix Studio Pro, refer to the [Mendix tutorial](../getting-started/mendix.md).
 
 ## Opening in Gitea
 

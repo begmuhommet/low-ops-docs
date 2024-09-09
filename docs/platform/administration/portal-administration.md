@@ -21,18 +21,15 @@ This centralized administration area enables efficient user management and contr
 
 ## Managing Users
 
-In the left side menu, click on "Users" tab.
+1. In the left menu, select the "Users" tab.
+2. Click on the user from the list to open their profile. 
+
+<img src="../../assets/user_profile.jpg" width="500" alt="User profile page">
 
 ### Creating a New User
 
 > **_NOTE:_** To learn how to ceate a new user, follow the steps from the [Create tutorial](./users/create.md).
 
-### Managing User Profiles
-
-1. In the left menu, select the "Users" tab.
-2. Click on the user from the list to open their profile. 
-
-<img src="../../assets/user_profile.jpg" width="500" alt="User profile page">
 
 ### Resetting User Password
 
@@ -44,7 +41,7 @@ In the left side menu, click on "Users" tab.
 
 ### Adding a User to a Team
 
-> **_NOTE:_** To learn how to add a user to a team, follow the steps from the [Membership tutorial](/membership.md)
+> **_NOTE:_** To learn how to add a user to a team, follow the steps from the [Membership tutorial](./membership.md)
 
 ## Managing Teams
 
@@ -53,6 +50,19 @@ To view all teams in your portal:
 1. Navigate to the "Teams" section in the left side menu.
 
 <img src="../../assets/teams.jpg" width="500" alt="Teams section">
+
+2. Click on the application from the list to view it. 
+3. From here you can Add new members by clickning the "Add members" button 
+
+<img src="../../assets/teams_member.jpg" width="500" alt="Teams Add Member">
+
+4. In the pop up window select users and click the "Add" button. 
+
+<img src="../../assets/add_members.jpg" width="500" alt="Teams Add Member">
+
+5. To remove members, click "Remove members". 
+
+<img src="../../assets/remove_members.jpg" width="500" alt="Teams Add Member">
 
 ## Managing Applications
 

@@ -95,11 +95,3 @@ Here you will see the full list of applications.
 <img src="../../assets/activity.jpg" width="500" alt="Activity section">
 
 In this section, you will see activity related to user creation, deletion, or team additions.
-
-## Best Practices
-
-- Regularly review user access and permissions.
-- Keep team memberships up-to-date.
-- Document any significant changes made in the administration section.
-- Periodically audit the activity log to ensure all actions are authorized.
-- Implement a process for requesting and approving new applications.

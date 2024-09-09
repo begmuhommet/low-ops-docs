@@ -8,7 +8,7 @@ This document provides instructions on how to request support in the Low-Ops Por
 
 2. Click the drop-down menu next to your user name.
 
-<img src="../../assets/support.jpg" width="500" alt="Support option in user menu">
+<img src="../assets/support.jpg" width="500" alt="Support option in user menu">
 
 3. In the drop-down menu, click on "Support".
 

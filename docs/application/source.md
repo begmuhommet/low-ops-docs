@@ -33,10 +33,10 @@ The Source page provides information about commits and branches:
 1. View the number of commits and branches at the top of the page.
 2. To see the list of branches:
 
-   - Locate the branch dropdown menu.
-   - Click the arrow to open the dropdown.
-   - View the list of branches.
-   - Select a branch to navigate to it.
+- Locate the branch dropdown menu.
+- Click the arrow to open the dropdown.
+- View the list of branches.
+- Select a branch to navigate to it.
 
 <img src="../assets/source_branch.jpg" width="500" alt="Branch list dropdown">
 

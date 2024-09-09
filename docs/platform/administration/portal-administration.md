@@ -21,32 +21,30 @@ This centralized administration area enables efficient user management and contr
 
 ## Managing Users
 
+In the left side menu, click on "Users" tab.
+
 ### Creating a New User
 
 > **_NOTE:_** To learn how to ceate a new user, follow the steps from the [Create tutorial](./users/create.md).
 
 ### Managing User Profiles
 
-1. Click on a user in the list to open their profile.
+1. In the left menu, select the "Users" tab.
+2. Click on the user from the list to open their profile. 
 
 <img src="../../assets/user_profile.jpg" width="500" alt="User profile page">
 
-2. From the user profile, you can:
-   - View personal information
-   - Manage credentials (including password deletion)
-   - Add user to teams
-   - Delete the user
+### Resetting User Password
+
+> **_NOTE:_** To learn how to reset user's password, follow the steps from the [Reset Password tutorial](./users/reset-password.md).
+
+### Deleting User 
+
+> **_NOTE:_** To learn how to delete user, follow the steps from the [Delete tutorial](./users/delete.md).
 
 ### Adding a User to a Team
 
-1. In the user profile, locate the "User teams" section.
-2. Click the "Join" button.
-3. In the pop-up window, select the team(s) you want to add the user to.
-4. Click "Confirm".
-
-<img src="../../assets/join_team.jpg" width="500" alt="Join team pop-up window">
-
-<img src="../../assets/user_profile_1.jpg" width="500" alt="User profile with team management">
+> **_NOTE:_** To learn how to add a user to a team, follow the steps from the [Membership tutorial](/membership.md)
 
 ## Managing Teams
 

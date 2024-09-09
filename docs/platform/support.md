@@ -19,7 +19,7 @@ This document provides instructions on how to request support in the Low-Ops Por
    - Provide a detailed "Description" of your issue or request
    - Click the "Send" button to submit your support ticket
 
-<img src="../../assets/support_form.jpg" width="500" alt="Support request form">
+<img src="../assets/support_form.jpg" width="500" alt="Support request form">
 
 > **Note:** Our support department will review your request and get back to you to resolve your issue or address your request.
 

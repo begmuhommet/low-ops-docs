@@ -1,6 +1,6 @@
 # Source Management
 
-This document provides instructions on how to access and use the "Source" tab, including connecting with Mendix Studio Pro and using Gitea.
+This document provides instructions on how to access and use the "Source" tab, including instructions on how to connect private projects in Version Control System (Gitea) using Mendix Studio Pro.
 
 ## Accessing the Source Tab
 
@@ -17,12 +17,12 @@ The source page contains the Git repository URL to use in the Mendix Studio Pro.
 
 > **Note:** For instructions on logging into Mendix Studio Pro, refer to the [Mendix tutorial](../getting-started/mendix.md).
 
-## Opening in Gitea
+## Opening project in the Version Control System (VCS)
 
-To open the project in Gitea:
+To open the project in the Version Control System:
 
 1. Click the "Open in Gitea" button.
-2. You will be redirected to the project in Gitea.
+2. You will be redirected to the project in the VCS.
 
 <img src="../assets/source_gitea.jpg" width="500" alt="Open in Gitea button">
 
@@ -32,10 +32,11 @@ The Source page provides information about commits and branches:
 
 1. View the number of commits and branches at the top of the page.
 2. To see the list of branches:
-   a. Locate the branch dropdown menu.
-   b. Click the arrow to open the dropdown.
-   c. View the list of branches.
-   d. Select a branch to navigate to it.
+
+   - Locate the branch dropdown menu.
+   - Click the arrow to open the dropdown.
+   - View the list of branches.
+   - Select a branch to navigate to it.
 
 <img src="../assets/source_branch.jpg" width="500" alt="Branch list dropdown">
 

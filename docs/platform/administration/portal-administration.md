@@ -77,14 +77,14 @@ Here you will see the full list of applications.
    - In the pop-up window, fill in the fields for "App name" and "App tenant".
    - Click on the "Create app" button.
 
-<img src="../../../assets/create_new_component.jpg" width="500" alt="Create new application pop-up">
+<img src="../../assets/create_new_component.jpg" width="500" alt="Create new application pop-up">
 
 3. To delete an app: 
    - Click on the three dots next to the app name.
    - Select "Delete app" from the dropdown menu.
    - In the pop-up window, confirm the deletion by clicking the "Delete app" button. 
 
-<img src="../../../assets/delete_app.jpg" width="500" alt="Delete app confirmation">
+<img src="../../assets/delete_app.jpg" width="500" alt="Delete app confirmation">
 
 > **Warning:** Deleting an application is irreversible. Ensure you want to permanently remove the application before confirming.
 
@@ -92,7 +92,7 @@ Here you will see the full list of applications.
 
 1. Navigate to the "Activity" section in the left side menu.
 
-<img src="../../../assets/activity.jpg" width="500" alt="Activity section">
+<img src="../../assets/activity.jpg" width="500" alt="Activity section">
 
 In this section, you will see activity related to user creation, deletion, or team additions.
 

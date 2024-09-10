@@ -62,7 +62,7 @@ web:
       git config --global user.name "robot"
       export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
       git clone git@github.com:cinaq/low-ops-docs.git
-      cp -r site/* low-ops-docs/
+      rsync -av --delete --exclude='.git' site/ low-ops-docs/
       cd low-ops-docs/
       git add .
       git commit -m "Publish $CI_COMMIT_SHORT_SHA"

@@ -10,13 +10,13 @@ This document provides instructions on how to deploy the application in differen
 
 There are two ways to access the Deploy button:
 
-<img src="../../assets/deploy_application.jpg" width="500" alt="Deploy button on Environments page">
+<img src="../../../assets/images/deploy_application.jpg" width="500" alt="Deploy button on Environments page">
 
 1. From the Environments page:  
    - Navigate to the Environments tab.
    - Click the Start button next to the specific environment.
 
-<img src="../../assets/deploy_application2.jpg" width="500" alt="Deploy button on Deployment page">
+<img src="../../../assets/images/deploy_application2.jpg" width="500" alt="Deploy button on Deployment page">
 
 2. From the Deployment page:
    - Open a specific environment.
@@ -25,7 +25,7 @@ There are two ways to access the Deploy button:
 
 ### Deploying the Application
 
-<img src="../../assets/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
+<img src="../../../assets/images/deploy_sidebar.jpg" width="500" alt="Deploy sidebar">
 
 1. Once the "Deploy" button is clicked, a side menu will pop. 
    - Select the package version.
@@ -36,13 +36,13 @@ There are two ways to access the Deploy button:
 
 2. The status will change to "Deploying". 
 
-<img src="../../assets/deploying.jpg" width="500" alt="Deploying status">
+<img src="../../../assets/images/deploying.jpg" width="500" alt="Deploying status">
 
 3. Wait for 1-2 minutes while the application initializes.
 4. The status will change to "Running" once the application is deployed.
 
-<img src="../../assets/running.jpg" width="500" alt="Running status">
+<img src="../../../assets/images/running.jpg" width="500" alt="Running status">
 
 5. Click the provided URL to verify that the application opens successfully.
 
-<img src="../../assets/open_app.jpg" width="500" alt="Open application">
+<img src="../../../assets/images/open_app.jpg" width="500" alt="Open application">

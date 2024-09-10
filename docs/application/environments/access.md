@@ -6,7 +6,7 @@ This document provides instructions on how to access the Access tab and retrieve
 
 1. Navigate to the Environments tab.
 
-<img src="../../assets/environments_overview.jpg" width="500" alt="Environments overview page">
+<img src="../../../assets/images/environments_overview.jpg" width="500" alt="Environments overview page">
 
 2. Choose the desired environment from the list.
 3. A new dropdown navigation menu will appear.
@@ -25,6 +25,6 @@ This document provides instructions on how to access the Access tab and retrieve
     - Copy the URL to access the page
     - Use the password to login
 
-<img src="../../assets/access.jpg" width="500" alt="Access tab">
+<img src="../../../assets/images/access.jpg" width="500" alt="Access tab">
 
 > **_NOTE:_** Ensure you keep these credentials secure and do not share them with unauthorized individuals.

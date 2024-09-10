@@ -6,7 +6,7 @@ This document provides instructions on how to view and modify environment settin
 
 1. Navigate to the "Environments" tab.
 
-<img src="../../assets/settings.jpg" width="500" alt="Settings overview">
+<img src="../../../assets/images/settings.jpg" width="500" alt="Settings overview">
 
 2. Choose the desired environment from the list.
 3. A new dropdown navigation menu will appear.
@@ -19,7 +19,7 @@ The Configuration page is divided into five sections: "Domain", "Scaling", "Envi
 
 This section consists of the "Application URL", and fields for "TLS Certificate Chain" and "TLS Private Key".
 
-<img src="../../assets/domain_settings.jpg" width="500" alt="Domain configuration settings">
+<img src="../../../assets/images/domain_settings.jpg" width="500" alt="Domain configuration settings">
 
 ### "Scaling" Section
 
@@ -29,7 +29,7 @@ To make changes:
   - Update the fields with desired changes.
   - Click the "Save changes" button.
 
-<img src="../../assets/scaling_settings.jpg" width="500" alt="Scaling settings">
+<img src="../../../assets/images/scaling_settings.jpg" width="500" alt="Scaling settings">
 
 ### "Environment Variables" Section
 
@@ -42,7 +42,7 @@ To add a new variable:
   - Check the "Protected" checkbox (optional).
   - Click on the "Add" button.
 
-<img src="../../assets/environment_variables.jpg" width="400" alt="Add new environment variable">
+<img src="../../../assets/images/environment_variables.jpg" width="400" alt="Add new environment variable">
 
 ### "Runtime Settings" Section
 
@@ -55,7 +55,7 @@ To add a new runtime settings:
   - Include the "Name" and "Value".
   - Click on the "Add" button.
 
-<img src="../../assets/runtime_settings.jpg" width="300" alt="Runtime settings">
+<img src="../../../assets/images/runtime_settings.jpg" width="300" alt="Runtime settings">
 
 > **_NOTE:_** For the new setting values to take effect, re-deploy the application. Re-deploy the application by following the steps from the [Deploy Application Tutorial](deploy.md).
 
@@ -65,6 +65,6 @@ This section allows you to delete the environment and everything it contains.
 
 To delete the environment, click  the red "Delete environment" button.
 
-<img src="../../assets/delete_environment.jpg" width="500" alt="Delete environment">
+<img src="../../../assets/images/delete_environment.jpg" width="500" alt="Delete environment">
 
 > **_WARNING:_** This action is irreversible. Ensure you want to delete the environment before proceeding.

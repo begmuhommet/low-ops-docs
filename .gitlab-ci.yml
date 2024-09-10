@@ -62,6 +62,8 @@ web:
       git config --global user.name "robot"
       export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
       git clone git@github.com:cinaq/low-ops-docs.git
+      apt update
+      apt install -y rsync
       rsync -av --delete --exclude='.git' site/ low-ops-docs/
       cd low-ops-docs/
       git add .

@@ -1,43 +1,57 @@
-## Build
+# Build Management
 
-*This section covers the build versions of your Mendix applications.The Build page allows you to view and manage these versions, providing insight into your application's development history and enabling you to track changes over time.*
+This document provides instructions on how to access and understand the "Build" tab.
 
-**To access the `Build` tab, follow the steps below:**
+## Overview
 
-- Navigate to the `Home` page and open one of the applications.
+The Build page allows you to view and manage build versions, providing insight into your application's development history and enabling you to track changes over time.
 
-![](../../assets/home_page.jpg)
+## Accessing the Build Tab
 
-- Inside the app, navigate to the `Build` tab. 
+1. From the "Home" page, select an application.
+2. Navigate to the "Build" tab.
 
-![](../../assets/build.jpg)
+<img src="../../assets/build.jpg" width="500" alt="Build tab in application">
 
-## Security Severity
+## Understanding Build Components
 
-*The Security Severity feature helps identify and categorize potential security issues within each build, allowing to address vulnerabilities promptly.*
+The Build tab contains several key components:
 
-- By clicking the `Details`, you can access more comprehensive information about the security issues detected in a specific build.
+1. Package: Indicates the package name
+2. Commit: Indicates the Commit name
+3. Security Severity: Identifies and categorizes potential security issues within each build
 
-![](../../assets/security_severity.jpg)
+> **Note:** To learn more about the security report, refer to the [Security Report tutorial](../security-report.md).
 
-- When opening the Details, you will see a summary of security vulnerabilities categorized by severity (High, Medium, Low), along with a table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions.
+4. Policies: Pre-defined rules that validate Mendix app development against best practices
 
-![](../../assets/security_severity_inside.jpg)
+> **Note:** To learn more about the policies, refer to the [Code Quality tutorial](../code-quality.md).
 
-## Policies
+5. Description: Indicates the name of the environment
+6. Mendix Version: Shows the version of Mendix used
+7. Created At: Date and time when the application was created
 
-*Policies are a set of pre-defined rules that validate Mendix app development against best practices.*
+## Making Adjustments
 
-- By clicking the `Details`, you can access more comprehensive information about the Policies.
+To access additional options:
 
-![](../../assets/policies.jpg)
+1. Click the arrow to open the menu
 
-- When opening the Details, you will see a summary of policy test results, including the total number of tests, passed tests, and failed tests.
+<img src="../../assets/build_inside.jpg" width="500" alt="Build tab options">
 
-![](../../assets/policies_inside.jpg)
+2. In this menu, you can:
+   - Deploy the application
+   > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../environments/deploy.md).
+   - Modify the "Description"
+   - Open the Security Severity details
+   - Open the Policies details
 
-- To view details of the failed policies, simply click the arrow as shown in the screenshot.
+### Modifying the Description
 
-![](../../assets/policies_failed.jpg)
+1. Click on "Description"
+2. In the pop-up window, adjust the description
+3. Click the save button
 
+<img src="../../assets/build_description.jpg" width="500" alt="Build description">
 
+> **Tip:** Regularly review and update build descriptions to maintain clear documentation of your application versions.

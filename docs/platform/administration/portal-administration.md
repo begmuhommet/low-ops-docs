@@ -1,48 +1,97 @@
+# Administration in Low-Ops Portal
 
-The Low-Ops Portal provides an administration interface for managing users, teams, and applications within the platform. From the Administration section, administrators can view all users in the portal, create new users, and manage application access. This centralized administration area allows for efficient user management and control over platform resources.
+This document provides an overview of the administration interface in the Low-Ops Portal and instructions on managing users, teams, and applications.
 
-Login to the Low-Ops portal and navigate to the `Administration` tab in the left upper corner. 
+## Overview
 
-![](../../assets/administration.jpg)
+The Administration section in the Low-Ops Portal allows administrators to:
+- View all users in the portal
+- Create new users
+- Manage application access
+- Oversee teams and applications
+- Monitor activity
 
-## Create New User
+This centralized administration area enables efficient user management and control over platform resources.
 
-- To create a new user, navigate to the `Users` tab in the left side menu.
+## Accessing the Administration Section
 
-![](../../assets/administration_users.jpg)
+1. Log in to the Low-Ops portal.
+2. Navigate to the "Administration" tab in the upper left corner.
 
-- Click the `Create user` button. In the pop up window, input new user information and click the `Create` button. 
+<img src="../../assets/administration.jpg" width="500" alt="Administration tab in Low-Ops Portal">
 
-![](../../assets/create_user.jpg)
+## Managing Users
 
-- Once the user is created, it will appear in the list of users. 
+1. In the left menu, select the "Users" tab.
+2. Click on a user from the list to open their profile. 
 
-- Click on the user to open the profile. 
+<img src="../../assets/user_profile.jpg" width="500" alt="User profile page">
 
-![](../../assets/user_profile.jpg)
+### Creating a New User
 
-From here you can view: 
-- Personal information
-- Credentials section with a possibility to delete the password. 
-- User teams section which allows to add user to different applications. To add a user to a new group, simply click the `Join` button. In the pop up window, put a check mark next to the group you want to add this user to. 
+> **Note:** To learn how to create a new user, follow the steps in the [Create User tutorial](./users/create.md).
 
-![](../../assets/join_team.jpg)
+### Resetting User Password
 
-- Delete user.  
+> **Note:** To learn how to reset a user's password, follow the steps in the [Reset Password tutorial](./users/reset-password.md).
 
+### Deleting User 
 
-![](../../assets/user_profile_1.jpg)
+> **Note:** To learn how to delete a user, follow the steps in the [Delete User tutorial](./users/delete.md).
 
-## Teams Section
+### Adding a User to a Team
 
-Here you can view all teams in your portal.
+> **Note:** To learn how to add a user to a team, follow the steps in the [Membership tutorial](./membership.md).
 
-![](../../assets/teams.jpg)
+## Managing Teams
 
-## Applications Section
+To view and manage teams in your portal:
 
-The `Applications` section allows to create new apps by clicking the `Create apps` button. 
-To delete the app, click on the three dots to open a `Delete app` button. 
+1. Navigate to the "Teams" section in the left side menu.
 
-![](../../assets/applications.jpg)
+<img src="../../assets/teams.jpg" width="500" alt="Teams section">
 
+2. Click on an application from the list to view it. 
+3. To add new members, click the "Add members" button.
+
+<img src="../../assets/teams_member.jpg" width="500" alt="Teams Add Member">
+
+4. In the pop-up window, select users and click the "Add" button. 
+
+<img src="../../assets/add_members.jpg" width="500" alt="Add Members pop-up">
+
+5. To remove members, click "Remove members". 
+
+<img src="../../assets/remove_members.jpg" width="500" alt="Remove Members option">
+
+## Managing Applications
+
+1. Navigate to the "Applications" section in the left side menu.
+
+<img src="../../assets/applications.jpg" width="500" alt="Applications section">
+
+Here you will see the full list of applications. 
+
+2. To create a new app:
+   - Click on the "Create apps" button in the upper right corner.
+   - In the pop-up window, fill in the fields for "App name" and "App tenant".
+   - Click on the "Create app" button.
+
+<img src="../../assets/create_new_component.jpg" width="500" alt="Create new application pop-up">
+
+3. To delete an app: 
+   - Click on the three dots next to the app name.
+   - Select "Delete app" from the dropdown menu.
+   - In the pop-up window, confirm the deletion by clicking the "Delete app" button. 
+
+<img src="../../assets/delete_app.jpg" width="500" alt="Delete app confirmation">
+
+> **Warning:** Deleting an application is irreversible. Ensure you want to permanently remove the application before confirming.
+
+## Monitoring Activity 
+
+1. Navigate to the "Activity" section in the left side menu.
+
+<img src="../../assets/activity.jpg" width="500" alt="Activity section">
+
+In this section, you will see activity related to user creation, deletion, or team additions.

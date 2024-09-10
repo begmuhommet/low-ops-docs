@@ -1,60 +1,86 @@
-# Mendix
+# Mendix Integration with Low-Ops Platform
 
-This documentation guides you through creating and deploying new application versions in the Low-Ops platform using Mendix Studio Pro. Mendix Studio Pro is a powerful low-code development environment that allows developers to rapidly build and customize enterprise-grade applications. The guide covers the entire process, from accessing the Git repository to making changes in Mendix Studio Pro and verifying them across different environments.
+This document guides you through creating and deploying new application versions in the Low-Ops platform using Mendix Studio Pro.
 
-## Low-Ops Portal
+## Overview
 
-> **_NOTE:_** To login to the Low-Ops portal, follow the steps from the [Onboard New Application tutorial](../platform/administration/onboard-new-application.md). 
+Mendix Studio Pro is a powerful low-code development environment that allows developers to rapidly build and customize enterprise-grade applications. This guide covers the entire process, from accessing the Git repository to making changes in Mendix Studio Pro and verifying them across different environments.
 
-## Open app overview
+## Prerequisites
 
-> **_NOTE:_** To navigate to the `Security` tab and access the Git repository URL, follow the steps from the [Security tutorial](../application/operations/security.md).
+- Access to the Low-Ops portal
+- Mendix Studio Pro installed on your machine
 
-## Make changes in Mendix Studio Pro
+> **Note:** For instructions on logging into the Low-Ops portal, refer to the [Login tutorial](../platform/login.md).
 
-To create a new application version in the Low-Ops platform, follow the steps below:
+## Creating a New Application Version
 
-- Inside the Low-Ops portal navigate to the `Security` tab and then copy the Git repository URL.
+### Access Git Repository
 
- ![](../assets/source.jpg)   
+1. In the Low-Ops portal, navigate to the "Security" tab.
+2. Copy the Git repository URL.
 
-- Within Mendix Studio Pro, locate and select the `Open Private App` button.
+<img src="../assets/source.jpg" width="500" alt="Git repository URL in Security tab">
 
-![](../assets/open_private_app.jpg)
+### Open Project in Mendix Studio Pro
 
-- In the pop-up window, paste the previously copied Git repository URL and click on the `Connect` button. Afterward, click on `OK` and wait for the program to load.
+1. In Mendix Studio Pro, click the "Open Private App" button.
 
-![](../assets/insert_link.jpg)
+<img src="../assets/open_private_app.jpg" width="500" alt="Open Private App button in Mendix Studio Pro">
 
-- Choose `Home_Web` from the dropdown list in the `MyFirstModule` menu.
+2. In the pop-up window, paste the Git repository URL.
+3. Click "Connect", then "OK".
 
-![](../assets/home_web.jpg)
+<img src="../assets/insert_link.jpg" width="500" alt="Insert Git repository URL">
 
-- Double-click on the item you wish to modify, make the desired changes, and then click on `OK`.
+### Make Changes
 
-![](../assets/make_change.jpg)
+1. In the "MyFirstModule" menu, select "Home_Web" from the dropdown list.
 
-- Select the `Commit` button, and then proceed by clicking on `Save and Continue`.
+<img src="../assets/home_web.jpg" width="500" alt="Selecting Home_Web in Mendix Studio Pro">
 
-![](../assets/commit.jpg)
+2. Double-click the item you wish to modify.
+3. Make your desired changes and click "OK".
 
-- In the pop-up window, specify the changes that were made, and then click on the `OK` button.
+<img src="../assets/make_change.jpg" width="500" alt="Making changes in Mendix Studio Pro">
 
-![](../assets/changes.jpg)
+### Commit Changes
 
-- Navigate back to the Low-Ops platform and access the `Activities` tab. After the changes are complete, you will observe the status transition to `Completed`.
+1. Click the "Commit" button, then "Save and Continue".
 
-![](../assets/activities.png)
+<img src="../assets/commit.jpg" width="500" alt="Committing changes in Mendix Studio Pro">
 
-- Proceed to the `Environments` tab, and open the `Test` (`Acceptance`, `Production`) environment.
+2. In the pop-up window, describe your changes and click "OK".
 
-![](../assets/environments_overview.jpg)
+<img src="../assets/changes.jpg" width="500" alt="Describing changes in commit message">
 
-- In the left-side menu that appears, go to `Security`.
+## Verifying Changes
 
-![](../assets/security.jpg)
+### Check Activity
 
-- Use the URL and login credentials to log in to `Mendix Studio Pro`.
-- After a successful login, you will be automatically directed to the Mendix home page, where you can observe the implemented changes.
+1. Navigate to the Activity tab 
 
-![](../assets/mendix_home.jpg)
+> **Note:** To learn how to access Activity tab, follow the steps from the [Activities tutorial](../application/activities.md)
+
+2. The status of the changes made will be "Completed".
+
+<img src="../assets/activities.jpg" width="500" alt="Activity tab">
+
+### Access Environment
+
+1. Go to the "Environments" tab and select an environment.
+
+<img src="../assets/environments_overview.jpg" width="500" alt="Environments overview in Low-Ops platform">
+
+2. In the left-side menu, go to "Access".
+
+> **Note:** To learn how to access "Access" tab, follow the steps from the [Acess tutorial](../application/environments/access.md)
+
+<img src="../assets/access.jpg" width="500" alt="Access tab">
+
+### Verify Changes in Mendix
+
+1. Use the provided URL and login credentials to access Mendix Studio Pro.
+2. After logging in, you'll be directed to the Mendix home page where you can observe your implemented changes.
+
+<img src="../assets/mendix_home.jpg" width="500" alt="Mendix home page with implemented changes">

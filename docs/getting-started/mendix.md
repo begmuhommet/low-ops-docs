@@ -56,22 +56,27 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 
 ## Verifying Changes
 
-### Check Activities
+### Check Activity
 
-1. In the Low-Ops platform, go to the "Activities" tab.
-2. Wait for the status to change to "Completed".
+1. Navigate to the Activity tab 
 
-<img src="../assets/activities.png" width="500" alt="Activities tab in Low-Ops platform">
+> **Note:** To learn how to access Activity tab, follow the steps from the [Activities tutorial](../application/activities.md)
 
-### Access Test Environment
+2. The status of the changes made will be "Completed".
 
-1. Go to the "Environments" tab and open the Test environment.
+<img src="../assets/activities.jpg" width="500" alt="Activity tab">
+
+### Access Environment
+
+1. Go to the "Environments" tab and select an environment.
 
 <img src="../assets/environments_overview.jpg" width="500" alt="Environments overview in Low-Ops platform">
 
-2. In the left-side menu, go to "Security".
+2. In the left-side menu, go to "Access".
 
-<img src="../assets/security.jpg" width="500" alt="Security tab in Test environment">
+> **Note:** To learn how to access "Access" tab, follow the steps from the [Acess tutorial](../application/environments/access.md)
+
+<img src="../assets/access.jpg" width="500" alt="Access tab">
 
 ### Verify Changes in Mendix
 
@@ -79,5 +84,3 @@ Mendix Studio Pro is a powerful low-code development environment that allows dev
 2. After logging in, you'll be directed to the Mendix home page where you can observe your implemented changes.
 
 <img src="../assets/mendix_home.jpg" width="500" alt="Mendix home page with implemented changes">
-
-> **Note:** Repeat the verification process for Acceptance and Production environments as needed.

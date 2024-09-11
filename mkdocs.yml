@@ -12,8 +12,8 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      primary: blue
-      accent: blue grey
+      primary: light blue
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -21,7 +21,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
+      primary: black
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -36,7 +36,7 @@ theme:
     - navigation.tracking
     # - navigation.sections
     #- navigation.expand
-    # - toc.integrate
+    #- toc.integrate
     - header.autohide
 extra:
   homepage: /

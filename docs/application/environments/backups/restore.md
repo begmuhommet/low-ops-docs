@@ -6,13 +6,13 @@ This document provides instructions on how to restore backups in different envir
 
 1. Navigate to the Environments tab.
 
-<img src="../../assets/images/environments_overview.jpg" width="500" alt="Environments overview page">
+<img src="../../../../../assets/images/environments_overview.jpg" width="500" alt="Environments overview page">
 
 2. Choose the desired environment from the list.
 3. A new dropdown navigation menu will appear.
 4. In the left-side menu, select "Backups".
 
-<img src="../../assets/images/access_backup.jpg" width="500" alt="Access backup page">
+<img src="../../../../../assets/images/access_backup.jpg" width="500" alt="Access backup page">
 
 ## Restoring a Backup
 
@@ -22,11 +22,11 @@ This document provides instructions on how to restore backups in different envir
 
 1. Click the "Restore" button in the right corner.
 
-<img src="../../assets/images/restore_backup.jpg" width="500" alt="Restore backup">
+<img src="../../../../../assets/images/restore_backup.jpg" width="500" alt="Restore backup">
 
 2. In the pop-up window include a comment and click the "Restore" button.
 
-<img src="../../assets/images/restore_popup.jpg" width="500" alt="Restore pop-up">
+<img src="../../../../../assets/images/restore_popup.jpg" width="500" alt="Restore pop-up">
 
 3. Once the backup is restored, it will appear in the list of backups.
 
@@ -34,12 +34,12 @@ This document provides instructions on how to restore backups in different envir
 
 1. Click on the arrow drop down list next to the "Restore" button in the right corner.
 
-<img src="../../assets/images/restore_arrow.jpg" width="500" alt="Restore arrow">
+<img src="../../../../../assets/images/restore_arrow.jpg" width="500" alt="Restore arrow">
 
 2. Select the environment from the drop down list to which you want to restore the backup. 
 
 3. In the pop-up window include a comment and click the "Restore" button.
 
-<img src="../../assets/images/restore_env.jpg" width="500" alt="Restore environment">
+<img src="../../../../../assets/images/restore_env.jpg" width="500" alt="Restore environment">
 
 4. Once the backup is restored, it will appear in the list of backups.

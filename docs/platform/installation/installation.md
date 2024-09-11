@@ -33,7 +33,7 @@ There are 2 different platform `foundation_type`s:
 
 High level AWS diagram:
 
-![LowOps AWS](../../assets/aws-foundation.png)
+![LowOps AWS](../../assets/images/aws-foundation.png)
 
 ## Platform Configuration
 

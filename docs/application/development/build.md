@@ -25,7 +25,7 @@ The Build tab contains several key components:
 
 4. Policies: Pre-defined rules that validate Mendix app development against best practices
 
-> **Note:** To learn more about the policies, refer to the [Code Quality tutorial](../code-quality.md).
+> **Note:** To learn more about the policies, refer to the [Code Quality tutorial](code-quality.md).
 
 5. Description: Indicates the name of the environment
 6. Mendix Version: Shows the version of Mendix used

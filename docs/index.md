@@ -1,4 +1,4 @@
-# Introduction
+# Home
 
 This is the documentation for Low-Ops platform. Here you will find information about how to use the platform. It describes the platform's architecture and how to use it as a developer and as an operator.
 

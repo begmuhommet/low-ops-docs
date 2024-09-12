@@ -19,7 +19,7 @@ The Build tab contains several key components:
 1. Package: Indicates the package name
 2. Commit: Indicates the Commit name
 3. Security Severity: Identifies and categorizes potential security issues within each build
-> **Note:** To learn more about the security report, refer to the [Security Report tutorial](security-report.md).
+ > **Note:** To learn more about the security report, refer to the [Security Report tutorial](security-report.md).
 4. Policies: Pre-defined rules that validate Mendix app development against best practices
 > **Note:** To learn more about the policies, refer to the [Code Quality tutorial](code-quality.md).
 5. Description: Indicates the name of the environment
@@ -32,6 +32,7 @@ To access additional options:
 
 1. Click the arrow to open the menu
  <img src="../../../assets/images/build_inside.jpg" width="500" alt="Build tab options">
+
 2. In this menu, you can:
    - Deploy the application
    > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../environments/deploy.md).

@@ -1,4 +1,4 @@
-# Introduction
+# Login
 Low-Ops is an Internal Developer Platform (IDP) designed specifically for private cloud and on-premise deployments. It transforms your existing infrastructure into a secure, powerful platform for Mendix app development and deployment, all within your controlled environment.
 
 ## Logging in to Low-Ops Portal

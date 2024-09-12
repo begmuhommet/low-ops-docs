@@ -1,4 +1,4 @@
-# Resetting a User's Password
+# Reset Password
 
 This guide provides step-by-step instructions for resetting a user's password in the Administration section.
 

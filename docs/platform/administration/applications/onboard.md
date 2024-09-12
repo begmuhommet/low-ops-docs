@@ -1,4 +1,4 @@
-# Application Onboarding
+# Onboard
 
 This document provides instructions on how to onboard a new application.
 

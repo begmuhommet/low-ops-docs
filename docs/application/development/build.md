@@ -1,4 +1,4 @@
-# Build Management
+# Build
 
 This document provides instructions on how to access and understand the "Build" tab.
 

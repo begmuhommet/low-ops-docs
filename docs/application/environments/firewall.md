@@ -1,4 +1,4 @@
-# Firewall Management
+# Firewall 
 
 Firewall (IP filtering) serves to restrict application access to specific IP address or IP ranges. 
 

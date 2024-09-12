@@ -1,4 +1,4 @@
-# Mendix Studio Pro
+# Mendix
 
 This document guides you through creating and deploying new application versions in the Low-Ops platform using Mendix Studio Pro.
 

@@ -1,4 +1,4 @@
-# Import a backup
+# Import 
 
 This document provides instructions on how to import backups in different environments. Backups serve as essential data insurance, ensuring quick recovery and minimal operational overhead in the face of data loss or system failures.
 

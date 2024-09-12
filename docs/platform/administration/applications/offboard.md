@@ -1,4 +1,4 @@
-# Application Offboarding
+# Offboard
 
 This document provides instructions on how to offboard an application.
 

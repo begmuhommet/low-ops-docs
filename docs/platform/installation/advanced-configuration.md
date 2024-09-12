@@ -1,4 +1,4 @@
-# Advanced configuration
+# Advanced Configuration
 
 ## Add Low-Ops Repository
 

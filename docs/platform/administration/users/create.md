@@ -1,4 +1,4 @@
-# Creating a New User
+# Create
 
 This guide provides step-by-step instructions for creating a new user in the Administration console.
 

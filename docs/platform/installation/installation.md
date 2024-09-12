@@ -1,4 +1,4 @@
-# Low Ops Platform installation
+# Installation
 
 ## Prerequisites
 

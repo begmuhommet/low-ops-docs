@@ -1,4 +1,4 @@
-# Monitoring Guide
+# Monitoring
 
 Monitoring is essential for proactively identifying and addressing system issues, ensuring performance, and maintaining overall reliability with minimal manual intervention.
 

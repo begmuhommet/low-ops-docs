@@ -1,4 +1,4 @@
-# Application Management Guide
+# Actions
 
 This document provides instructions on how to Start, Stop, and Restart the application in different environments.
 

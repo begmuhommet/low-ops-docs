@@ -1,4 +1,4 @@
-# Low-Ops Platform Light Version
+# Light Version
 
 The light version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for testing purposes.
 

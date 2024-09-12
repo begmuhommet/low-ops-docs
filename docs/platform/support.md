@@ -1,4 +1,4 @@
-# Requesting Support
+# Support
 
 This document provides instructions on how to request support in the Low-Ops Portal.
 

@@ -1,4 +1,4 @@
-# Source Management
+# Source 
 
 This document provides instructions on how to access and use the "Source" tab, including instructions on how to connect private projects in Version Control System (Gitea) using Mendix Studio Pro.
 

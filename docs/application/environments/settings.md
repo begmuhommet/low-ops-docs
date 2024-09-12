@@ -1,4 +1,4 @@
-# Setting Configuration Guide
+# Settings
 
 This document provides instructions on how to view and modify environment settings.
 

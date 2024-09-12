@@ -1,4 +1,4 @@
-# Logs Management
+# Logs
 
 Logs capture information about events, activities, errors, or status changes; they serve as a valuable resource for troubleshooting, debugging, and monitoring system performance.
 

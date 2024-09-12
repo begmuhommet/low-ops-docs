@@ -1,4 +1,4 @@
-# Team Memberships
+# Membership
 
 This guide provides step-by-step instructions for managing a user's team membership in the Administration section.
 

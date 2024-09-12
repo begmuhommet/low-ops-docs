@@ -1,4 +1,4 @@
-# Application Deployment Guide
+# Deploy
 
 This document provides instructions on how to deploy the application in different environments.
 

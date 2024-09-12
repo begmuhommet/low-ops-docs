@@ -1,4 +1,4 @@
-# Deleting a User
+# Delete
 
 This guide provides step-by-step instructions for deleting a user in the Administration section.
 

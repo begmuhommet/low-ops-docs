@@ -1,4 +1,4 @@
-# Architecture
+# High Level Architecture
 
 Low-Ops is made up of a set of components that work together to provide a platform for running applications. 
 

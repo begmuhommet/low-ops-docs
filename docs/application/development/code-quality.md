@@ -14,9 +14,9 @@ Policies are a set of pre-defined rules that validate Mendix app development aga
    <img src="../../../assets/images/policies.jpg" width="500" alt="Policies overview">
 4. In the Details view, you will see a summary of policy test results, including:
 
-   - Total number of tests
-   - Number of passed tests
-   - Number of failed tests
+      - Total number of tests
+      - Number of passed tests
+      - Number of failed tests
 
    <img src="../../../assets/images/policies_inside.jpg" width="500" alt="Detailed Policies information">
    

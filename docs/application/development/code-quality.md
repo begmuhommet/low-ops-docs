@@ -22,7 +22,6 @@ Policies are a set of pre-defined rules that validate Mendix app development aga
    <img src="../../../assets/images/policies_inside.jpg" width="500" alt="Detailed Policies information">
 
 5. To view details of the failed policies, click the arrow as shown in the screenshot.
-
    <img src="../../../assets/images/policies_failed.jpg" width="500" alt="Failed Policies details">
 
 ## Interpreting Policy Results

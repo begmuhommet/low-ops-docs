@@ -10,6 +10,7 @@ The Build page allows you to view and manage build versions, providing insight i
 
 1. From the "Home" page, select an application.
 2. Navigate to the "Build" tab.
+
  <img src="../../../assets/images/build.jpg" width="500" alt="Build tab in application">
 
 ## Understanding Build Components
@@ -34,6 +35,7 @@ To access additional options:
  <img src="../../../assets/images/build_inside.jpg" width="500" alt="Build tab options">
 
 2. In this menu, you can:
+
    - Deploy the application
    > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../environments/deploy.md).
    - Modify the "Description"
@@ -45,6 +47,7 @@ To access additional options:
 1. Click on "Description"
 2. In the pop-up window, adjust the description
 3. Click the save button
+
  <img src="../../../assets/images/build_description.jpg" width="500" alt="Build description">
 
 > **Tip:** Regularly review and update build descriptions to maintain clear documentation of your application versions.

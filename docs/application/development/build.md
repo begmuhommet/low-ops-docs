@@ -36,11 +36,11 @@ To access additional options:
 
 2. In this menu, you can:
 
-   - Deploy the application
+      - Deploy the application
    > **Note:** To learn how to deploy an application, refer to the [Deploy tutorial](../environments/deploy.md).
-   - Modify the "Description"
-   - Open the Security Severity details
-   - Open the Policies details
+      - Modify the "Description"
+      - Open the Security Severity details
+      - Open the Policies details
 
 ### Modifying the Description
 

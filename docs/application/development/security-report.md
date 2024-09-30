@@ -22,9 +22,8 @@ The Security Severity feature helps identify and categorize potential security i
     <img src="../../../assets/images/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox" />
     
 5. In the Details view, you will see:
-
-  - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
-  - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
+    - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
+    - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
 
 > **Note:** Regularly reviewing Security Severity information can help maintain the security of your Mendix applications and address potential vulnerabilities in a timely manner.
 

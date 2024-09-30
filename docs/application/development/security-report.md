@@ -13,13 +13,12 @@ The Security Severity feature helps identify and categorize potential security i
 2. Locate the Security Severity section.
 <img src="../../../assets/images/security_severity.jpg" width="500" alt="Security Severity overview" />
 3. Click on "Details" to access more comprehensive information about the security issues detected in a specific build.
-
   <img src="../../../assets/images/security_severity_inside.jpg" width="500" alt="Detailed Security Severity information" />
 4. Check the "Include image vulnerabilities" box to view security issues related to Docker images used in your application.
-    <img src="../../../assets/images/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox" />
+  <img src="../../../assets/images/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox" />
 5. In the Details view, you will see:
-      - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
-      - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
+  - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
+  - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
 
 > **Note:** Regularly reviewing Security Severity information can help maintain the security of your Mendix applications and address potential vulnerabilities in a timely manner.
 

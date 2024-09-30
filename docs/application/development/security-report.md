@@ -9,7 +9,6 @@ The Security Severity feature helps identify and categorize potential security i
 ## Accessing Security Severity Details
 
 1. Navigate to the Build tab of your application.
-    ![](../../../assets/images/security_severity.jpg)
 2. Locate the Security Severity section.
     
     <img src="../../../assets/images/security_severity.jpg" width="500" alt="Security Severity overview" />

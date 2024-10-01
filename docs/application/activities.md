@@ -15,22 +15,22 @@ Activity tab captures information about activities such as:
 
 1. Select an application from the list and click on it to open.  
 2. You will be redirected to the "Overview" tab which shows the recent activity. 
-
-<img src="../../assets/images/activities.jpg" width="500" alt="Overview tab">
-
+    
+    <img src="../../assets/images/activities.jpg" width="500" alt="Overview tab">
+    
 3. To access the full activities list, you have two options:
 
    a. Click on "All activities" in the right corner of the Overview tab.
    
    b. Navigate to the "Activity" tab.
-
-<img src="../../assets/images/activity_list.jpg" width="500" alt="Activity list">
-
+    
+    <img src="../../assets/images/activity_list.jpg" width="500" alt="Activity list">
+    
 4. In the Activities section, you will find the following information for each audit log event:
-   - Status
-   - Description
-   - Triggered by
-   - Environment
-   - Date and time
+    - Status
+    - Description
+    - Triggered by
+    - Environment
+    - Date and time
 
 > **Note:** Regular review of Activity can help maintain security, track changes, and ensure compliance with organizational policies.

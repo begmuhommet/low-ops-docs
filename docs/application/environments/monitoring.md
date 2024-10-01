@@ -5,7 +5,7 @@ Monitoring is essential for proactively identifying and addressing system issues
 ## Access Monitoring Tab
 
    1. Navigate to the "Environments" tab.
-    
+        
     <img src="../../../assets/images/environments_overview.jpg" width="500" alt="Environments Overview">
     
    2. Choose the desired environment from the list.

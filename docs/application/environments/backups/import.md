@@ -5,7 +5,7 @@ This document provides instructions on how to import backups in different enviro
 ## Accessing the Backups tab
 
 1. Navigate to the Environments tab.
-    
+        
     <img src="../../../../../assets/images/environments_overview.jpg" width="500" alt="Environments overview page">
     
 2. Choose the desired environment from the list.
@@ -19,7 +19,7 @@ This document provides instructions on how to import backups in different enviro
 1. Click the "Import locally" button in the right corner.
     
     <img src="../../../../../assets/images/import_backup.jpg" width="500" alt="Import backup">
-    
+       
 2. Upload the backup file from your device in the tar.gz archive format.
 3. In the pop-up window include a comment and click the "Import" button. 
     

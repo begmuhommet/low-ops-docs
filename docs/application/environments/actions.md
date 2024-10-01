@@ -11,15 +11,17 @@ There are two ways to access the Start button:
     <img src="../../../assets/images/start_application.jpg" width="500" alt="Start button on Environments page">
     
 1. From the Environments page:  
-   - Navigate to the Environments tab.
-   - Click the Start button next to the specific environment.
+    
+    - Navigate to the Environments tab.
+    - Click the Start button next to the specific environment.
     
      <img src="../../../assets/images/start_application2.jpg" width="500" alt="Start button on Deployment page">
     
 2. From the Deployment page:
-   - Open a specific environment.
-   - You will be redirected to the Deployment page.
-   - Locate the Start button on this page.
+    
+    - Open a specific environment.
+    - You will be redirected to the Deployment page.
+    - Locate the Start button on this page.
 
 ### Starting the application 
 
@@ -43,15 +45,17 @@ The Stop button is located in the same place as the Start button. There are two 
     <img src="../../../assets/images/stop_application.jpg" width="500" alt="Stop button on Environments page">
     
 1. From the Environments page:
-   - Navigate to the Environments tab.
-   - Click the Stop button next to the specific environment.
+    
+    - Navigate to the Environments tab.
+    - Click the Stop button next to the specific environment.
     
     <img src="../../../assets/images/stop_application2.jpg" width="500" alt="Stop button on Deployment page">
     
 2. From the Deployment page:
-   - Open a specific environment.
-   - You will be redirected to the Deployment page.
-   - Locate the Stop button on this page.
+    
+    - Open a specific environment.
+    - You will be redirected to the Deployment page.
+    - Locate the Stop button on this page.
 
 ### Stopping the Application
 
@@ -76,15 +80,17 @@ The Restart button is located in the same place as the Start and Stop button. Th
     <img src="../../../assets/images/restart_application.jpg" width="500" alt="Restart button on Environments page">
     
 1. From the Environments page:
-   - Navigate to the Environments tab.
-   - Click the arrow to access drop down menu and see access the Restart button.
+    
+    - Navigate to the Environments tab.
+    - Click the arrow to access drop down menu and see access the Restart button.
     
     <img src="../../../assets/images/restart_application2.jpg" width="500" alt="Restart button on Deployment page">
     
 2. From the Deployment page:
-   - Open a specific environment.
-   - You will be redirected to the Deployment page.
-   - Locate the Restart button by clicking the arrow and accessing the Restart button.
+    
+    - Open a specific environment.
+    - You will be redirected to the Deployment page.
+    - Locate the Restart button by clicking the arrow and accessing the Restart button.
 
 ## Restarting the Application
 

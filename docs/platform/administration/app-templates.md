@@ -15,36 +15,55 @@ Currently, only the `tar.gz` format is supported for app templates. Follow these
 
 ## Uploading App Template
 
-1. In the administration section, navigate to the 'App template' tab
-2. Click the 'Upload template' button
+1. Access the Administration section.
+2. Navigate to the 'App template' tab in the left sidebar.
+3. Click the 'Upload template' button located at the top right of the page.
     
     <img src="../../../assets/images/app_templates.jpg" width="500" alt="App templates">
 
-3. In the pop up window, indicate name, type, description (if any), click on the 'Select file'and click the 'Upload' button. 
+4. In the pop-up window that appears:
+    
+    - Enter a name for the template
+    - Select the appropriate type from the dropdown menu
+    - Provide a description (optional, but recommended)
+    - Click 'Select file' to choose your template file
+    - Click the 'Upload' button to finalize the process
     
     <img src="../../../assets/images/upload_template.jpg" width="500" alt="Upload template">
     
-Note: Only .tar.gz files are supported
+> **Important:** Only `.tar.gz` files are supported for upload. Ensure your template is in the correct format before attempting to upload.
 
 ## Modifying App Template
 
-1. Click on the three dot menu
-2. Click the 'Edit' button
+1. Locate the template you wish to modify in the list.
+2. Click on the three-dot menu (⋮) to the right of the template name.
+3. Select 'Edit' from the dropdown menu.
     
     <img src="../../../assets/images/edit_template.jpg" width="500" alt="Edit template">
 
-3. In the pop up window apply the needed changes and click the 'Save' button
+4. In the pop-up window, you can modify the following:
+    
+    - Template name
+    - Type
+    - Description
+
+5. After making your changes, click the 'Save' button to apply the modifications.
     
     <img src="../../../assets/images/save_edit.jpg" width="500" alt="Save edit">
 
+> **Note:** The file itself cannot be changed through this interface. If you need to update the template file, you'll need to upload a new template.
+
 ## Deleting App Template
 
-1. click the three dot menu
-2. Click on the 'Delete' button
+1. Find the template you want to delete in the list.
+2. Click on the three-dot menu (⋮) next to the template name.
+3. Choose 'Delete' from the dropdown options.
     
     <img src="../../../assets/images/delete_template.jpg" width="500" alt="Delete template">
 
-3. In the pop up window, confirm the delete by clicking the 'Delete' button
+4. A confirmation pop-up will appear. Review the template details to ensure you're deleting the correct one.
+5. Click the 'Delete' button in the pop-up to confirm and permanently remove the template.
     
     <img src="../../../assets/images/deleting_template.jpg" width="500" alt="Deleting template">
 
+> **Warning:** Deleting a template is irreversible. Make sure you want to proceed before confirming the deletion.

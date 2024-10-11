@@ -20,12 +20,12 @@ The Pipelines tab contains several key components:
 1. Run: Indicates the package name
 2. Commit: Indicates the Commit name
 3. Jobs: Identifies and categorizes potential security issues within each build
-a. Build
-b. Vulerabilities
+    a. Build
+    b. Vulerabilities
 > **Note:** To learn more about the security report, refer to the [Security Report tutorial](security-report.md).
-c. Best practices: Pre-defined rules that validate Mendix app development against best practices
+    c. Best practices: Pre-defined rules that validate Mendix app development against best practices
 > **Note:** To learn more about the policies, refer to the [Code Quality tutorial](code-quality.md).
-d. Unit Testing
+    d. Unit Testing
 4. Description: Indicates the name of the environment
 5. Created At: Date and time when the application was created
 

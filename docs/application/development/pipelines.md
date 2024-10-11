@@ -24,8 +24,11 @@ The Pipelines tab contains several key components:
     a. Build
     b. Vulerabilities
 > **Note:** To learn more about the security report, refer to the [Security Report tutorial](security-report.md).
+    
     c. Best practices: Pre-defined rules that validate Mendix app development against best practices
+
 > **Note:** To learn more about the policies, refer to the [Code Quality tutorial](code-quality.md).
+    
     d. Unit Testing
     
 4. Description: Indicates the name of the environment

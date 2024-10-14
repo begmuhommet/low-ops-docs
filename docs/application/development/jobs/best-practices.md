@@ -1,4 +1,4 @@
-# Code Quality
+# Best Practices
 
 This document provides an overview of the Policies feature in your Mendix applications and instructions on how to access and interpret policy test results.
 

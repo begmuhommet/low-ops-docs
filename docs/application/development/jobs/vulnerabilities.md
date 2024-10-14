@@ -1,4 +1,4 @@
-# Security Report
+# Vulnerabiliies
 
 This document provides an overview of the Security Severity feature in your Mendix applications and instructions on how to access detailed security information.
 

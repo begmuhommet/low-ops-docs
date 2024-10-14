@@ -1,37 +1,24 @@
 # Vulnerabiliies
 
-This document provides an overview of the Vulnerabiliies feature in your Mendix applications and instructions on how to access detailed security information.
-
-## Understanding Vulnerabiliies
-
 The Vulnerabiliies feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
 
-## Accessing Vulnerabiliies Details
+## Accessing Vulnerabiliies 
 
 1. Navigate to the Pipelines tab of your application.
-2. Locate the Jobs section and click on them to open a new menu
-3. Navigate to the 'Vulnerabilities' tab
+2. Locate the Jobs section and click on it.
     
     <img src="../../../../assets/images/jobs.jpg" width="500" alt="Jobs overview" />
-    
-3. Click on "Details" to access more comprehensive information about the security issues detected in a specific build.
+
+3. In the new menu that opens up, navigate to the 'Vulnerabilities' tab to access more comprehensive information about the security issues detected in a specific build.
     
     <img src="../../../../assets/images/vulnerabilities.jpg" width="500" alt="Vulnerabilities" />
     
 4. Check the "Include image vulnerabilities" box to view security issues related to Docker images used in your application.
     
-    <img src="../../../../assets/images/security_severity_image.jpg" width="500" alt="Include image vulnerabilities checkbox" />
+    <img src="../../../../../assets/images/vulnerabilities_image.jpg" width="500" alt="Include image vulnerabilities checkbox" />
     
-5. In the Details view, you will see:
-    - A summary of security vulnerabilities categorized by severity (High, Medium, Low)
+5. Interpreting Security Severity Information:
+    - A summary of security vulnerabilities categorized by severity (Critical, High, Medium, Low)
     - A table listing specific vulnerabilities including their CVE IDs, affected packages, versions, and fixed versions
 
-> **Note:** Regularly reviewing Security Severity information can help maintain the security of your Mendix applications and address potential vulnerabilities in a timely manner.
-
-## Interpreting Security Severity Information
-
-- High Severity: These issues require immediate attention and should be addressed as soon as possible.
-- Medium Severity: These issues are important but may not require immediate action. They should be addressed in your next update cycle.
-- Low Severity: These issues pose minimal risk but should still be reviewed and addressed when convenient.
-
-> **Tip:** Always prioritize addressing high severity vulnerabilities to minimize potential security risks to your application. Don't forget to review Docker image vulnerabilities by checking the "Include image vulnerabilities" box.
+> **Note:** Regularly reviewing Vulnerabilities information can help maintain the security of your Mendix applications and address potential issues in a timely manner.

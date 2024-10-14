@@ -2,7 +2,7 @@
 
 The Vulnerabiliies feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
 
-## Accessing Vulnerabiliies 
+## Accessing Vulnerabilities 
 
 1. Navigate to the Pipelines tab of your application.
 2. Locate the Jobs section and click on it.

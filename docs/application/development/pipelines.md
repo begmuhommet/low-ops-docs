@@ -22,7 +22,7 @@ The Pipelines tab contains several key components:
 3. Jobs: Identifies and categorizes potential security issues within each build
     
     a. Build
-    
+
     b. Vulerabilities
 > **Note:** To learn more about the security report, refer to the [Security Report tutorial](security-report.md).
     

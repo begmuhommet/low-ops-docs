@@ -1,4 +1,4 @@
-# Vulnerabiliies
+# Vulnerabilities
 
 The Vulnerabiliies feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
 

@@ -1,26 +1,23 @@
 # Best Practices
 
-This document provides an overview of the Policies feature in your Mendix applications and instructions on how to access and interpret policy test results.
-
-## Understanding Policies
-
 Policies are a set of pre-defined rules that validate Mendix app development against best practices. They help ensure code quality and adherence to development standards.
 
 ## Accessing Policy Details
 
-1. Navigate to the Build tab of your application.
-2. Locate the Policies section.
-3. Click on "Details" to access more comprehensive information about the Policies.
+1. Navigate to the Pipelines tab of your application.
+2. Locate the Jobs section and click on it.
     
-    <img src="../../../assets/images/policies.jpg" width="500" alt="Policies overview">
+    <img src="../../../../assets/images/jobs.jpg" width="500" alt="Jobs overview">
    
-4. In the Details view, you will see a summary of policy test results, including:
+3. In the new menu that opens up, navigate to the 'Best practices' tab you will see a summary of policy test results, including:
 
-      - Total number of tests
+      - Total number of policies
+      - Total number of test suites
       - Number of passed tests
       - Number of failed tests
+      - Number of skipped tests
     
-    <img src="../../../assets/images/policies_inside.jpg" width="500" alt="Detailed Policies information">
+    <img src="../../../../assets/images/best_practices.jpg" width="500" alt="Detailed Policies information">
     
 5. To view details of the failed policies, click the arrow as shown in the screenshot.
     

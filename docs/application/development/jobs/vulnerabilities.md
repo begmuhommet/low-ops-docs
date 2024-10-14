@@ -1,17 +1,18 @@
 # Vulnerabiliies
 
-This document provides an overview of the Security Severity feature in your Mendix applications and instructions on how to access detailed security information.
+This document provides an overview of the Vulnerabiliies feature in your Mendix applications and instructions on how to access detailed security information.
 
-## Understanding Security Severity
+## Understanding Vulnerabiliies
 
-The Security Severity feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
+The Vulnerabiliies feature helps identify and categorize potential security issues within each build, allowing you to address vulnerabilities promptly.
 
-## Accessing Security Severity Details
+## Accessing Vulnerabiliies Details
 
-1. Navigate to the Build tab of your application.
-2. Locate the Security Severity section.
+1. Navigate to the Pipelines tab of your application.
+2. Locate the Jobs section and click on them to open a new menu
+3. Navigate to the 'Vulnerabilities' tab
     
-    <img src="../../../assets/images/security_severity.jpg" width="500" alt="Security Severity overview" />
+    <img src="../../../../assets/images/jobs.jpg" width="500" alt="Jobs overview" />
     
 3. Click on "Details" to access more comprehensive information about the security issues detected in a specific build.
     

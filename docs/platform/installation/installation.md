@@ -46,23 +46,24 @@ For more advanced configuration and options descriptions follow this [page](./ad
 ```
 lowops:
   image:
-    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v3-1-2
+    containerImage: registry.gitlab.com/cinaq/low-ops-platform/ansible-roles:0-ci-v3-2-4
 
   # LowOps platfrom configuration variables
   config:
     common:
       base_domain: ci.cinaq.com
       platform_state: present
-      foundation_type: generic
+      foundation_type: generic # supported values: generic, aws, azure
       email_domain: cinaq.com
       general_client_name: CINAQ
-      platform_version: v3.1.2
-    ingress:
-  # Update certificate and key params values to base64 encoded strings 
-      default_ssl_cert: base64-encoded-cert-string
-      default_ssl_key: base64-encoded-key-string
+      platform_version: v3.2.4
+      low_ops_env: prod # set low-ops-env variable can't be ci,dev,trial - reserved
+      enable_letsencrypt: "true"
+      enable_nginx_proxy_protocol: "true" # required when running on generic foundation with haproxy
+
 ```
 
+Refer to the [Advanced Configuration](./advanced-configuration.md) page for more details on the available configuration options.
 
 ## Platform Installation
 

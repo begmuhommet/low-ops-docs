@@ -30,13 +30,13 @@ helm show values lowops/lowops
 | lowops.config.common.platform_private_registry_user | LowOps platform private container registry user.   | "lowops-user" |
 | lowops.config.common.platform_private_registry_token| LowOps platform private container registry token. Request from `CINAQ Team`  | "" |
 | lowops.config.common.platform_state                 | LowOps platform state. Options: `present` - will run platform install or upgrade, `absent` - will destroy all platform components. | "present"|
-| lowops.config.common.foundation_type                | LowOps platform foundation type. Options `generic`, `aws` - must be set if running on AWS EKS.                 | "generic" |
+| lowops.config.common.foundation_type                | LowOps platform foundation type. Options `generic`, `aws` - when running AWS EKS. `azure` - when running Azure AKS. | "generic" |
 | lowops.config.common.aws_default_region             | LowOps platform AWS Default region. When `common.foundation_type` is set to `aws` | "eu-central-1" |
 | lowops.config.common.email_domain                   | LowOps platform email domain. Example: `Google workspace domain`          | "cinaq.com" |
 | lowops.config.common.general_client_name            | LowOps platform general client name                                       | "CINAQ" |
 | lowops.config.common.shared_db_type                 | LowOps platform shared database type for running applications. Options: `platform_pg`, `platform_cnpg`, `rds_mysql`, `rds_postgres` | "platform_cnpg" |
-| lowops.config.common.low_ops_env                    | LowOps platform environment name. You can use any string except reserved values: `ci`, `trial`. Example `prod`, `stage`           | "dev" |
-| lowops.config.common.platform_version               | LowOps platform version. Example: `v2.0.0.`                                | "" |
+| lowops.config.common.low_ops_env                    | LowOps platform environment name. You can use any string except reserved values: `dev`, `ci`, `trial`. Example `prod`, `stage`           | "dev" |
+| lowops.config.common.platform_version               | LowOps platform version. Example: `v3.2.4.`                                | "" |
 | lowops.config.common.mendix_license_id              | LowOps platform mendix license ID                                          | "" |
 | lowops.config.common.mendix_license_key             | LowOps platform mendix license key                                         | "" |
 | lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp3` storage class. | "csi-hostpath-sc" |

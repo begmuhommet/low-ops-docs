@@ -19,7 +19,7 @@ helm show values lowops/lowops
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
-|lowops.image.containerImage                          |LowOps platform deploy image name. Request from `CINAQ Team` | "" |
+|lowops.image.containerImage                          | LowOps platform deploy image name. Request from `CINAQ Team` | "" |
 
 ### Common Parameters
 
@@ -34,12 +34,12 @@ helm show values lowops/lowops
 | lowops.config.common.aws_default_region             | LowOps platform AWS Default region. When `common.foundation_type` is set to `aws` | "eu-central-1" |
 | lowops.config.common.email_domain                   | LowOps platform email domain. Example: `Google workspace domain`          | "cinaq.com" |
 | lowops.config.common.general_client_name            | LowOps platform general client name                                       | "CINAQ" |
-| lowops.config.common.shared_db_type                 | LowOps platform shared database type for running applications. Options: `platform_pg`, `platform_cnpg`, `rds_mysql`, `rds_postgres` | "platform_cnpg" |
+| lowops.config.common.shared_db_type                 | LowOps platform shared database type for running applications. Options: `platform_cnpg`, `rds_mysql`, `rds_postgres`, `azure_postgres` | "platform_cnpg" |
 | lowops.config.common.low_ops_env                    | LowOps platform environment name. You can use any string except reserved values: `dev`, `ci`, `trial`. Example `prod`, `stage`           | "dev" |
-| lowops.config.common.platform_version               | LowOps platform version. Example: `v3.2.4.`                                | "" |
+| lowops.config.common.platform_version               | LowOps platform version. Example: `v3.2.5`.                                | "" |
 | lowops.config.common.mendix_license_id              | LowOps platform mendix license ID                                          | "" |
 | lowops.config.common.mendix_license_key             | LowOps platform mendix license key                                         | "" |
-| lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp3` storage class. | "csi-hostpath-sc" |
+| lowops.config.common.storage_class                  | LowOps platform storage class. When `foundation_type` == `aws`, use `gp3` storage class. When `foundation_type` == `azure`, use `default` storage class. | "csi-hostpath-sc" |
 
 ### Cloudnative Postgres Service (CNPG)
 

@@ -59,3 +59,21 @@ This metric displays Mendix Microflow Execution Frequency (per second).
 This metric displays Mendix Microflow Execution Time.
     
     <img src="../../../assets/images/execution_time.jpg" width="300" alt="Execution Time">
+
+### Datadog support
+
+Datadog is a monitoring service that allows you to monitor your application performance and troubleshoot issues.
+
+Set following environment variables in the Mendix application environment:
+
+```
+DD_API_KEY=api-key
+DD_HOSTNAME=hostname
+DD_SITE=datadoghq.eu
+```
+
+Where:
+
+- `DD_API_KEY` is the API key for the Datadog service.
+- `DD_HOSTNAME` is the hostname of the Mendix application.
+- `DD_SITE` is the Datadog site to use.

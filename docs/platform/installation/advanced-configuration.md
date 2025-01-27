@@ -103,6 +103,7 @@ Kanister - backup solution for the private application platform. Used for `backu
 
 | Name     | Description | Default Value |
 | -------- | -------     | ------- |
+| lowops.config.kanister.retention_days | Kanister backup retention days. Default value is `0` which means that backups will be stored indefinitely. | "0" |
 
 ### Keycloak service
 

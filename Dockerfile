@@ -22,6 +22,8 @@ WORKDIR /usr/share/nginx/html
 # Copy the MkDocs static files into the container
 COPY --from=builder /app/site/ .
 
+COPY LICENSE .
+COPY EULA .
 # Expose port 80 for serving the MkDocs site
 EXPOSE 80
 

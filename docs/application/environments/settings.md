@@ -57,6 +57,13 @@ To add a new runtime settings:
     
     <img src="../../../assets/images/runtime_settings.jpg" width="300" alt="Runtime settings">
     
+In case you need to override the `ApplicationRootUrl`, you can do so by adding the following environment variable (See Environment Variables section for more information):
+
+- Name: `MXRUNTIME_ApplicationRootUrl`
+- Value: `your-custom-domain.com`
+
+By default, the `ApplicationRootUrl` runtime setting is set to the application domain name.
+
 > **_NOTE:_** For the new setting values to take effect, re-deploy the application. Re-deploy the application by following the steps from the [Deploy Application Tutorial](deploy.md).
 
 ### Delete this environment Section

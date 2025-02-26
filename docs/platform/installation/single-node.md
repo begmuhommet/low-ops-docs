@@ -25,7 +25,7 @@ To avoid this issue you have to set docker registry credentials, you can request
 
 Then run the following command to start the installation:
 ```
-curl -s https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh | bash
+curl -sO https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh && chmod +x install-platform.sh && ./install-platform.sh
 ```
 You will be asked to provide the following information:
 - Platform base domain (must be resolvable from the internet to your server public IP address)

@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for preparing, uploading, modifyin
 
 Currently, only the `tar.gz` format is supported for app templates. Follow these steps to prepare your template:
 
-1. Navigate to the folder containing your application template.
+1. Navigate to the folder containing your application template (make sure it's not git repository, remove all `.git` files or folders).
 2. Run the following command to compress the application:
 
     ```bash

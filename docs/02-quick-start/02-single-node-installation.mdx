@@ -1,0 +1,51 @@
+---
+title: Single Node Installation
+---
+
+The single node version of the Low-Ops platform allows you to run Low-Ops on a single Linux machine, making it ideal for
+testing purposes.
+
+:::warning
+
+The single node version of the Low-Ops platform is not recommended for production environments.
+
+:::
+
+:::info Prerequisites
+
+The minimum system resources required to run the single node version of the Low-Ops platform are:
+
+- 16 GB RAM
+- 8-core CPU
+- 500 GB Disk
+
+:::
+
+### Foundation
+
+This setup requires a single Linux (Ubuntu 22.04) server with internet access. DNS resolution is required for the
+platform to work. Create a DNS record for the platform base domain.
+
+### Installation
+
+To start Platform installation process make sure you have ssh access to the server with sudo privileges. During platform
+installation all OCI images will be pulled from the docker hub public repositories. But the image pull limit could be
+reached. To avoid this issue you have to set docker registry credentials, you can request temporary credentials from the
+Low-Ops team.
+
+`From your VM terminal, run the following command to start the installation:`
+
+```bash
+curl -sO https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh
+  && chmod +x install-platform.sh
+  && ./install-platform.sh
+
+```
+
+You will be asked to provide the following information:
+
+- Platform base domain (must be resolvable from the internet to your server public IP address)
+- Docker registry credentials
+- Platform admin credentials
+
+After installation is complete, you can access the platform portal UI at `https://portal.your.domain.com`

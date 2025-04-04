@@ -1,0 +1,81 @@
+---
+title: Monitoring
+---
+
+### Overview
+
+Monitoring is essential for proactively identifying and addressing system `issues`, ensuring `performance`, and
+maintaining overall `reliability` with minimal manual intervention.
+
+In Low-Ops each `environment` is monitored seperately and you can access the monitoring by navigating to
+`Application > Environment > Monitoring`. Select the period for which to display the metrics, default is last `3 hours`.
+
+<img src="/img/monitoring.png" alt="Monitoring" className="image" />
+
+For more metrics you can go to the Grafana dashboard by clicking on the `Open in Grafana` button.
+
+### Available Metrics
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs>
+  <TabItem value="generic" label="Generic Application" default>
+    **CPU Usage**
+
+    _Displays the percentage of CPU utilization by the application._
+
+    **Memory Usage**
+
+    _Displays the amount of memory used by the application._
+
+  </TabItem>
+  <TabItem value="mendix" label="Mendix Application">
+
+    **CPU Usage**
+
+    _Displays the percentage of CPU utilization by the application._
+
+
+    **Memory Usage**
+
+    _Displays the amount of memory used by the application._
+
+    **Mendix Runtime Requests (per second)**
+
+    _Displays the number of requests processed by the Mendix Runtime per second._
+
+    **JVM Memory Usage**
+
+    _Displays the number of Mendix Runtime sessions._
+
+    **Mendix Connection Bus**
+
+    _Displays the status and performance of the Mendix Connection Bus._
+
+    **Microflow Metrics - Mendix Microflow Execution Frequency**
+
+    _Displays Mendix Microflow Execution Frequency (per second)._
+
+    **Microflow Metrics - Mendix Microflow Execution Time**
+
+    _Displays Mendix Microflow Execution Time.._
+
+  </TabItem>
+</Tabs>
+
+### Datadog Support
+
+`Datadog` is a monitoring service that allows you to monitor your application performance and troubleshoot issues.
+
+Set following environment variables in the application environment
+
+```bash
+  DD_API_KEY=api-key
+  DD_HOSTNAME=hostname
+  DD_SITE=datadoghq.eu
+```
+
+- `DD_HOSTNAME` is the hostname of the Mendix application.
+- `DD_API_KEY` is the API key for the Datadog service.
+- `DD_SITE` is the Datadog site to use.

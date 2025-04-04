@@ -1,0 +1,37 @@
+---
+title: Firewall
+---
+
+import ReDeployLink from "@site/src/components/ReDeployLink";
+
+### Overview
+
+Firewall (IP filtering) serves to `restrict` or `allow` application access to specific IP address or IP ranges.
+
+You can access the firewall by navigating to `Application > Environment > Firewall`.
+
+<img src="/img/firewall-screen.png" alt="Firewall screen" className="image" />
+
+### Create Firewall Rule
+
+You can create a firewall rule by clicking on the `Create Rule` button. Give it a path and select the action `Allow` or
+`Deny`, add the IP address or IP range, and give it a description (optional). IP address or IP range can be added by
+clicking on the `Enter` button.
+
+<img src="/img/create-firewall-dialog.png" alt="Create Firewall Dialog" className="image" />
+
+### Edit Firewall Rule
+
+You can edit firewall rule byt clicking on the `Edit` button on the firewalls table action menu.
+
+<img src="/img/firewall-action-menu.png" alt="Edit Firewall Rule" className="image" />
+
+### Delete Firewall Rule
+
+You can delete a firewall rule by clicking on the `Delete` button on the firewalls action table menu.
+
+:::warning
+
+To apply new firewall rules, you need to Re-Deploy the environment. <ReDeployLink />
+
+:::

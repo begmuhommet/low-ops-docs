@@ -88,3 +88,12 @@ html {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.redeploy-link {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: var(--ifm-color-primary);
+  }
+}

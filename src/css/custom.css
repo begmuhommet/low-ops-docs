@@ -37,6 +37,10 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .footer--dark {
   background-color: #161b26;
 }
@@ -75,4 +79,21 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.my-h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.redeploy-link {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: var(--ifm-color-primary);
+  }
 }

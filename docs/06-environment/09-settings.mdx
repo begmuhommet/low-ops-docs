@@ -1,0 +1,77 @@
+---
+title: Settings
+---
+
+import ReDeployLink from "@site/src/components/ReDeployLink";
+
+### Overview
+
+The environment settings are used to configure environment specific settings like domain, scaling, and delete
+environment.
+
+You can access the environment settings by navigating to `Application > Environment > Settings`.
+
+### Domain Settings
+
+The domain settings are used to configure the domain for the environment. Environment url is generated with
+`[app name]-[environment name].[domain]`. If you want to add your own url, you can edit the url field. Also you can
+provide `TLS Certificate` and `TLS Certificate Key` to enable TLS for your environment.
+
+<img src="/img/domain-settings.png" alt="Domain Settings" className="image" />
+
+:::warning
+
+For the new domain setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+
+:::
+
+### Scaling Settings
+
+The scaling settings are used to configure the scaling for the environment. You can change `CPU`, `Memory`, and
+`Replica` for the environment.
+
+<img src="/img/scaling-settings.png" alt="Scaling Settings" className="image" />
+
+:::warning
+
+For the new scaling setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+
+:::
+
+### Delete Environment
+
+The delete environment settings are used to delete the current environment.
+
+<img src="/img/delete-environment.png" alt="Delete Environment" className="image" />
+
+:::warning
+
+Deleting an environment will delete all the resources associated with the environment. This action is not reversible.
+
+:::
+
+### Mendix Access Settings
+
+In this section you can retrieve login credentials for Mendix Studio Pro and Mendix Debugger.
+
+<img src="/img/mendix-access.png" alt="Mendix Access" className="image" />
+
+### Mendix Runtime Settings
+
+The mendix runtime settings are used to configure the mendix runtime for the environment. You can `add`, `edit`, and
+`delete` the mendix runtime settings.
+
+<img src="/img/mendix-runtime.png" alt="Mendix Runtime" className="image" />
+
+:::note
+
+In case you need to override the application url you can do so by adding the `ApplicationRootUrl` with your own url as
+`VALUE`.
+
+:::
+
+:::warning
+
+For the new runtime setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+
+:::

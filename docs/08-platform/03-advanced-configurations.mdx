@@ -1,0 +1,170 @@
+---
+title: Advanced Configurations
+---
+
+### Image Parameters
+
+| Name                        | Description                                                  | Default Value |
+| --------------------------- | ------------------------------------------------------------ | ------------- |
+| lowops.image.containerImage | LowOps platform deploy image name. Request from `CINAQ Team` | ""            |
+
+### Common Parameters
+
+| Name                                                 | Description                                                                                                                                              | Default Value         |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| lowops.config.common.base_domain                     | LowOps platform base domain. Example: `example.low-ops.com`                                                                                              | "ci.cinaq.com"        |
+| lowops.config.common.private_registry_url            | LowOps platform private container registry url                                                                                                           | "registry.gitlab.com" |
+| lowops.config.common.platform_private_registry_user  | LowOps platform private container registry user.                                                                                                         | "lowops-user"         |
+| lowops.config.common.platform_private_registry_token | LowOps platform private container registry token. Request from `CINAQ Team`                                                                              | ""                    |
+| lowops.config.common.platform_state                  | LowOps platform state. Options: `present` - will run platform install or upgrade, `absent` - will destroy all platform components.                       | "present"             |
+| lowops.config.common.foundation_type                 | LowOps platform foundation type. Options `generic`, `aws` - when running AWS EKS. `azure` - when running Azure AKS.                                      | "generic"             |
+| lowops.config.common.aws_default_region              | LowOps platform AWS Default region. When `common.foundation_type` is set to `aws`                                                                        | "eu-central-1"        |
+| lowops.config.common.email_domain                    | LowOps platform email domain. Example: `Google workspace domain`                                                                                         | "cinaq.com"           |
+| lowops.config.common.general_client_name             | LowOps platform general client name                                                                                                                      | "CINAQ"               |
+| lowops.config.common.shared_db_type                  | LowOps platform shared database type for running applications. Options: `platform_cnpg`, `rds_mysql`, `rds_postgres`, `azure_postgres`                   | "platform_cnpg"       |
+| lowops.config.common.low_ops_env                     | LowOps platform environment name. You can use any string except reserved values: `dev`, `ci`, `trial`. Example `prod`, `stage`                           | "dev"                 |
+| lowops.config.common.platform_version                | LowOps platform version. Example: `v3.2.5`.                                                                                                              | ""                    |
+| lowops.config.common.mendix_license_id               | LowOps platform mendix license ID                                                                                                                        | ""                    |
+| lowops.config.common.mendix_license_key              | LowOps platform mendix license key                                                                                                                       | ""                    |
+| lowops.config.common.storage_class                   | LowOps platform storage class. When `foundation_type` == `aws`, use `gp3` storage class. When `foundation_type` == `azure`, use `default` storage class. | "csi-hostpath-sc"     |
+
+### Cloudnative Postgres Service (CNPG)
+
+Low-Ops platform runs Postgres as primary database service. By default 3 CNPG clusters are added: `services` - to store
+data for platform core services, `audit` - to store data for retraced audit system events, and `apps` - to store
+application data
+
+| Name                                       | Description                                                                                                                                    | Default Value |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| lowops.config.cnpg.services_admin_user     | LowOps platform Cloudnative Postgres `services` cluster admin user name                                                                        | "postgres"    |
+| lowops.config.cnpg.services_admin_password | LowOps platform Cloudnative Postgres `services` cluster admin user password (if empty will be autogenerated and stored as secret in namespace) | ""            |
+| lowops.config.cnpg.services_volume_size    | LowOps platform Cloudnative Postgres `services` cluster volume size                                                                            | "20Gi"        |
+| lowops.config.cnpg.apps_admin_user         | LowOps platform Cloudnative Postgres `apps` cluster admin user name                                                                            | "postgres"    |
+| lowops.config.cnpg.apps_admin_password     | LowOps platform Cloudnative Postgres `apps` cluster admin user password (if empty will be autogenerated and stored as secret in namespace)     | ""            |
+| lowops.config.cnpg.apps_volume_size        | LowOps platform Cloudnative Postgres `apps` cluster volume size                                                                                | "20Gi"        |
+| lowops.config.cnpg.audit_admin_user        | LowOps platform Cloudnative Postgres `audit` cluster admin user name                                                                           | "postgres"    |
+| lowops.config.cnpg.audit_admin_password    | LowOps platform Cloudnative Postgres `audit` cluster admin user password (if empty will be autogenerated and stored as secret in namespace)    | ""            |
+| lowops.config.cnpg.apps_volume_size        | LowOps platform Cloudnative Postgres `audit` cluster volume size                                                                               | "20Gi"        |
+
+### Etcd service
+
+| Name                           | Description                              | Default Value |
+| ------------------------------ | ---------------------------------------- | ------------- |
+| lowops.config.etcd.volume_size | LowOps platform etcd service volume size | "8Gi"         |
+
+### Gitea service
+
+Gitea, a private source code version control system, is used to store application source code, platform configuration
+states, etc.
+
+| Name                               | Description                                                                                                        | Default Value     |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| lowops.config.gitea.admin_username | LowOps platform gitea service admin user name                                                                      | "gitea_admin"     |
+| lowops.config.gitea.admin_password | LowOps platform gitea service admin user password (if empty will be autogenerated and stored as kubernetes secret) | ""                |
+| lowops.config.gitea.admin_email    | LowOps platform gitea service admin user email                                                                     | "admin@cinaq.com" |
+| lowops.config.gitea.storage_size   | LowOps platform gitea service volume/storage size                                                                  | "50Gi"            |
+
+### Harbor service
+
+Harbor - private registry service is used to store platform and application container images
+
+| Name                                            | Description                                               | Default Value |
+| ----------------------------------------------- | --------------------------------------------------------- | ------------- |
+| lowops.config.harbor.admin_password             | LowOps platform harbor service admin user password        | ""            |
+| lowops.config.harbor.registry_volume_size       | LowOps platform harbor service registry volume size       | "10Gi"        |
+| lowops.config.harbor.chartmuseum_volume_size    | LowOps platform harbor service chartmuseum volume size    | "10Gi"        |
+| lowops.config.harbor.joblog_volume_size         | LowOps platform harbor service joblog volume size         | "2Gi"         |
+| lowops.config.harbor.scandataexport_volume_size | LowOps platform harbor service scandataexport volume size | "2Gi"         |
+| lowops.config.harbor.trivy_volume_size          | LowOps platform harbor service trivy volume size          | "2Gi"         |
+
+### Ingress Parameters
+
+When `foundation_type` is set to `aws`, the ELB (Elastic Load Balancer) is managed through the Ingress Controller
+platform component. To configure the load balancer to use static IP addresses (typically, you need 2 for a production
+environment in 2 different subnets/azs, which could be useful for DNS configuration), update the
+`lowops.config.ingress.aws_elb_eipalloc` helm values variable as a comma-separated string of AWS EIP allocation IDs.
+
+| Name                                   | Description                                                                                                  | Default Value |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------- |
+| lowops.config.ingress.default_ssl_cert | LowOps platform ssl certificate. Base64 encoded string                                                       | ""            |
+| lowops.config.ingress.default_ssl_key  | LowOps platform ssl key. Base64 encoded string                                                               | ""            |
+| lowops.config.ingress.aws_elb_eipalloc | LowOps platform aws elb allocation. CSV of aws ip allocations. When `common.foundation_type` is set to `aws` | ""            |
+
+### Kanister service
+
+Kanister - backup solution for the private application platform. Used for `backup`, `restore`, and `import` application
+data actions.
+
+| Name                                  | Description                                                                                                | Default Value |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------- |
+| lowops.config.kanister.retention_days | Kanister backup retention days. Default value is `0` which means that backups will be stored indefinitely. | "0"           |
+
+### Keycloak service
+
+Keycloak - Low-Ops platform Single Sing-On and OIDC client for Low-Ops Private application platform
+
+| Name                                  | Description                                                                                           | Default Value     |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------- |
+| lowops.config.keycloak.lowops_realm   | LowOps platform keycloack realm.                                                                      | "lowops-platform" |
+| lowops.config.keycloak.admin_password | LowOps platform admin user password. (if empty will be autogenerated and stored as kubernetes secret) | ""                |
+
+### Monitoring service
+
+Monitoring - Low-Ops platform monitoring service. Used for platform and application insights, alerts
+
+| Name                                                           | Description                                                                                                 | Default Value        |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------- |
+| lowops.config.monitoring_stack.thanos_minio_user               | Monitoring service Thanos s3 gateway user.                                                                  | "thanos"             |
+| lowops.config.monitoring_stack.thanos_minio_password           | Monitoring service Thanos s3 gateway user.                                                                  | ""                   |
+| lowops.config.monitoring_stack.grafana_admin_password          | Monitoring service grafana admin password. (if empty will be autogenerated and stored as kubernetes secret) | ""                   |
+| lowops.config.monitoring_stack.prometheus_storage_size         | Monitoring service prometheus storage size                                                                  | "20Gi"               |
+| lowops.config.monitoring_stack.grafana_smtp_smarthost          | Monitoring service grafana smtp host.                                                                       | "smtp.gmail.com:587" |
+| lowops.config.monitoring_stack.grafana_smtp_smarthost_user     | Monitoring service grafana smtp user.                                                                       | ""                   |
+| lowops.config.monitoring_stack.grafana_smtp_smarthost_password | Monitoring service grafana smtp password.                                                                   | ""                   |
+| lowops.config.monitoring_stack.grafana_alert_email_contact     | Monitoring service grafana alerts contact email.                                                            | ""                   |
+
+### Oauth2-proxy service
+
+OAuth2-proxy - used to enable Low-Ops platform web services user authentication using OIDC Keycloak provider.
+
+| Name | Description | Default Value |
+| ---- | ----------- | ------------- |
+
+### Retraced audit service
+
+Retraced audit - service used to store platform and application events.
+
+| Name | Description | Default Value |
+| ---- | ----------- | ------------- |
+
+### S3 Apps Services Gateway Parameters
+
+When running with `foundation_type` == `aws`, change S3 gateway values to AWS API Access and Secret keys with access to
+the S3 applications bucket (refer to the diagram above). For `generic` type, will point to the MinIO service inside the
+platform.
+
+| Name                                        | Description                                                             | Default Value |
+| ------------------------------------------- | ----------------------------------------------------------------------- | ------------- |
+| lowops.config.s3_gateway.apps_root_user     | LowOps platform s3 gateway user name to access apps storage buckets     | ""            |
+| lowops.config.s3_gateway.apps_root_password | LowOps platform s3 gateway user password to access apps storage buckets | ""            |
+
+### S3 Core Services Parameters
+
+When running with `foundation_type` == `aws`, change S3 gateway values with AWS API Access and Secret keys that have
+access to the S3 core services bucket (refer to the diagram above). For `generic` type, the system will point to MinIO
+service inside platform.
+
+| Name                                        | Description                                                             | Default Value |
+| ------------------------------------------- | ----------------------------------------------------------------------- | ------------- |
+| lowops.config.s3_gateway.core_root_user     | LowOps platform s3 gateway user name to access core storage buckets     | ""            |
+| lowops.config.s3_gateway.core_root_password | LowOps platform s3 gateway user password to access core storage buckets | ""            |
+
+### Tekton service
+
+Tekton - pipeline base platform backend.
+
+| Name                                             | Description                                                           | Default Value |
+| ------------------------------------------------ | --------------------------------------------------------------------- | ------------- |
+| lowops.config.tekton_cicd.dashboard_enabled      | Enable LowOps platform Tekton Dashboard                               | "true"        |
+| lowops.config.tekton_cicd.kubernetes_min_version | LowOps platform Tekton pipelines minimal kubernetes version supported | "1.22.7"      |
+| lowops.config.tekton_cicd.pipelines_pvc_size     | LowOps platform Tekton pipelines volume size                          | "2Gi"         |

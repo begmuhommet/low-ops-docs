@@ -4,72 +4,81 @@ title: Settings
 
 import ReDeployLink from "@site/src/components/ReDeployLink";
 
-The environment settings are used to configure environment specific settings like domain, scaling, and delete
-environment.
+Configure your environment with settings for domain, scaling, and environment management.
 
-You can access the environment settings by navigating to `Application > Environment > Settings`.
+Go to `Application > Environment > Settings` to access these settings.
 
 ### Domain Settings
 
-The domain settings are used to configure the domain for the environment. Environment url is generated with
-`[app name]-[environment name].[domain]`. If you want to add your own url, you can edit the url field. Also you can
-provide `TLS Certificate` and `TLS Certificate Key` to enable TLS for your environment.
+Domain settings configure your environment's domain. The default URL format is `[app name]-[environment name].[domain]`.
+You can:
+
+- Use a custom URL
+- Add `TLS Certificate` and `TLS Certificate Key` to enable TLS
 
 <img src="/img/domain-settings.png" alt="Domain Settings" className="image" />
 
 :::warning
 
-For the new domain setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+Re-deploy the environment to apply new domain settings. <ReDeployLink />
 
 :::
 
 ### Scaling Settings
 
-The scaling settings are used to configure the scaling for the environment. You can change `CPU`, `Memory`, and
-`Replica` for the environment.
+Adjust your environment's resources:
+
+- CPU allocation
+- Memory allocation
+- Number of replicas
 
 <img src="/img/scaling-settings.png" alt="Scaling Settings" className="image" />
 
 :::warning
 
-For the new scaling setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+Re-deploy the environment to apply new scaling settings. <ReDeployLink />
 
 :::
 
 ### Delete Environment
 
-The delete environment settings are used to delete the current environment.
+Remove the current environment and all its resources.
 
 <img src="/img/delete-environment.png" alt="Delete Environment" className="image" />
 
 :::warning
 
-Deleting an environment will delete all the resources associated with the environment. This action is not reversible.
+This action cannot be undone. All environment resources will be permanently deleted.
 
 :::
 
 ### Mendix Access Settings
 
-In this section you can retrieve login credentials for Mendix Studio Pro and Mendix Debugger.
+Get login credentials for:
+
+- Mendix Studio Pro
+- Mendix Debugger
 
 <img src="/img/mendix-access.png" alt="Mendix Access" className="image" />
 
 ### Mendix Runtime Settings
 
-The mendix runtime settings are used to configure the mendix runtime for the environment. You can `add`, `edit`, and
-`delete` the mendix runtime settings.
+Manage Mendix runtime configuration:
+
+- Add new settings
+- Edit existing settings
+- Remove settings
 
 <img src="/img/mendix-runtime.png" alt="Mendix Runtime" className="image" />
 
 :::note
 
-In case you need to override the application url you can do so by adding the `ApplicationRootUrl` with your own url as
-`VALUE`.
+To override the application URL, add `ApplicationRootUrl` with your custom URL as the `VALUE`.
 
 :::
 
 :::warning
 
-For the new runtime setting values to take effect, Re-Deploy the environment. <ReDeployLink />
+Re-deploy the environment to apply new runtime settings. <ReDeployLink />
 
 :::

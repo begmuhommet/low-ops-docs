@@ -1,4 +1,7 @@
 {
   "label": "Platform",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/platform"
+  }
 }

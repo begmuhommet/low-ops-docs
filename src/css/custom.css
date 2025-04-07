@@ -97,3 +97,7 @@ html {
     color: var(--ifm-color-primary);
   }
 }
+
+.navbar__search-input {
+  border-radius: 6px;
+}

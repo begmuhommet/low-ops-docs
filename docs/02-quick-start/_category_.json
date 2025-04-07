@@ -1,4 +1,7 @@
 {
   "label": "Quick Start",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/quick-start"
+  }
 }

@@ -1,4 +1,7 @@
 {
   "label": "Getting Started",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/getting-started"
+  }
 }

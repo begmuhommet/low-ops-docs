@@ -1,4 +1,7 @@
 {
   "label": "Application",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/application"
+  }
 }

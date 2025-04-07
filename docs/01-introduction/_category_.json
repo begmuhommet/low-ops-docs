@@ -1,4 +1,7 @@
 {
   "label": "Introduction",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/introduction"
+  }
 }

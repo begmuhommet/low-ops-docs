@@ -1,4 +1,7 @@
 {
   "label": "Installation",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/installation"
+  }
 }

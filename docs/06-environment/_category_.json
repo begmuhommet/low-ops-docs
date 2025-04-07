@@ -1,4 +1,7 @@
 {
   "label": "Environment",
-  "link": null
+  "link": {
+    "type": "generated-index",
+    "slug": "/docs/environment"
+  }
 }

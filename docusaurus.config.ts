@@ -5,7 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Low-Ops",
+  title: "Low-Ops Docs",
   tagline: "Private Cloud Infrastructure",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
@@ -29,6 +29,8 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
     [

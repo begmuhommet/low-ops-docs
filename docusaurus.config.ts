@@ -30,6 +30,11 @@ const config: Config = {
     locales: ["en"],
   },
 
+  themes: ["@docusaurus/theme-mermaid"],
+  markdown: {
+    mermaid: true,
+  },
+
   plugins: [require.resolve("docusaurus-lunr-search")],
 
   presets: [
@@ -87,29 +92,32 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      links: [
-        { title: "Docs", items: [{ label: "Docs", to: "/docs/introduction/overview" }] },
-        {
-          title: "Community",
-          items: [
-            { label: "Stack Overflow", href: "https://stackoverflow.com/questions/tagged/docusaurus" },
-            { label: "Discord", href: "https://discordapp.com/invite/docusaurus" },
-            { label: "X", href: "https://x.com/docusaurus" },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            // { label: "Blog", to: "/blog" },
-            // { label: "GitHub", href: "https://github.com/facebook/docusaurus" },
-          ],
-        },
-      ],
+      // links: [
+      //   { title: "Docs", items: [{ label: "Docs", to: "/docs/introduction/overview" }] },
+      //   {
+      //     title: "Community",
+      //     items: [
+      //       { label: "Stack Overflow", href: "https://stackoverflow.com/questions/tagged/docusaurus" },
+      //       { label: "Discord", href: "https://discordapp.com/invite/docusaurus" },
+      //       { label: "X", href: "https://x.com/docusaurus" },
+      //     ],
+      //   },
+      //   {
+      //     title: "More",
+      //     items: [
+      //       // { label: "Blog", to: "/blog" },
+      //       // { label: "GitHub", href: "https://github.com/facebook/docusaurus" },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} Low-Ops.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    mermaid: {
+      theme: { light: "neutral", dark: "neutral" },
     },
   } satisfies Preset.ThemeConfig,
 };

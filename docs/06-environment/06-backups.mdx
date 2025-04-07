@@ -12,8 +12,8 @@ You can access the backups by navigating to `Application > Environment > Backups
 ### Create backup
 
 You can create a backup manually by clicking on the `Create` button. You can give it a name (optional) and description
-(optional). Backups creation mean saving the current state of the database and files. The system automatically creates a
-backup at night. These backups appear with the "Nightly backup" comment in the list of backups.
+(optional). Creating backups means saving the current state of the database and files. The system automatically creates
+a backup nightly. These backups appear with the "Nightly backup" comment in the list of backups.
 
 <img src="/img/create-backup-dialog.png" alt="Create Backup Dialog" className="image" />
 
@@ -26,11 +26,11 @@ You can import a backup from you local machine by clicking on the `Import locall
 ### Restore backup
 
 You can restore a backup by clicking on the `Restore` button. You can restore the backup to the current environment or
-to a other environments.
+to other environments.
 
 :::warning
 
-The environment where you are restoring should be `stopped`. Restore a backup will `override` the current state of the
+The environment you're restoring to should be `stopped`. Restoring a backup will `override` the current state of the
 `database` and `files`.
 
 :::

@@ -10,3 +10,5 @@ source ~/.venv/low-ops-docs/bin/activate
 pip install -r requirements.txt
 mkdocs serve
 ```
+
+Load key "/root/.ssh/id_rsa": error in libcrypto

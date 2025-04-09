@@ -31,21 +31,21 @@ compile:
       - build/
     expire_in: 1 week
 
-docker:
-  stage: Package
-  needs:
-    - compile
-  variables:
-    CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
-    TAG_LATEST: $TAG_BASE:latest
-  allow_failure: false
-  script:
-    - |
-      $DOCKER_LOGIN
-      docker pull $TAG_LATEST || true
-      docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
-      docker push $CONTAINER_IMAGE
-      docker push $TAG_LATEST
+# docker:
+#   stage: Package
+#   needs:
+#     - compile
+#   variables:
+#     CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
+#     TAG_LATEST: $TAG_BASE:latest
+#   allow_failure: false
+#   script:
+#     - |
+#       $DOCKER_LOGIN
+#       docker pull $TAG_LATEST || true
+#       docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
+#       docker push $CONTAINER_IMAGE
+#       docker push $TAG_LATEST
 
 web:
   stage: Publish

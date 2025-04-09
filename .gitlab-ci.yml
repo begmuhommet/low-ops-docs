@@ -1,0 +1,73 @@
+# Low-Ops Docs
+
+stages:
+  - Build
+  - Package
+  - Publish
+
+image: docker:20.10.16
+
+variables:
+  TAG_VERSION: 0-ci-$CI_COMMIT_REF_SLUG
+  TAG_BASE: $CI_REGISTRY/cinaq/low-ops-docs
+  DOCKER_LOGIN: docker login -u $LOWOPS_DOCS_CI_REGISTRY_USER -p $LOWOPS_DOCS_CI_REGISTRY_PASSWORD $CI_REGISTRY
+
+default:
+  tags:
+    - hosted
+    - docker
+
+compile:
+  stage: Build
+  needs: []
+  allow_failure: false
+  image: node:lts-alpine
+  before_script:
+    - npm ci
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 week
+
+docker:
+  stage: Package
+  needs:
+    - compile
+  variables:
+    CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
+    TAG_LATEST: $TAG_BASE:latest
+  allow_failure: false
+  script:
+    - |
+      $DOCKER_LOGIN
+      docker pull $TAG_LATEST || true
+      docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
+      docker push $CONTAINER_IMAGE
+      docker push $TAG_LATEST
+
+web:
+  stage: Publish
+  needs:
+    - compile
+  allow_failure: false
+  image: bitnami/git
+  script:
+    - |
+      mkdir -p /root/.ssh
+      echo "$SSH_KEY_BASE64" | base64 -d > /root/.ssh/id_rsa
+      chmod 600 /root/.ssh/id_rsa
+      git config --global user.email "noreply@cinaq.com"
+      git config --global user.name "robot"
+      export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+      git clone git@github.com:cinaq/low-ops-docs.git
+      apt update
+      apt install -y rsync
+      rsync -av --delete --exclude='.git' build/ low-ops-docs/
+      cd low-ops-docs/
+      git add .
+      git commit -m "Publish $CI_COMMIT_SHORT_SHA"
+      git push origin new-docs
+  only:
+    - new-docs

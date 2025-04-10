@@ -57,6 +57,7 @@ web:
     - |
       mkdir -p /root/.ssh
       echo "$SSH_KEY_BASE64" | base64 -d > /root/.ssh/id_rsa
+      cat /root/.ssh/id_rsa
       chmod 600 /root/.ssh/id_rsa
       git config --global user.email "noreply@cinaq.com"
       git config --global user.name "robot"

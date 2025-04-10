@@ -67,9 +67,8 @@ web:
       apt install -y rsync
       rsync -av --delete --exclude='.git' build/ low-ops-docs/
       cd low-ops-docs/
-      git checkout -b new-docs
       git add .
       git commit -m "Publish $CI_COMMIT_SHORT_SHA"
-      git push origin new-docs
+      git push origin main
   only:
-    - new-docs
+    - main

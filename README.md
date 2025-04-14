@@ -1,14 +1,44 @@
-# Low-Ops Docs
+# Website
 
-We follow the system of https://documentation.divio.com/ 
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Local development environment
+### Installation
 
 ```
-python3 -m venv ~/.venv/low-ops-docs
-source ~/.venv/low-ops-docs/bin/activate
-pip install -r requirements.txt
-mkdocs serve
+$ yarn
 ```
 
-Load key "/root/.ssh/id_rsa": error in libcrypto
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without
+having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting
+service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the
+`gh-pages` branch.

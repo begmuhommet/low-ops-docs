@@ -1,0 +1,159 @@
+---
+title: Hetzner Single Node Installation
+---
+
+This guide describes how to install the Low-Ops on a single `Hetzner Cloud server` using their `CLI tool`.
+
+:::warning
+
+This setup is suitable for testing and development environments. For production use, we recommend using a multi-node
+setup with proper high availability.
+
+:::
+
+:::info Prerequisites
+
+- Hetzner Cloud account with API access
+- Hetzner Cloud CLI (hcloud) installed in your machine
+- Available domain name with DNS management access
+- Ubuntu 22.04 LTS
+
+:::
+
+:::info Minimum system requirements
+
+- RAM: 16 GB
+- CPU: 8 vCPUs
+- Disk: 500 GB
+
+:::
+
+## Install and Configure Hetzner Cloud CLI
+
+### <span style={{ fontSize: "1.2rem" }}>**Step 1.** Install Hetzner Cloud CLI</span>
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs>
+  <TabItem value="macOS" label="macOS" default>
+  
+    ```bash    
+    brew install hcloud
+    ```
+
+  </TabItem>
+  <TabItem value="Linux" label="Linux">
+  
+    ```bash 
+    curl -fsSL https://raw.githubusercontent.com/hetznercloud/cli/master/install.sh | bash 
+    ```
+
+  </TabItem>
+</Tabs>
+
+---
+
+### <span style={{fontSize: "1.2rem"}}> **Step 2.** Configure CLI with your API token</span>
+
+```bash
+hcloud context create lowops
+# When prompted, enter your API token from the Hetzner Cloud Console
+```
+
+---
+
+## Create Hetzner Cloud Server
+
+### <span style={{fontSize: "1.2rem"}}> **Step 1.** Create an SSH key for server access</span>
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/hetzner_lowops
+hcloud ssh-key create --name lowops-key --public-key-from-file ~/.ssh/hetzner_lowops.pub
+```
+
+---
+
+### <span style={{fontSize: "1.2rem"}}> **Step 2.** Create public ipv4 IP address</span>
+
+```bash
+hcloud primary-ip create --datacenter=hel1-dc2 --name=lowops-ip --type=ipv4
+```
+
+---
+
+### <span style={{fontSize: "1.2rem"}}> **Step 3.** Create the server with required specifications</span>
+
+```bash
+hcloud server create \
+  --name lowops-server \
+  --type cxp41 \
+  --image ubuntu-22.04 \
+  --ssh-key lowops-key \
+  --datacenter hel1-dc2 \
+  --primary-ipv4 lowops-ip
+```
+
+---
+
+### <span style={{fontSize: "1.2rem"}}> **Step 4.** Get the server's public IP</span>
+
+```bash
+hcloud server list
+```
+
+---
+
+## Configure DNS record
+
+Configure wildcard `A` record pointing to server public IP address within DNS provider of your choice. Example: If your
+domain is `paas.company.com`, create an A record for `*.paas.company.com` pointing to your server's public IP Wait for
+DNS propagation (can take up to 48 hours, but usually much faster).
+
+---
+
+## Install Low-Ops
+
+### <span style={{fontSize: "1.2rem"}}> **Step 1.** Connect to your Hetzner server</span>
+
+Connect to your Hetzner server via SSH.
+
+```bash
+ssh -i ~/.ssh/hetzner_lowops root@your-server-public-ip
+```
+
+---
+
+### <span style={{fontSize: "1.2rem"}}> **Step 2.** Install Low-Ops</span>
+
+```bash
+curl -sO https://raw.githubusercontent.com/cinaq/helm-charts/refs/heads/main/charts/lowops-platform/scripts/install-platform.sh
+  && chmod +x install-platform.sh
+  && ./install-platform.sh
+```
+
+During installation process you will be prompted to input: `base domain name` (For instance if your portal should be
+available at `portal.paas.company.com`. Base domain is `paas.company.com`).
+
+Docker registry credentials. Current dockerhub pull image limits requires at list pro plan PAT for successfull
+installation.
+
+Wait until `lowops-platform pod` in `lowops-devops` namespace status is `Completed`. Usually takes `20-30 minutes`.
+
+After installation completes, you can access the platform portal using the credentials from the `script output`.
+
+---
+
+## Access Low-Ops
+
+Access the Low-Ops at `https://portal.paas.company.com`
+
+## Cleanup (optional)
+
+If you need to remove the server and associated resources, you can do so with the following commands
+
+```bash
+hcloud server delete lowops-server
+hcloud primary-ip delete lowops-ip
+hcloud ssh-key delete lowops-key
+```

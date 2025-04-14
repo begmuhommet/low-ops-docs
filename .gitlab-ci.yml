@@ -1,9 +1,9 @@
 # Low-Ops Docs
 
 stages:
-- Build
-- Package
-- Publish
+  - Build
+  - Package
+  - Publish
 
 image: docker:20.10.16
 
@@ -21,31 +21,31 @@ compile:
   stage: Build
   needs: []
   allow_failure: false
-  image: python:3.9.7-alpine3.14
+  image: node:lts-alpine
   before_script:
-    - pip install -r requirements.txt
+    - npm ci
   script:
-    - mkdocs build --verbose --clean
+    - npm run build
   artifacts:
     paths:
-    - site/
+      - build/
     expire_in: 1 week
 
-docker:
-  stage: Package
-  needs:
-    - compile
-  variables:
-    CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
-    TAG_LATEST: $TAG_BASE:latest
-  allow_failure: false
-  script:
-    - |
-      $DOCKER_LOGIN
-      docker pull $TAG_LATEST || true
-      docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
-      docker push $CONTAINER_IMAGE
-      docker push $TAG_LATEST
+# docker:
+#   stage: Package
+#   needs:
+#     - compile
+#   variables:
+#     CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
+#     TAG_LATEST: $TAG_BASE:latest
+#   allow_failure: false
+#   script:
+#     - |
+#       $DOCKER_LOGIN
+#       docker pull $TAG_LATEST || true
+#       docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
+#       docker push $CONTAINER_IMAGE
+#       docker push $TAG_LATEST
 
 web:
   stage: Publish
@@ -57,6 +57,7 @@ web:
     - |
       mkdir -p /root/.ssh
       echo "$SSH_KEY_BASE64" | base64 -d > /root/.ssh/id_rsa
+      cat /root/.ssh/id_rsa
       chmod 600 /root/.ssh/id_rsa
       git config --global user.email "noreply@cinaq.com"
       git config --global user.name "robot"
@@ -64,10 +65,10 @@ web:
       git clone git@github.com:cinaq/low-ops-docs.git
       apt update
       apt install -y rsync
-      rsync -av --delete --exclude='.git' site/ low-ops-docs/
+      rsync -av --delete --exclude='.git' build/ low-ops-docs/
       cd low-ops-docs/
       git add .
       git commit -m "Publish $CI_COMMIT_SHORT_SHA"
       git push origin main
   only:
-    - main
+    - new-docs

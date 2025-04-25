@@ -1,0 +1,6 @@
+nav:
+    - development
+    - environments
+    - ...
+    - activities.md
+    - settings.md

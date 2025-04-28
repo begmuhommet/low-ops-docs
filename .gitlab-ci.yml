@@ -17,35 +17,35 @@ default:
     - hosted
     - docker
 
-# compile:
-#   stage: Build
-#   needs: []
-#   allow_failure: false
-#   image: node:lts-alpine
-#   before_script:
-#     - npm ci
-#   script:
-#     - npm run build
-#   artifacts:
-#     paths:
-#       - build/
-#     expire_in: 1 week
-
-docker:
-  stage: Package
-  needs:
-    - compile
-  variables:
-    CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
-    TAG_LATEST: $TAG_BASE:latest
+compile:
+  stage: Build
+  needs: []
   allow_failure: false
+  image: node:lts-alpine
+  before_script:
+    - npm ci
   script:
-    - |
-      $DOCKER_LOGIN
-      docker pull $TAG_LATEST || true
-      docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
-      docker push $CONTAINER_IMAGE
-      docker push $TAG_LATEST
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 week
+
+# docker:
+#   stage: Package
+#   needs:
+#     - compile
+#   variables:
+#     CONTAINER_IMAGE: $TAG_BASE:$TAG_VERSION
+#     TAG_LATEST: $TAG_BASE:latest
+#   allow_failure: false
+#   script:
+#     - |
+#       $DOCKER_LOGIN
+#       docker pull $TAG_LATEST || true
+#       docker build -t $CONTAINER_IMAGE -t $TAG_LATEST .
+#       docker push $CONTAINER_IMAGE
+#       docker push $TAG_LATEST
 
 web:
   stage: Publish

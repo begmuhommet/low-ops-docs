@@ -17,19 +17,19 @@ default:
     - hosted
     - docker
 
-compile:
-  stage: Build
-  needs: []
-  allow_failure: false
-  image: node:lts-alpine
-  before_script:
-    - npm ci
-  script:
-    - npm run build
-  artifacts:
-    paths:
-      - build/
-    expire_in: 1 week
+# compile:
+#   stage: Build
+#   needs: []
+#   allow_failure: false
+#   image: node:lts-alpine
+#   before_script:
+#     - npm ci
+#   script:
+#     - npm run build
+#   artifacts:
+#     paths:
+#       - build/
+#     expire_in: 1 week
 
 docker:
   stage: Package

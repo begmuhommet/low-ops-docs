@@ -1,0 +1,218 @@
+---
+title: Technical Specifications
+---
+
+## Kubernetes & Core Infrastructure
+
+| Component      | Specification                             |
+| -------------- | ----------------------------------------- |
+| **Kubernetes** | - Version: v1.27+                         |
+|                | - CNCF-compliant distributions:           |
+|                | - AKS (Azure Kubernetes Service)          |
+|                | - EKS (Amazon Elastic Kubernetes Service) |
+|                | - GKE (Google Kubernetes Engine)          |
+|                | - RKE2 (Rancher Kubernetes Engine)        |
+|                | - OpenShift 4.12+                         |
+| **Ingress**    | - NGINX Ingress Controller v1.12.1        |
+|                | - Helm chart: ingress-nginx-4.12.1        |
+|                | - Features:                               |
+|                | - TLS termination                         |
+|                | - Path-based routing                      |
+|                | - Custom annotations                      |
+|                | - SSL passthrough                         |
+| **DNS**        | - External DNS controller                 |
+|                | - Support for:                            |
+|                | - Azure DNS                               |
+|                | - AWS Route53                             |
+|                | - Cloudflare                              |
+|                | - Custom DNS providers                    |
+| **TLS**        | - cert-manager v1.14.1                    |
+|                | - Let's Encrypt ClusterIssuer             |
+|                | - Support for:                            |
+|                | - HTTP-01 challenges                      |
+|                | - DNS-01 challenges                       |
+|                | - Custom certificates                     |
+
+---
+
+## Platform Services
+
+### Identity & Access
+
+| Component       | Specification                     |
+| --------------- | --------------------------------- |
+| **Keycloak**    | - Version: 21.1.1-debian-11-r8    |
+|                 | - Helm chart: keycloak-15.1.3     |
+|                 | - Backend: CloudNativePG          |
+|                 | - Features:                       |
+|                 | - OIDC/OAuth2 support             |
+|                 | - LDAP integration                |
+|                 | - Custom themes                   |
+|                 | - User federation                 |
+| **OAuth Proxy** | - Version: v7.6.0                 |
+|                 | - Helm chart: oauth2-proxy-6.13.1 |
+|                 | - Features:                       |
+|                 | - Session management              |
+|                 | - Cookie encryption               |
+|                 | - Rate limiting                   |
+
+### DevOps Toolchain
+
+| Component  | Specification               |
+| ---------- | --------------------------- |
+| **Gitea**  | - Version: v1.19.3          |
+|            | - Helm chart: gitea-8.3.0   |
+|            | - Features:                 |
+|            | - Git LFS support           |
+|            | - Webhook integration       |
+|            | - Access control            |
+|            | - Repository mirroring      |
+| **Tekton** | - Pipelines: v0.59.5        |
+|            | - Triggers: v0.22.1         |
+|            | - Dashboard: v0.36.0        |
+|            | - Features:                 |
+|            | - Pipeline templates        |
+|            | - Event triggers            |
+|            | - Workspace management      |
+| **Harbor** | - Version: v2.8.2           |
+|            | - Helm chart: harbor-1.12.2 |
+|            | - Features:                 |
+|            | - OCI image scanning        |
+|            | - Audit logs                |
+|            | - S3 backend integration    |
+|            | - Replication policies      |
+
+### Portal & Workers
+
+| Component      | Specification                                                           |
+| -------------- | ----------------------------------------------------------------------- |
+| LowOps Portal  | React frontend, backend in Go/Python, exposed via ingress + OAuth proxy |
+| LowOps Workers | Stateless job runners, scaled dynamically                               |
+| Communication  | RabbitMQ (`bitnami/rabbitmq`) used for task/event queuing               |
+
+---
+
+## Data Services
+
+| Component   | Specification                                            |
+| ----------- | -------------------------------------------------------- |
+| **CNPG**    | - Operator: v16.0                                        |
+|             | - Helm chart: cloudnative-pg-0.19.1                      |
+|             | - Features:                                              |
+|             | - WAL archiving to S3                                    |
+|             | - Point-in-time recovery                                 |
+|             | - High availability                                      |
+| **MinIO**   | - Version: 2021.12.10-debian-10-r0                       |
+|             | - Helm chart: minio-11.6.7                               |
+|             | - Gateway mode: v1.1                                     |
+|             | - Features:                                              |
+|             | - S3-compatible API                                      |
+|             | - Multi-tenant support                                   |
+|             | - Encryption at rest                                     |
+| **Vault**   | - Version: v1.13.1                                       |
+|             | - Helm chart: vault-0.24.1                               |
+|             | - Features:                                              |
+|             | - Kubernetes auth                                        |
+|             | - Dynamic secrets                                        |
+|             | - Secret rotation                                        |
+| **Consul**  | - Service discovery and dynamic config store (optional)  |
+| **pgAdmin** | - pgAdmin for DB browsing (namespace-scoped read access) |
+
+---
+
+## Monitoring & Logging
+
+| Component      | Specification                              |
+| -------------- | ------------------------------------------ |
+| **Prometheus** | - Version: v2.42.0                         |
+|                | - Helm chart: kube-prometheus-stack-45.5.0 |
+|                | - Features:                                |
+|                | - Service discovery                        |
+|                | - Alert rules                              |
+|                | - Recording rules                          |
+| **Grafana**    | - Version: v9.3.8                          |
+|                | - Helm chart: grafana-6.58.9               |
+|                | - Features:                                |
+|                | - SSO integration                          |
+|                | - Custom dashboards                        |
+|                | - Alert notifications                      |
+| **Loki**       | - Version: v2.6.1                          |
+|                | - Helm chart: loki-stack-2.9.9             |
+|                | - Features:                                |
+|                | - Log aggregation                          |
+|                | - LogQL query language                     |
+|                | - Multi-tenant support                     |
+| **Thanos**     | - Long-term Prometheus storage using S3    |
+
+---
+
+## Developer Experience
+
+| Feature            | Specification                                               |
+| ------------------ | ----------------------------------------------------------- |
+| App Initialization | Mendix from Marketplace; Generic via Dockerfile scaffolding |
+| CI/CD Triggering   | Git push → Tekton Trigger → Pipeline execution              |
+| App Promotion      | dev → test → prod via Portal or CI workflows                |
+| Namespaces         | Per-app / environment isolation                             |
+| Portal Auth        | All actions authenticated via Keycloak SSO                  |
+
+---
+
+## Backup & Recovery
+
+| Component    | Specification                                                                         |
+| ------------ | ------------------------------------------------------------------------------------- |
+| **Kanister** | - Version: v0.103.0                                                                   |
+|              | - Helm chart: kanister-operator-0.103.0                                               |
+|              | - Features:                                                                           |
+|              | - Application-aware backups                                                           |
+|              | - Point-in-time recovery                                                              |
+|              | - Cross-region replication                                                            |
+| **Storage**  | - S3-compatible storage                                                               |
+|              | - Support for:                                                                        |
+|              | - Azure Blob Storage                                                                  |
+|              | - AWS S3                                                                              |
+|              | - MinIO                                                                               |
+|              | - Ceph RGW                                                                            |
+|              | - Backup Policies: Daily backups + hourly WAL (for CNPG), with configurable retention |
+
+---
+
+## Security & Compliance
+
+| Area              | Specification                                                                      |
+| ----------------- | ---------------------------------------------------------------------------------- |
+| Image Scanning    | Trivy scans in Harbor + optional CI checks                                         |
+| Secret Management | Vault with dynamic secrets and rotation policies                                   |
+| TLS Everywhere    | Enforced via cert-manager and ingress settings                                     |
+| RBAC              | Namespaced access, managed via Keycloak roles + K8s RoleBindings                   |
+| Audit Logging     | Actions in Git, Portal, and Harbor collected in portal database, retained 30+ days |
+
+## Platform Components Matrix
+
+| Category       | Component        | Version    | Notes / Source                   |
+| -------------- | ---------------- | ---------- | -------------------------------- |
+| **Kubernetes** | Kubernetes       | v1.27+     | CNCF-compliant distros           |
+| **Core**       | NGINX Ingress    | v1.12.1    | ingress-nginx-4.12.1             |
+| **Core**       | cert-manager     | v1.14.1    | cert-manager-v1.14.1             |
+| **DevOps**     | Gitea            | v1.19.3    | gitea-8.3.0                      |
+| **DevOps**     | Tekton Pipelines | v0.59.5    | tektoncd/pipeline                |
+| **DevOps**     | Tekton Triggers  | v0.22.1    | tektoncd/triggers                |
+| **DevOps**     | Harbor           | v2.8.2     | harbor-1.12.2                    |
+| **DevOps**     | Trivy            | v0.61.0    | CI and Harbor integration        |
+| **Auth**       | Keycloak         | 21.1.1     | keycloak-15.1.3                  |
+| **Auth**       | OAuth2 Proxy     | v7.6.0     | oauth2-proxy-6.13.1              |
+| **Messaging**  | RabbitMQ         | 4.0.2      | rabbitmq-cluster-operator-4.3.24 |
+| **Platform**   | LowOps Portal    | v4.0.0     | Internal release                 |
+| **Platform**   | LowOps Workers   | v4.0.0     | Internal release                 |
+| **Data**       | MinIO            | 2021.12.10 | minio-11.6.7                     |
+| **Data**       | MinIO Gateway    | v1.1       | S3 Gateway mode                  |
+| **Data**       | CloudNativePG    | v16.0      | cloudnative-pg-0.19.1            |
+| **Data**       | Vault            | v1.13.1    | vault-0.24.1                     |
+| **Data**       | Consul           | v1.15.1    | consul-1.1.1                     |
+| **Data**       | pgAdmin          | v6.19      | pgadmin4-1.14.3                  |
+| **Monitoring** | Prometheus       | v2.42.0    | kube-prometheus-stack-45.5.0     |
+| **Monitoring** | Grafana          | v9.3.8     | grafana-6.58.9                   |
+| **Monitoring** | Loki             | v2.6.1     | loki-stack-2.9.9                 |
+| **Monitoring** | Thanos           | v0.30.2    | thanos-12.1.2                    |
+| **Backup**     | Kanister         | v0.103.0   | kanister-operator-0.103.0        |

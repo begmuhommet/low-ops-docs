@@ -1,0 +1,197 @@
+---
+title: Technical Requirements
+---
+
+## Infrastructure Requirements
+
+### Single Node Deployment
+
+- **Compute Resources:**
+  - Minimum: `8 vCPUs`
+  - Minimum: `16 GB RAM`
+  - Recommended: `16 vCPUs`, `32 GB RAM` for production workloads
+- **Storage:**
+  - Minimum: `500 GB` persistent disk space
+  - Recommended: `1 TB` SSD for production workloads
+  - Storage class must support `ReadWriteOnce` and `ReadWriteMany` access modes
+- **Operating System:**
+  - `Ubuntu 22.04 LTS` (Recommended for single-node script installations)
+  - Any Linux distribution capable of running `Kubernetes 1.27+`
+- **Networking:**
+  - Static Public IP address assigned to the node
+  - Network connectivity to the internet for pulling images and dependencies
+  - Open inbound ports:
+    - `SSH (TCP/22)` - For administrative access (restrict to specific IPs)
+    - `HTTP (TCP/80)` - For Let's Encrypt certificate validation and HTTP traffic
+    - `HTTPS (TCP/443)` - For platform and application access
+  - Internal cluster networking must allow communication between pods and services
+  - Network bandwidth: Minimum `1 Gbps` recommended
+- **DNS:**
+  - A managed domain name
+  - Ability to configure DNS records:
+    - Wildcard `A` record (e.g., `*.paas.yourcompany.com`)
+    - Additional records for specific services (e.g., portal, registry)
+
+### Multi-node Deployment
+
+- **Kubernetes Cluster:**
+  - Minimum 3 worker nodes
+  - Kubernetes version 1.27 or later
+  - CNCF-compliant distribution
+  - `kubectl` access configured for the cluster
+  - Helm v3.9+ installed on the machine performing the installation
+- **Storage:**
+  - Default StorageClass configured
+  - Support for dynamic provisioning
+  - Support for ReadWriteOnce and ReadWriteMany access modes
+  - Minimum 1 TB total storage capacity
+- **Networking:**
+  - Load balancer support (cloud provider or MetalLB)
+  - Network policies support
+  - Ingress controller support
+  - DNS integration capabilities
+- **Node Requirements:**
+  - Minimum per node:
+    - `4 vCPUs`
+    - `8 GB RAM`
+    - `100 GB storage`
+  - Recommended per node:`
+    - `8 vCPUs`
+    - `16 GB RAM`
+    - `200 GB storage`
+
+## Platform Services Requirements
+
+### Core Services
+
+| Service        | Requirement                                   |
+| -------------- | --------------------------------------------- |
+| **Kubernetes** | CNCF-compliant distribution with support for: |
+|                | - Network policies                            |
+|                | - Storage classes                             |
+|                | - Load balancer integration                   |
+| **Storage**    | Object storage with:                          |
+|                | - S3-compatible API support                   |
+|                | - MinIO gateway to Azure Blob/S3              |
+|                | - Minimum 1 TB capacity                       |
+| **Network**    | Ingress controller with:                      |
+|                | - TLS termination                             |
+|                | - Custom DNS routing                          |
+|                | - SSL passthrough support                     |
+| **Database**   | Support for:                                  |
+|                | - CloudNativePG (CNPG)                        |
+|                | - Managed databases (Azure DB, AWS RDS)       |
+|                | - Backup and restore capabilities             |
+
+### Platform Components
+
+| Component         | Requirement                    |
+| ----------------- | ------------------------------ |
+| **Ingress**       | NGINX ingress controller with: |
+|                   | - TLS termination              |
+|                   | - Path-based routing           |
+|                   | - Custom annotations support   |
+| **Certificates**  | Automatic TLS via:             |
+|                   | - cert-manager                 |
+|                   | - Let's Encrypt integration    |
+|                   | - Custom certificate support   |
+| **Git Service**   | Gitea with:                    |
+|                   | - Git LFS support              |
+|                   | - Webhook integration          |
+|                   | - Access control               |
+| **CI/CD**         | Tekton pipelines with:         |
+|                   | - Build automation             |
+|                   | - Test execution               |
+| Security scanning |
+|                   | - Deployment automation        |
+| **Registry**      | Harbor with:                   |
+|                   | - OCI image scanning           |
+|                   | - Audit logs                   |
+|                   | - S3 backend integration       |
+| **Secrets**       | HashiCorp Vault with:          |
+|                   | - Kubernetes integration       |
+|                   | - Dynamic secrets              |
+|                   | - Secret rotation              |
+| **Messaging**     | RabbitMQ with:                 |
+|                   | - High availability            |
+|                   | - Message persistence          |
+|                   | - Queue management             |
+| **Backup**        | Kanister with:                 |
+|                   | - Platform data backup         |
+|                   | - Application data backup      |
+|                   | - Point-in-time recovery       |
+
+## Security Requirements
+
+### Authentication & Authorization
+
+- **SSO Integration:**
+  - Keycloak-based SSO for all user-facing components
+  - Support for multiple identity providers
+  - Role-based access control (RBAC)
+- **Access Control:**
+  - Namespace-level RBAC
+  - Resource-level permissions
+  - Audit logging for all actions
+
+### Data Security
+
+- **Encryption:**
+  - TLS for all inter-service communication
+  - Data encryption at rest
+  - Secure secret management
+- **Compliance:**
+  - Regular security scanning
+  - Vulnerability management
+  - Compliance reporting
+
+## Operational Requirements
+
+### Monitoring & Observability
+
+- **Metrics:**
+  - Prometheus-based metrics collection
+  - Custom metrics support
+  - Long-term storage with Thanos
+- **Logging:**
+  - Centralized logging with Loki
+  - Log retention policies
+  - Log analysis capabilities
+- **Alerting:**
+  - Alertmanager integration
+  - Multiple notification channels
+  - Custom alert rules
+
+### Backup & Recovery
+
+- **Backup Strategy:**
+  - Daily full backups
+  - Point-in-time recovery
+  - Cross-region replication
+- **Recovery:**
+  - Automated recovery procedures
+  - Tested recovery plans
+  - Recovery time objectives (RTO)
+
+## Scalability Requirements
+
+### Horizontal Scaling
+
+- **Platform Services:**
+  - Auto-scaling support
+  - Load balancing
+  - High availability
+- **Applications:**
+  - Zero-downtime deployments
+  - Rolling updates
+
+### Multi-tenancy
+
+- **Isolation:**
+  - Namespace-based isolation
+  - Resource quotas
+  - Network policies
+- **Resource Management:**
+  - Resource limits
+  - Priority classes
+  - Quality of service (QoS)

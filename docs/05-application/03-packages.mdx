@@ -73,3 +73,25 @@ You can see the Unit Testing summary in the Packages screen under the `job` colu
 details `Application > Package > Unit Testing` screen to see full details of the unit testing.
 
 <img src="/img/package-unit-testing.png" alt="Package unit testing" className="image" />
+
+### Package Approval
+
+:::note
+
+Package approval works only in protected environments. To learn more about protected environments, see
+[Protected Environments](/docs/application/environments#protected-environments).
+
+:::
+
+By default all packages on protected environments are `unapproved`. You can see that in the `Packages` screen.
+Unapproved packages marked with a `x` icon. Package can be approved by `Owner` or `Admin` users.
+
+To approve a package, navigate to `Application > Packages` screen and click to the menu icon in the package row. Select
+`Approve` from the menu. You will see the `✓` icon if package is approved. It is also possible to disapprove a package
+in the same way.
+
+<img src="/img/package-approval.png" alt="Package approval" className="image" />
+
+If the package is not approved, you can't deploy it to the protected environment.
+
+<img src="/img/package-approval-deploy.png" alt="Package approval" className="image" />
